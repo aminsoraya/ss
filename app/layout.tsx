@@ -4,7 +4,8 @@ import "./globals.css";
 import Layout from "@/components/layout/layout";
 import { Service } from "@/types/header";
 import { Meta } from "@/types";
-
+import { Menu } from "@/types/subHeader";
+ 
 const iranSans = localFont({
   src: "./fonts/IRANSansWeb_Medium.woff2",
   variable: "--font-geist-mono",
@@ -26,13 +27,61 @@ export default function RootLayout({
     { link: "/paypal", text: "Paypal داری، کلیک کن !" },
   ];
 
+  const menus:Menu[]=[
+    {
+      title: "کالای دیجیتال",
+      icon: "FaC",
+      subs: [
+        {
+          title: "گجت های پوشیدنی",
+          childs: [
+            {
+              "link": "/products/shoes",
+              "text": "ساعت هوشمند"
+            },
+            {
+              "link": "/products/shoes",
+              "text": "عینک واقعیت مجازی"
+            }
+          ]
+        },
+        {
+          title: "لوازم جانبی",
+          childs: [
+            {
+              "link": "/products/accessories",
+              "text": "کمربندها"
+            },
+            {
+              "link": "/products/accessories",
+              "text": "کلاه‌ها"
+            }
+          ]
+        },
+        {
+          title: "لباس‌ها",
+          childs: [
+            {
+              "link": "/products/clothing",
+              "text": "تی‌شرت‌ها"
+            },
+            {
+              "link": "/products/clothing",
+              "text": "شلوارها"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+
   const meta: Meta = {
     headers: {
       services: services,
     },
     subHeaders: {
       categories:undefined,
-      menus:undefined,
+      menus:menus,
     }
   };
 
@@ -44,3 +93,5 @@ export default function RootLayout({
     </html>
   );
 }
+ 
+

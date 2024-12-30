@@ -10,8 +10,13 @@ export type Sub = {
 
 export type Menu = {
   title: string;
-  icon: IconType;
+  icon: string;
   subs: Sub[];
+};
+
+export type SubHeader = {
+  menus: Menu[] | undefined;
+  categories: Category[] | undefined;
 };
 
 export type Category = {
@@ -20,9 +25,4 @@ export type Category = {
   icon?: IconType;
   link: string;
   dir: "rtl" | "ltr";
-};
-
-export type SubHeader = {
-  menus: Menu[]|undefined;
-  categories: Category[]|undefined;
 };
