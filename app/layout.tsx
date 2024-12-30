@@ -31,8 +31,8 @@ export default function RootLayout({
       services: services,
     },
     subHeaders: {
-      categories:,
-      menus:,
+      categories:undefined,
+      menus:undefined,
     }
   };
 

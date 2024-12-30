@@ -23,6 +23,6 @@ export type Category = {
 };
 
 export type SubHeader = {
-  menus: Menu[];
-  categories: Category[];
+  menus: Menu[]|undefined;
+  categories: Category[]|undefined;
 };
