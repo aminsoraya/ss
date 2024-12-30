@@ -28,9 +28,12 @@ export default function RootLayout({
 
   const meta: Meta = {
     headers: {
-      Services: services,
+      services: services,
     },
-    subHeaders: undefined,
+    subHeaders: {
+      categories:,
+      menus:,
+    }
   };
 
   return (

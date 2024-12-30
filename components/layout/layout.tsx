@@ -1,7 +1,6 @@
 "use client";
 import React, { ReactNode } from "react";
 import Header from "./header/header";
-import { Service } from "@/types/header";
 import SubHeader from "./subHeader/subHeader";
 import { Meta } from "@/types";
 
@@ -12,8 +11,8 @@ export default function Layout(props: IProps) {
   const { children, headers, subHeaders } = props;
   return (
     <>
-      <Header {...headers.Services} />
-      <SubHeader />
+      <Header services={headers.services} />
+      <SubHeader subHeaders={subHeaders} />
       {children}
     </>
   );

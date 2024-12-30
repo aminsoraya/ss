@@ -1,13 +1,8 @@
 import { headers } from "next/headers";
-import { Service } from "./header";
-import { Category, Menu } from "./subHeader";
+import { Header, Service } from "./header";
+import { Category, Menu, SubHeader } from "./subHeader";
 
 export interface Meta {
-  headers: {
-    Services: Service[];
-  };
-  subHeaders: {
-    Menus: Menu[];
-    Categories: Category[];
-  }|undefined;
+  headers: Header;
+  subHeaders: SubHeader;
 }

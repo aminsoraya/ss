@@ -21,3 +21,8 @@ export type Category = {
   link: string;
   dir: "rtl" | "ltr";
 };
+
+export type SubHeader = {
+  menus: Menu[];
+  categories: Category[];
+};

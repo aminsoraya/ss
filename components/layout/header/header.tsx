@@ -1,16 +1,16 @@
 import React from "react";
 import Services from "./services";
-import { Service } from "@/types/header";
+import { Header, Service } from "@/types/header";
 import Login from "./login";
 import Cart from "./cart";
 import Search from "./search";
 import Logo from "./logo";
 
-function Header(props: Service[]) {
+export default function HeaderComponent(props: Header) {
   return (
     <div className="bg-header">
       <div className="w-full flex items-center justify-between px-5 text-[11px] py-2">
-        <Services {...props} />
+        <Services services={props.services} />
         <div className="flex items-center">
           <a href="" className="text-gray-50">
             نصب افزونه سایت
@@ -36,5 +36,3 @@ function Header(props: Service[]) {
     </div>
   );
 }
-
-export default Header;

@@ -1,19 +1,29 @@
 import { Service } from "@/types/header";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { FaPlayCircle } from "react-icons/fa";
 
-export default function Services(props: Service[]) {
+interface IProps {
+  services: Service[];
+}
+export default function Services({ services }: IProps) {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
+  const length = useRef(services.length);
+  const textIndex = useRef(0);
 
+  console.log(services);
   useEffect(() => {
-    const intervalId = setInterval(() => {
-      setCurrentTextIndex((prevIndex) => (prevIndex + 1) % props?.length);
-    }, 2000);
+    if (services) {
+      const intervalId = setInterval(() => {
+        const increased = (textIndex.current + 1) % length.current;
+        textIndex.current = increased;
+        setCurrentTextIndex(increased);
+      }, 2000);
 
-    return () => clearInterval(intervalId);
-  }, []);
+      return () => clearInterval(intervalId);
+    }
+  }, [services]);
 
-  const activeLink = props[currentTextIndex] ??props[0];
+  const activeLink = services[currentTextIndex] ?? services[0];
   return (
     <div className="text-gray-50 flex items-center gap-2">
       <FaPlayCircle className="animate animate-pulse delay-[5ms] text-teal-500" />
