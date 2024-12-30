@@ -8,12 +8,12 @@ export default function Services(props: Service[]) {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentTextIndex((prevIndex) => (prevIndex + 1) % props?.length);
-    }, 3000);
+    }, 2000);
 
     return () => clearInterval(intervalId);
   }, []);
 
-  const activeLink = props[currentTextIndex] || [];
+  const activeLink = props[currentTextIndex] ??props[0];
   return (
     <div className="text-gray-50 flex items-center gap-2">
       <FaPlayCircle className="animate animate-pulse delay-[5ms] text-teal-500" />

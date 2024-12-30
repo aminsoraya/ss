@@ -20,7 +20,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const services: Service[] = [{ link: "/a", text: "خدمات ارزی بی مرز" },{link:"/paypal",text:"Paypal داری، کلیک کن !"}];
+  const services: Service[] = [
+    { link: "/a", text: "خدمات ارزی بی مرز" },
+    { link: "/paypal", text: "Paypal داری، کلیک کن !" },
+  ];
   return (
     <html lang="en">
       <body className={`  ${iranSans.variable}   `}>
