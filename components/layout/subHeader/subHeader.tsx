@@ -1,12 +1,13 @@
 import React from "react";
 import Menu from "./menu";
 import Categories from "./categories";
+import { Meta } from "@/types";
 
-function SubHeader() {
+function SubHeader({ subHeaders }: Pick<Meta, "subHeaders">) {
   return (
     <div className="w-full flex items-center justify-start px-5 gap-5  py-2 bg-subHeader">
-      <Menu />
-      <Categories />
+      <Menu menus={subHeaders?.Menus!} />
+      <Categories categories={subHeaders?.Categories!} />
     </div>
   );
 }
