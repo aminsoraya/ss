@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Layout from "@/components/layout/layout";
 import { Service } from "@/types/header";
+import { Meta } from "@/types";
 
 const iranSans = localFont({
   src: "./fonts/IRANSansWeb_Medium.woff2",
@@ -24,10 +25,18 @@ export default function RootLayout({
     { link: "/a", text: "خدمات ارزی بی مرز" },
     { link: "/paypal", text: "Paypal داری، کلیک کن !" },
   ];
+
+  const meta: Meta = {
+    headers: {
+      Services: services,
+    },
+    subHeaders: undefined,
+  };
+
   return (
     <html lang="en">
       <body className={`  ${iranSans.variable}   `}>
-        <Layout services={services}>{children}</Layout>
+        <Layout {...meta}>{children}</Layout>
       </body>
     </html>
   );

@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       backgroundColor:{
-        "header":"#0b2a9c"
+        "header":"#0b2a9c",
+        "subHeader":"#082488"
       },
       colors: {
         background: "var(--background)",

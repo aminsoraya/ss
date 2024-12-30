@@ -2,16 +2,18 @@
 import React, { ReactNode } from "react";
 import Header from "./header/header";
 import { Service } from "@/types/header";
+import SubHeader from "./subHeader/subHeader";
+import { Meta } from "@/types";
 
-interface IProps {
+interface IProps extends Meta {
   children: ReactNode;
-  services: Service[];
 }
 export default function Layout(props: IProps) {
-  const { children, services } = props;
+  const { children, headers, subHeaders } = props;
   return (
     <>
-      <Header {...services} />
+      <Header {...headers.Services} />
+      <SubHeader />
       {children}
     </>
   );
