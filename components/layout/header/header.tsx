@@ -1,6 +1,10 @@
 import React from "react";
 import Services from "./services";
 import { Service } from "@/types/header";
+import Login from "./login";
+import Cart from "./cart";
+import Search from "./search";
+import Logo from "./logo";
 
 function Header(props: Service[]) {
   return (
@@ -15,7 +19,20 @@ function Header(props: Service[]) {
           <span className="text-gray-400">ارسال رایگان به سراسر کشور</span>
         </div>
       </div>
-
+      <div className="w-full flex items-center justify-start px-5 gap-5  py-2">
+        <div className="w-1/12">
+          <Login />
+        </div>
+        <div className="w-1/12">
+          <Cart />
+        </div>
+        <div className="w-8/12">
+          <Search />
+        </div>
+        <div className="w-1/12">
+          <Logo />
+        </div>
+      </div>
     </div>
   );
 }
