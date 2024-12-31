@@ -105,6 +105,32 @@
             }
           ]
         }
+      ],
+      "categories": [
+        {
+          "text": "ارسال فوری ها",
+          "icon": "FaTruckFast",
+          "link": "/available",
+          "dir": "ltr"
+        },
+        {
+          "img": "./imgs/aliexpress.svg",
+          "text": "علی اکسپرس",
+          "link": "/aliexpress",
+          "dir": "rtl"
+        },
+        {
+          "img": "/imgs/ebay.svg",
+          "text": "ایبی",
+          "link": "/ebay",
+          "dir": "rtl"
+        },
+        {
+          "img": "/imgs/trendyol.svg",
+          "text": "ترندویل",
+          "link": "/trendyol",
+          "dir": "rtl"
+        }
       ]
     }
   }
