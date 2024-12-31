@@ -2,9 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Layout from "@/components/layout/layout";
-import { Service } from "@/types/header";
 import { Meta } from "@/types";
-import { Menu } from "@/types/subHeader";
 
 const iranSans = localFont({
   src: "./fonts/IRANSansWeb_Medium.woff2",
@@ -22,26 +20,26 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const initialData = await fetch("http://localhost:3000/meta",{next:{
-    revalidate:0
-  }}).then((res) =>
-    res.json()
-  );
+  const initialData = await fetch("http://localhost:3000/meta", {
+    next: {
+      revalidate: 0,
+    },
+  }).then((res) => res.json());
   let parseMetaData: Meta | undefined = undefined;
 
   if (initialData) {
-    const { headers, subHeaders } = initialData as Meta;
+    const { headers, subHeaders, footers } = initialData as Meta;
     parseMetaData = {
       headers,
       subHeaders,
+      footers,
     };
   }
 
- 
   return (
     <html lang="en">
       <body className={`  ${iranSans.variable}   `}>
-        {parseMetaData&&<Layout {...parseMetaData!}>{children}</Layout>}
+        {parseMetaData && <Layout {...parseMetaData!}>{children}</Layout>}
       </body>
     </html>
   );
