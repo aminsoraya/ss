@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "headers": {
+      "services": [
+        { "link": "/a", "text": "خدمات ارزی بی مرز" },
+        { "link": "/paypal", "text": "Paypal داری، کلیک کن !" }
+      ]
+    },
+    "subHeaders": {
+      "menus": [
+        {
+          "title": "کالای دیجیتال",
+          "icon": "FaC",
+          "subs": [
+            {
+              "title": "گجت های پوشیدنی",
+              "childs": [
+                {
+                  "link": "/products/shoes",
+                  "text": "ساعت هوشمند"
+                },
+                {
+                  "link": "/products/shoes",
+                  "text": "عینک واقعیت مجازی"
+                }
+              ]
+            },
+            {
+              "title": "لوازم جانبی",
+              "childs": [
+                {
+                  "link": "/products/accessories",
+                  "text": "کمربندها"
+                },
+                {
+                  "link": "/products/accessories",
+                  "text": "کلاه‌ها"
+                }
+              ]
+            },
+            {
+              "title": "لباس‌ها",
+              "childs": [
+                {
+                  "link": "/products/clothing",
+                  "text": "تی‌شرت‌ها"
+                },
+                {
+                  "link": "/products/clothing",
+                  "text": "شلوارها"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "مد و پوشاک",
+          "icon": "FaC",
+          "subs": [
+            {
+              "title": "پوشاک و اکسسوری زنانه",
+              "childs": [
+                {
+                  "link": "/products/shoes",
+                  "text": "لباس زیر زنانه"
+                },
+                {
+                  "link": "/products/shoes",
+                  "text": "لباس زنانه"
+                },
+                {
+                  "link": "/products/shoes",
+                  "text": "کفش زنانه"
+                },
+                {
+                  "link": "/products/shoes",
+                  "text": "کتونی زنانه"
+                },
+                {
+                  "link": "/products/shoes",
+                  "text": "کاپشن زنانه"
+                }
+              ]
+            },
+            {
+              "title": "پوشاک و اکسسوری مردانه",
+              "childs": [
+                {
+                  "link": "/products/accessories",
+                  "text": "لباس مردانه"
+                },
+                {
+                  "link": "/products/accessories",
+                  "text": "لباس زیر مردانه"
+                },
+                {
+                  "link": "/products/accessories",
+                  "text": "کاپشن مردانه"
+                },
+                {
+                  "link": "/products/accessories",
+                  "text": "جوراب مردانه"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "categories": [
+        {
+          "text": "ارسال فوری ها",
+          "icon": "FaTruckFast",
+          "link": "/available",
+          "dir": "ltr"
+        },
+        {
+          "img": "./imgs/aliexpress.svg",
+          "text": "علی اکسپرس",
+          "link": "/aliexpress",
+          "dir": "rtl"
+        },
+        {
+          "img": "/imgs/ebay.svg",
+          "text": "ایبی",
+          "link": "/ebay",
+          "dir": "rtl"
+        },
+        {
+          "img": "/imgs/trendyol.svg",
+          "text": "ترندویل",
+          "link": "/trendyol",
+          "dir": "rtl"
+        }
+      ]
+    }
+  }
+}
