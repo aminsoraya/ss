@@ -5,7 +5,7 @@ import Layout from "@/components/layout/layout";
 import { Service } from "@/types/header";
 import { Meta } from "@/types";
 import { Menu } from "@/types/subHeader";
- 
+
 const iranSans = localFont({
   src: "./fonts/IRANSansWeb_Medium.woff2",
   variable: "--font-geist-mono",
@@ -27,7 +27,7 @@ export default function RootLayout({
     { link: "/paypal", text: "Paypal داری، کلیک کن !" },
   ];
 
-  const menus:Menu[]=[
+  const menus: Menu[] = [
     {
       title: "کالای دیجیتال",
       icon: "FaC",
@@ -36,53 +36,105 @@ export default function RootLayout({
           title: "گجت های پوشیدنی",
           childs: [
             {
-              "link": "/products/shoes",
-              "text": "ساعت هوشمند"
+              link: "/products/shoes",
+              text: "ساعت هوشمند",
             },
             {
-              "link": "/products/shoes",
-              "text": "عینک واقعیت مجازی"
-            }
-          ]
+              link: "/products/shoes",
+              text: "عینک واقعیت مجازی",
+            },
+          ],
         },
         {
           title: "لوازم جانبی",
           childs: [
             {
-              "link": "/products/accessories",
-              "text": "کمربندها"
+              link: "/products/accessories",
+              text: "کمربندها",
             },
             {
-              "link": "/products/accessories",
-              "text": "کلاه‌ها"
-            }
-          ]
+              link: "/products/accessories",
+              text: "کلاه‌ها",
+            },
+          ],
         },
         {
           title: "لباس‌ها",
           childs: [
             {
-              "link": "/products/clothing",
-              "text": "تی‌شرت‌ها"
+              link: "/products/clothing",
+              text: "تی‌شرت‌ها",
             },
             {
-              "link": "/products/clothing",
-              "text": "شلوارها"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+              link: "/products/clothing",
+              text: "شلوارها",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      title: "مد و پوشاک",
+      icon: "FaC",
+      subs: [
+        {
+          title: "پوشاک و اکسسوری زنانه",
+          childs: [
+            {
+              link: "/products/shoes",
+              text: "لباس زیر زنانه",
+            },
+            {
+              link: "/products/shoes",
+              text: "لباس زنانه",
+            },
+            {
+              link: "/products/shoes",
+              text: "کفش زنانه",
+            },
+            {
+              link: "/products/shoes",
+              text: "کتونی زنانه",
+            },
+            {
+              link: "/products/shoes",
+              text: "کاپشن زنانه",
+            },
+          ],
+        },
+        {
+          title: "پوشاک و اکسسوری مردانه",
+          childs: [
+            {
+              link: "/products/accessories",
+              text: "لباس مردانه",
+            },
+            {
+              link: "/products/accessories",
+              text: "لباس زیر مردانه",
+            },
+            {
+              link: "/products/accessories",
+              text: "کاپشن مردانه",
+            },
+            {
+              link: "/products/accessories",
+              text: "جوراب مردانه",
+            },
+          ],
+        },
+      ],
+    },
+  ];
 
   const meta: Meta = {
     headers: {
       services: services,
     },
     subHeaders: {
-      categories:undefined,
-      menus:menus,
-    }
+      categories: undefined,
+      menus: menus,
+    },
   };
 
   return (
@@ -93,5 +145,3 @@ export default function RootLayout({
     </html>
   );
 }
- 
-
