@@ -158,6 +158,19 @@
         {
           "fri": "09:00 16:00"
         }
+      ],
+      "appsDownload":[
+        "http://play.google.com",
+        "http://bazar.com",
+        "http://mykey.com",
+        "http://sib.com",
+        "http://iapps.com"
+      ],
+      "social":[
+        "https://twitter.com",
+        "https://linkedin.com",
+        "https://instagram.com",
+        "https://aparat.com"
       ]
     }
   }

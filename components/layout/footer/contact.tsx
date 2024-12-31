@@ -39,7 +39,7 @@ export default function Contact(
   }, [groupByTime]);
 
   return (
-    <div className="w-full h-14 gap-3 text-sm bg-gray-300 flex items-center  px-5">
+    <div className="w-full h-14 gap-3 text-sm  border-b flex items-center  px-5">
       <div>
         <span>تلفن تماس :</span>
         <a href={`tel:+98${phone}`} className="text-blue-500">

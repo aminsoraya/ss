@@ -1,21 +1,23 @@
 "use client";
-import React from "react";
+import { Footer } from "@/types/footer";
 import Features from "./features";
 import Contact from "./contact";
-import { Footer } from "@/types/footer";
+import GarantyAndPolicy from "./garantyAndPolicy";
+import SocialMediaAndStore from "./socialMediaAndStore";
 
-interface IProps {
+type FooterProps = {
   footers: Footer;
-}
-export default function FooterComponent({ footers }: IProps) {
+};
+
+export default function FooterComponent({
+  footers: { email, phone, timesWork, appsDownload, social },
+}: FooterProps) {
   return (
-    <>
+    <footer>
       <Features />
-      <Contact
-        email={footers.email}
-        phone={footers.phone}
-        timesWork={footers.timesWork}
-      />
-    </>
+      <Contact email={email} phone={phone} timesWork={timesWork} />
+      <GarantyAndPolicy />
+      <SocialMediaAndStore appsDownload={appsDownload} social={social} />
+    </footer>
   );
 }

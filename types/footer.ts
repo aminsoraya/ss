@@ -12,4 +12,6 @@ export type Footer = {
   email: string;
   phone: string;
   timesWork: TimesWork;
+  appsDownload: string[];
+  social: string[];
 };
