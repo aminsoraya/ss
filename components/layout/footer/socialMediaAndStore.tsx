@@ -10,7 +10,7 @@ export default function SocialMediaAndStore(
 
   return (
     <div className="w-full h-20 px-5 ">
-      <div className="w-full px-5  h-full rounded-lg flex justify-between items-center bg-gray-200">
+      <div className="w-full    h-full rounded-lg flex justify-between items-center bg-gray-200">
         <Store appsDownload={appsDownload!} />
         <Social social={social} />
       </div>

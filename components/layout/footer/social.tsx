@@ -13,7 +13,7 @@ export default function Social({ social }: Pick<Footer, "social">) {
 
 
   return (
-    <div className="flex items-center h-full text-gray-500 gap-3">
+    <div className="flex items-center h-full text-gray-500 gap-2 px-5">
       {aparat && (
         <a target="_blank"  href={aparat}><MdSlowMotionVideo className="text-3xl" /></a>
       )}
