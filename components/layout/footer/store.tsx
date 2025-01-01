@@ -6,7 +6,7 @@ interface IProps {
 }
 export default function Store({ appsDownload }: IProps) {
   return (
-    <div className="flex items-center gap-5  h-full">
+    <div className="flex items-center gap-2  h-full">
       {appsDownload.map((item: string, index) => (
         <a href={item} target="_blank" key={index} >
           <img src={localImage(item)} className="h-10" />
