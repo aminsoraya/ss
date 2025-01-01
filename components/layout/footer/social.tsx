@@ -6,25 +6,26 @@ import { RiLinkedinFill } from "react-icons/ri";
 import { TfiTwitter } from "react-icons/tfi";
 
 export default function Social({ social }: Pick<Footer, "social">) {
-  const hasAparat = social?.some(url => url.includes('aparat'));
-  const hasTwitter = social?.some(url => url.includes('twitter'));
-  const hasLinked = social?.some(url => url.includes('linkedin'));
-  const hasInsta = social?.some(url => url.includes('instagram'));
+  const aparat = social?.find(url => url.includes('aparat'));
+  const twitter = social?.find(url => url.includes('twitter'));
+  const linked = social?.find(url => url.includes('linkedin'));
+  const insta = social?.find(url => url.includes('instagram'));
 
 
   return (
     <div className="flex items-center h-full text-gray-500 gap-3">
-      {hasAparat && (
-        <MdSlowMotionVideo className="text-3xl" />
+      {aparat && (
+        <a target="_blank"  href={aparat}><MdSlowMotionVideo className="text-3xl" /></a>
       )}
-      {hasTwitter && (
-        <TfiTwitter className="text-3xl" />
+      {twitter && (
+        <a target="_blank" href={twitter}><TfiTwitter className="text-3xl" /></a>
       )}
-      {hasLinked && (
-        <RiLinkedinFill className="text-3xl" />
+      {linked && (
+        <a target="_blank" href={linked}><RiLinkedinFill className="text-3xl" /></a>
       )}
-      {hasInsta && (
-        <MdSlowMotionVideo className="text-3xl" />
+      {insta && (
+        <a target="_blank" href={insta}><MdSlowMotionVideo className="text-3xl" /></a>
+        
       )}
     </div>
   );
