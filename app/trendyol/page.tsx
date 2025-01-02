@@ -1,13 +1,23 @@
 import Categories from "@/components/trendyol/categories";
 import FavouriteProducts from "@/components/trendyol/favouriteProducts";
+import { Trendyol } from "@/types";
 import React from "react";
 
-export default function Trendyol() {
+export default async function TrendyolComponent() {
+  const initialData = (await fetch(
+    process.env.NEXT_PUBLIC_TRENDYOL?.toString()!,
+    {
+      next: {
+        revalidate: 0,
+      },
+    }
+  ).then((res) => res.json())) as Trendyol;
+
   return (
     <div className="w-full flex justify-center">
-      <div className="container">
+      <div className="w-[1200px]">
         <Categories />
-        <FavouriteProducts />
+        <FavouriteProducts data={initialData.mostPopular} />
         <div className="w-full h-20"></div>
       </div>
     </div>
