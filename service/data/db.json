@@ -222,6 +222,53 @@
         "finalPrice": "225,84",
         "originalPrice":"0"
       }
+    ],
+    "amazingOffer":[
+      {
+        "img": "https://cdn.dsmcdn.com/ty1374/product/media/images/prod/QC/20240621/13/4e6c8e6a-84ad-3349-a30c-026f2f15e192/1_org.jpg",
+        "brand": "Bershka",
+        "name": "ژاکت برش نرم",
+        "score": 4.6,
+        "reviewCount": 610,
+        "finalPrice": "1.390",
+        "originalPrice": 0
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/ty1536/prod/QC/20240912/13/9e541604-7949-3c55-8dae-fa256cddda85/1_org.jpg",
+        "brand": "Madamra",
+        "name": "چکمه مشکی زنانه",
+        "score": 4.4,
+        "reviewCount": 3814,
+        "finalPrice": "1.399,90",
+        "originalPrice": 0
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/ty1012/product/media/images/prod/SPM/PIM/20231008/13/042a7fd4-2b58-3497-b371-d8d2d05ea69b/1_org.jpg",
+        "brand": "BYMEER",
+        "name": "پیراهن ورزشی مشکی بچه گانه پروانه ای سفید",
+        "score": 3.9,
+        "reviewCount": 1941,
+        "finalPrice": "1.399,90",
+        "originalPrice":"249,99"
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/ty1601/product/media/images/prod/PIM/20241107/08/82e9448c-ea5c-435c-a01f-f96a022b92dd/1_org.jpg",
+        "brand": "Quality Life",
+        "name": "سرم رشد سریع مو Ql (سرم فوق العاده مو) اسپری سری روغن های کمکی رشد سریع مو",
+        "score": 4.5,
+        "reviewCount": 11227,
+        "finalPrice": "349,99",
+        "originalPrice":"0"
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/ty1535/product/media/images/prod/QC/20240910/11/736b7918-0e1b-32d7-84f7-da9c514c750e/1_org.jpg",
+        "brand": "ELSEVE",
+        "name": "شامپو مرطوب کننده ضد روغن Hydra Pure + ست نرم کننده با اسید سالیسیلیک",
+        "score": 4.6,
+        "reviewCount": 359,
+        "finalPrice": "225,84",
+        "originalPrice":"0"
+      }
     ]
   }
 }

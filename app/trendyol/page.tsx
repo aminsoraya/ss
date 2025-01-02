@@ -1,3 +1,5 @@
+import Amazing from "@/components/trendyol/amazing";
+import Brands from "@/components/trendyol/brands";
 import Categories from "@/components/trendyol/categories";
 import FavouriteProducts from "@/components/trendyol/favouriteProducts";
 import { Trendyol } from "@/types";
@@ -18,7 +20,8 @@ export default async function TrendyolComponent() {
       <div className="w-[1200px]">
         <Categories />
         <FavouriteProducts data={initialData.mostPopular} />
-        <div className="w-full h-20"></div>
+        <Brands />
+        <Amazing data={initialData.amazingOffer} />
       </div>
     </div>
   );

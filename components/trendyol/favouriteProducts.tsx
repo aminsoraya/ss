@@ -8,7 +8,7 @@ interface IProps {
 }
 
 export default function FavouriteProducts({ data }: IProps) {
-  console.log(data);
+  
   return (
     <div className="w-full  pt-3 bg-gray-100   my-10 ">
       <div className="w-full flex justify-between px-5  text-gray-700">

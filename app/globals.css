@@ -2,9 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-
 html,
 body {
   direction: rtl;
   font-family: var(--font-geist-mono), sans-serif;
+}
+
+.gradinat-trendyol {
+  background: hsla(4, 93%, 67%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(4, 93%, 67%, 1) 0%,
+    hsla(29, 86%, 52%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(4, 93%, 67%, 1) 0%,
+    hsla(29, 86%, 52%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(4, 93%, 67%, 1) 0%,
+    hsla(29, 86%, 52%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F9655B", endColorstr="#EE821A", GradientType=1 );
 }

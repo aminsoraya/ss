@@ -7,3 +7,5 @@ export interface MostPopular {
     finalPrice: string;
     originalPrice: string;
 }
+
+export type AmazingOfffer=MostPopular
