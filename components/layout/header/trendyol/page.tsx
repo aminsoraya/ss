@@ -30,13 +30,7 @@ export default function TrendyolHeader(props: SearchType) {
         <div className="flex min-h-16  items-center justify-between gap-4">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0 hidden md:flex">
-            <Image
-              src="/trendyol-logo.svg" // Add your logo path here
-              alt="Trendyol"
-              width={120}
-              height={40}
-              className="h-8 w-auto"
-            />
+            Trendyol
           </Link>
 
           {/* Search Bar - Hidden on mobile */}

@@ -25,5 +25,6 @@ export interface Trendyol {
     search: Search;
     mostPopular: MostPopular[];
     amazingOffer: AmazingOfffer[];
+    menus: Menu[];
   };
 }

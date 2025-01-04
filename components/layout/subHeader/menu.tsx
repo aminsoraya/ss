@@ -82,7 +82,7 @@ export default function MenuComonent({ menus }: IProps) {
 
   return (
     <div
-      className="relative  h-8 flex items-center justify-center text-gray-200"
+      className="relative  h-8 flex items-center justify-center  "
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >

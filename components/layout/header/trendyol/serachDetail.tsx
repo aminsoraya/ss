@@ -1,14 +1,7 @@
 import React from "react";
 import { Search as SearchType } from "@/types/trendyol";
 import Link from "next/link";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
@@ -73,8 +66,12 @@ export default function SearchDetail(props: SearchType) {
                         <span className="text-[10px] w-full whitespace-nowrap">
                           {item.brand}
                         </span>
-                        <span className="text-xs text-gray-600">{item.text}</span>
-                        <span className="absolute bottom-3 text-xs text-orange-500">{item.price} TL</span>
+                        <span className="text-xs text-gray-600">
+                          {item.text}
+                        </span>
+                        <span className="absolute bottom-3 text-xs text-orange-500">
+                          {item.price} TL
+                        </span>
                       </div>
 
                       <div className="h-full p-1 ">
