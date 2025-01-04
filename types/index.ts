@@ -5,7 +5,7 @@ import { Footer } from "./footer";
 import { AmazingOfffer, MostPopular, Search } from "./trendyol";
 
 export interface Meta {
-  headers: Header|Trendyol;
+  headers: Header;
   subHeaders: SubHeader;
   footers: Footer;
 }
@@ -21,7 +21,9 @@ export const weekDays = {
 };
 
 export interface Trendyol {
-  search: Search;
-  mostPopular: MostPopular[];
-  amazingOffer: AmazingOfffer[];
+  initial: {
+    search: Search;
+    mostPopular: MostPopular[];
+    amazingOffer: AmazingOfffer[];
+  };
 }

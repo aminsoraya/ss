@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Layout from "@/components/layout/layout";
-import { Meta } from "@/types";
+import { Meta, Trendyol } from "@/types";
 import { headers } from "next/headers";
+import { Routes } from "@/types/header";
 
 const iranSans = localFont({
   src: "./fonts/IRANSansWeb_Medium.woff2",
@@ -22,21 +23,18 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   const headersList = headers();
-  const referer = headersList.get("referer");
+  const currentRoute = headersList.get("x-route") || "/";
 
-  const isTrendyolRoute = referer?.includes("/trendyol");
+  const isTrendyolRoute = currentRoute.includes(Routes.Trendyol);
 
-  console.log({referer})
-
-  const route = isTrendyolRoute
-    ? process.env.NEXT_PUBLIC_TRENDYOL_INITIAL!
-    : process.env.NEXT_PUBLIC_META_URL!;
-
-  const initialData = await fetch(route.toString(), {
-    next: {
-      revalidate: 0,
-    },
-  }).then((res) => res.json());
+  const initialData = await fetch(
+    process.env.NEXT_PUBLIC_META_URL?.toString()!,
+    {
+      next: {
+        revalidate: 0,
+      },
+    }
+  ).then((res) => res.json());
 
   let parseMetaData: Meta | undefined = undefined;
 
@@ -49,10 +47,33 @@ export default async function RootLayout({
     };
   }
 
+  let parseTrendyolData: Trendyol | undefined = undefined;
+
+  if (isTrendyolRoute) {
+    await fetch(process.env.NEXT_PUBLIC_TRENDYOL?.toString()!, {
+      next: {
+        revalidate: 0,
+      },
+    })
+      .then((res) => res.json())
+      .then((item: Trendyol) => {
+        parseTrendyolData = item;
+      });
+  }
+
+ 
   return (
     <html lang="en">
-      <body className={`  ${iranSans.variable}   `}>
-        {parseMetaData && <Layout {...parseMetaData!} pathName="/trendyol">{children}</Layout>}
+      <body className={`${iranSans.variable}`}>
+        {parseMetaData && (
+          <Layout
+            {...parseMetaData}
+            trendoyl={parseTrendyolData!}
+            pathName={currentRoute}
+          >
+            {children}
+          </Layout>
+        )}
       </body>
     </html>
   );

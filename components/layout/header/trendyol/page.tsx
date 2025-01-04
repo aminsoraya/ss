@@ -10,14 +10,18 @@ import { useState } from "react";
 import { IoCartOutline } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
 import SearchDetail from "./serachDetail";
+import { Trendyol } from "@/types";
+import { Search as SearchType } from "@/types/trendyol";
 
-export default function TrendyolHeader() {
+ 
+export default function TrendyolHeader(props: SearchType) {
   const navigation = [
     { name: "خانه", href: "/" },
     { name: "ترندیول", href: "/trendyol" },
     { name: "آمازون", href: "/amazon" },
   ];
 
+ 
   const [searchFocus, setSearchFocus] = useState(false);
 
   return (
@@ -48,7 +52,7 @@ export default function TrendyolHeader() {
                 className="pr-10 bg-gray-100 focus-within:shadow-lg focus-within:bg-white border-none focus:!ring-0 focus:!ring-offset-0 text-xs placeholder:text-xs w-full"
               />
               <Search className="absolute right-3 top-2.5 h-5 w-5 text-orange-500" />
-              {searchFocus && <SearchDetail />}
+              {searchFocus && <SearchDetail {...props} />}
             </div>
           </div>
 
@@ -80,7 +84,7 @@ export default function TrendyolHeader() {
                 placeholder="محصول، دسته یا برند مورد نظر خود را تایپ کنید"
                 className="pr-10 bg-gray-100 focus-within:shadow-lg focus-within:bg-white border-none focus:!ring-0 focus:!ring-offset-0 text-xs placeholder:text-xs w-full"
               />
-              <Search className="absolute right-3 top-2.5 h-5 w-5 text-orange-500" />
+              <Search  className="absolute right-3 top-2.5 h-5 w-5 text-orange-500" />
               {searchFocus && (
                 <div className="absolute inset-x-[-2px] border-t-0 bg-white   border-2  border-orange-500 min-h-[200px] top-[100%] mt-[2px] rounded-b"></div>
               )}

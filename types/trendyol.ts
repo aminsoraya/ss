@@ -10,7 +10,7 @@ export interface MostPopular {
 
 export interface PopularItem {
   link: string;
-  band: string;
+  brand: string;
   text: string;
   price: string;
   img: string;
