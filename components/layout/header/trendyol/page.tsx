@@ -1,14 +1,6 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import {
-  Sheet,
-  SheetContent,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
-import { FaCartShopping, FaRegUser } from "react-icons/fa6";
+import { FaRegUser } from "react-icons/fa6";
 import { Container } from "@/components/ui/container";
 import { Input } from "@/components/ui/input";
 import { Search, Menu, ShoppingCart, User } from "lucide-react";
@@ -17,6 +9,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { IoCartOutline } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
+import SearchDetail from "./serachDetail";
 
 export default function TrendyolHeader() {
   const navigation = [
@@ -55,9 +48,7 @@ export default function TrendyolHeader() {
                 className="pr-10 bg-gray-100 focus-within:shadow-lg focus-within:bg-white border-none focus:!ring-0 focus:!ring-offset-0 text-xs placeholder:text-xs w-full"
               />
               <Search className="absolute right-3 top-2.5 h-5 w-5 text-orange-500" />
-              {searchFocus && (
-                <div className="absolute inset-x-[-2px] border-t-0 bg-white   border-2  border-orange-500 min-h-[200px] top-[100%] mt-[2px] rounded-b"></div>
-              )}
+              {searchFocus && <SearchDetail />}
             </div>
           </div>
 

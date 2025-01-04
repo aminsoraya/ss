@@ -176,6 +176,43 @@
     }
   },
   "trendyol": {
+    "initial": {
+      "search": {
+        "mostPopularKeywords": [
+          {
+            "text": "لباس",
+            "link": "/sr?os=1&q=kahvaltı takımı&qt=kahvaltı takımı&st=kahvaltı takımı"
+          },
+          {
+            "text": "جوراب",
+            "link": "/sr?os=2&q=kahvaltı takımı"
+          }
+        ],
+        "popularItems": [
+          {
+            "link": "/madmext/siyah-kayik-yaka-kadin-body-mg1840-p-716339179?boutiqueId=61&merchantId=105292",
+            "brand": "Madmext",
+            "text": "Siyah Kayık Yaka Kadın Body Mg1840",
+            "price": "319.99",
+            "img": "https://cdn.dsmcdn.com//ty1017/product/media/images/prod/SPM/PIM/20231019/02/23c033c8-0dc5-3b12-b67d-fb37ea40955e/1_org_zoom.jpg"
+          },
+          {
+            "link": "/bershka/duz-renkli-sal-p-853424847?boutiqueId=61&merchantId=104961",
+            "brand": "Bershka",
+            "text": "Düz renkli şal",
+            "price": "760.00",
+            "img": "https://cdn.dsmcdn.com//ty1504/product/media/images/prod/QC/20240826/13/cc725362-c1e0-3291-bcdf-34e5f6a298a7/1_org_zoom.jpg"
+          },
+          {
+            "link": "/genel-markalar/kadin-beyaz-nakis-islemeli-kalpli-kazak-p-792687130?boutiqueId=61&merchantId=931302",
+            "brand": "Genel Markalar",
+            "text": "Kadın Beyaz Nakış Işlemeli Kalpli Kazak",
+            "price": "615.00",
+            "img": "https://cdn.dsmcdn.com//ty1477/product/media/images/prod/QC/20240731/15/8d1f7e5a-d40a-3beb-944a-e31f94e6f176/1_org_zoom.jpg"
+          }
+        ]
+      }
+    },
     "mostPopular": [
       {
         "img": "https://cdn.dsmcdn.com/ty1374/product/media/images/prod/QC/20240621/13/4e6c8e6a-84ad-3349-a30c-026f2f15e192/1_org.jpg",
@@ -202,7 +239,7 @@
         "score": 3.9,
         "reviewCount": 1941,
         "finalPrice": "1.399,90",
-        "originalPrice":"249,99"
+        "originalPrice": "249,99"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1601/product/media/images/prod/PIM/20241107/08/82e9448c-ea5c-435c-a01f-f96a022b92dd/1_org.jpg",
@@ -211,7 +248,7 @@
         "score": 4.5,
         "reviewCount": 11227,
         "finalPrice": "349,99",
-        "originalPrice":"0"
+        "originalPrice": "0"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1535/product/media/images/prod/QC/20240910/11/736b7918-0e1b-32d7-84f7-da9c514c750e/1_org.jpg",
@@ -220,10 +257,10 @@
         "score": 4.6,
         "reviewCount": 359,
         "finalPrice": "225,84",
-        "originalPrice":"0"
+        "originalPrice": "0"
       }
     ],
-    "amazingOffer":[
+    "amazingOffer": [
       {
         "img": "https://cdn.dsmcdn.com/ty1374/product/media/images/prod/QC/20240621/13/4e6c8e6a-84ad-3349-a30c-026f2f15e192/1_org.jpg",
         "brand": "Bershka",
@@ -249,7 +286,7 @@
         "score": 3.9,
         "reviewCount": 1941,
         "finalPrice": "1.399,90",
-        "originalPrice":"249,99"
+        "originalPrice": "249,99"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1601/product/media/images/prod/PIM/20241107/08/82e9448c-ea5c-435c-a01f-f96a022b92dd/1_org.jpg",
@@ -258,7 +295,7 @@
         "score": 4.5,
         "reviewCount": 11227,
         "finalPrice": "349,99",
-        "originalPrice":"0"
+        "originalPrice": "0"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1535/product/media/images/prod/QC/20240910/11/736b7918-0e1b-32d7-84f7-da9c514c750e/1_org.jpg",
@@ -267,7 +304,7 @@
         "score": 4.6,
         "reviewCount": 359,
         "finalPrice": "225,84",
-        "originalPrice":"0"
+        "originalPrice": "0"
       }
     ]
   }
