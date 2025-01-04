@@ -16,15 +16,14 @@ export default async function TrendyolComponent() {
     }
   ).then((res) => res.json())) as TrendyolMain;
 
-  console.log("initialData ", JSON.stringify(fetchedData));
-
+ 
   return (
     <div className="w-full flex justify-center">
       <Container>
         <Categories />
         <FavouriteProducts data={fetchedData.mostPopular} />
         <Brands />
-        {/* <Amazing data={initialData.initial.amazingOffer} /> */}
+        <Amazing data={fetchedData.amazingOffer} />
       </Container>
     </div>
   );

@@ -5,11 +5,12 @@ import { Container } from "@/components/ui/container";
 import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IoCartOutline } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
 import SearchDetail from "./serachDetail";
 import { Search as SearchType } from "@/types/trendyol";
+import { twMerge } from "tailwind-merge";
 
 export default function TrendyolHeader(props: SearchType) {
   const navigation = [
@@ -19,9 +20,20 @@ export default function TrendyolHeader(props: SearchType) {
   ];
 
   const [searchFocus, setSearchFocus] = useState(false);
+  const [haveBorder, setHaveBorder] = useState<boolean>(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) setHaveBorder(true);
+      else setHaveBorder(false);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <header className="border-b sticky top-0 bg-white z-50">
+    <header className={twMerge(" sticky top-0 bg-white z-50",haveBorder?"border-b":null)}>
       <Container>
         <div className="flex min-h-16  items-center justify-between gap-4">
           {/* Logo */}
