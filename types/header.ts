@@ -6,3 +6,9 @@ export type Service = {
 export type Header = {
   services: Service[];
 };
+
+
+export enum Routes{
+  Trendyol="/trendyol",
+  Amazon="/amazon"
+}
