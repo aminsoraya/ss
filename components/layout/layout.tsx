@@ -1,16 +1,16 @@
 import React, { FC, Fragment, ReactNode } from "react";
 import Header from "./header/header";
 import SubHeader from "./subHeader/subHeader";
-import { Meta, Trendyol } from "@/types";
+import { Meta, TrendyolMeta } from "@/types";
 import Footer from "./footer/footer";
-import { Header as HeaderType, Routes, Service } from "@/types/header";
+import { Header as HeaderType, Routes } from "@/types/header";
 import TrendyolHeader from "./header/trendyol/page";
 import TrendyolSubHeader from "./subHeader/trendyolSubHeader";
 
 interface IProps extends Meta {
   children: ReactNode;
   pathName: string;
-  trendoyl: Trendyol;
+  trendoyl: TrendyolMeta;
 }
 export default function Layout(props: IProps) {
   const { children, headers, subHeaders, footers } = props;
@@ -20,16 +20,16 @@ export default function Layout(props: IProps) {
       case Routes.Trendyol:
         return (
           <Fragment>
-            <TrendyolHeader {...props.trendoyl.initial.search!} />
-            <TrendyolSubHeader subHeaders={props.trendoyl.initial.menus} />
+            <TrendyolHeader {...props.trendoyl.search} />
+            <TrendyolSubHeader subHeaders={props.trendoyl.menus} />
           </Fragment>
         );
       default:
         return (
-          <>
+          <Fragment>
             <Header services={(headers as HeaderType).services} />
             <SubHeader subHeaders={subHeaders} />
-          </>
+          </Fragment>
         );
     }
   };

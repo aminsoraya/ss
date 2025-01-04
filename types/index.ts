@@ -20,11 +20,11 @@ export const weekDays = {
   fri: "جمعه",
 };
 
-export interface Trendyol {
-  initial: {
-    search: Search;
-    mostPopular: MostPopular[];
-    amazingOffer: AmazingOfffer[];
-    menus: Menu[];
-  };
+export interface TrendyolMeta {
+  search: Search;
+  menus: Menu[];
+}
+export interface TrendyolMain {
+  mostPopular: MostPopular[];
+  amazingOffer: AmazingOfffer[];
 }

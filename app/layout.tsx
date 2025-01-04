@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Layout from "@/components/layout/layout";
-import { Meta, Trendyol } from "@/types";
+import { Meta, TrendyolMeta } from "@/types";
 import { headers } from "next/headers";
 import { Routes } from "@/types/header";
 
@@ -47,16 +47,16 @@ export default async function RootLayout({
     };
   }
 
-  let parseTrendyolData: Trendyol | undefined = undefined;
+  let parseTrendyolData: TrendyolMeta | undefined = undefined;
 
   if (isTrendyolRoute) {
-    await fetch(process.env.NEXT_PUBLIC_TRENDYOL?.toString()!, {
+    await fetch(process.env.NEXT_PUBLIC_TRENDYOL_META?.toString()!, {
       next: {
         revalidate: 0,
       },
     })
       .then((res) => res.json())
-      .then((item: Trendyol) => {
+      .then((item: TrendyolMeta) => {
         parseTrendyolData = item;
       });
   }
