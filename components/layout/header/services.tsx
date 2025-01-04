@@ -1,3 +1,4 @@
+"use client"
 import { Service } from "@/types/header";
 import { useEffect, useRef, useState } from "react";
 import { FaPlayCircle } from "react-icons/fa";
@@ -10,7 +11,7 @@ export default function Services({ services }: IProps) {
   const length = useRef(services.length);
   const textIndex = useRef(0);
 
-  console.log(services);
+  
   useEffect(() => {
     if (services) {
       const intervalId = setInterval(() => {

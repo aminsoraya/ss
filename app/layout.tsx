@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Layout from "@/components/layout/layout";
 import { Meta } from "@/types";
+import { headers } from "next/headers";
 
 const iranSans = localFont({
   src: "./fonts/IRANSansWeb_Medium.woff2",
@@ -20,11 +21,23 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const initialData = await fetch("http://localhost:3000/meta", {
+  const headersList = headers();
+  const referer = headersList.get("referer");
+
+  const isTrendyolRoute = referer?.includes("/trendyol");
+
+  console.log({referer})
+
+  const route = isTrendyolRoute
+    ? process.env.NEXT_PUBLIC_TRENDYOL_INITIAL!
+    : process.env.NEXT_PUBLIC_META_URL!;
+
+  const initialData = await fetch(route.toString(), {
     next: {
       revalidate: 0,
     },
   }).then((res) => res.json());
+
   let parseMetaData: Meta | undefined = undefined;
 
   if (initialData) {
@@ -39,7 +52,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={`  ${iranSans.variable}   `}>
-        {parseMetaData && <Layout {...parseMetaData!}>{children}</Layout>}
+        {parseMetaData && <Layout {...parseMetaData!} pathName="/trendyol">{children}</Layout>}
       </body>
     </html>
   );

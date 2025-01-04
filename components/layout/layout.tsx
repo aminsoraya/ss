@@ -1,28 +1,28 @@
-"use client";
+
 import React, { FC, ReactNode } from "react";
 import Header from "./header/header";
 import SubHeader from "./subHeader/subHeader";
 import { Meta } from "@/types";
 import Footer from "./footer/footer";
 import { usePathname } from "next/navigation";
-import { Routes } from "@/types/header";
+import { Header as HeaderType, Routes, Service } from "@/types/header";
 import TrendyolHeader from "./header/trendyol/page";
 
 interface IProps extends Meta {
   children: ReactNode;
+  pathName:string
 }
 export default function Layout(props: IProps) {
   const { children, headers, subHeaders, footers } = props;
-  const router = usePathname();
-
+ 
   const ConditionalyRenderHeader: FC = () => {
-    switch (router) {
+    switch (props.pathName) {
       case Routes.Trendyol:
         return <TrendyolHeader />;
       default:
         return (
           <>
-            <Header services={headers.services} />
+            <Header services={(headers as HeaderType).services} />
             <SubHeader subHeaders={subHeaders} />
           </>
         );

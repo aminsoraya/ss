@@ -5,7 +5,7 @@ import { Footer } from "./footer";
 import { AmazingOfffer, MostPopular, Search } from "./trendyol";
 
 export interface Meta {
-  headers: Header;
+  headers: Header|Trendyol;
   subHeaders: SubHeader;
   footers: Footer;
 }
