@@ -4,6 +4,9 @@ import Categories from "@/components/trendyol/categories";
 import FavouriteProducts from "@/components/trendyol/favouriteProducts";
 import { Trendyol } from "@/types";
 import React from "react";
+ 
+
+ 
 
 export default async function TrendyolComponent() {
   const initialData = (await fetch(
@@ -22,6 +25,7 @@ export default async function TrendyolComponent() {
         <FavouriteProducts data={initialData.mostPopular} />
         <Brands />
         <Amazing data={initialData.amazingOffer} />
+        
       </div>
     </div>
   );

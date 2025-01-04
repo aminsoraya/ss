@@ -31,3 +31,9 @@ body {
 
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F9655B", endColorstr="#EE821A", GradientType=1 );
 }
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
