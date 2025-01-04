@@ -175,7 +175,150 @@
       "about": "<div><p>مالتینا راهکار جامع خرید از فروشگاه‌های بین‌المللی است. شما می‌توانید به‌کمک مالتینا از فروشگاه‌های معتبر خارجی مانند آمازون، ترندیول، ایبی، علی بابا، علی اکسپرس و… کالاهای متنوعی را خریداری کنید و آنها را درب منزل تحویل بگیرید. با مالتینا علاوه بر محصولات اورجینال روزمره، شما به کالاهای اصل و خاص که نمونه آنها در ایران پیدا نمی‌شود دسترسی خواهید داشت و خیالتان از اصالت و کیفیت تمام کالاهایی که می‌خرید، راحت خواهد بود.<br>با مالتینا می‌توانید:</p><ul class='styles_contentList__5ymeX'><li>به‌راحتی از فروشگاه‌های بین‌المللی محصولات باکیفیت و اصل خریداری کنید.</li><li>به انواع تخفیف‌ها و کمپین‌ها دسترسی داشته باشید و خرید خود را با قیمت پایین‌تری انجام دهید.</li><li>در تمام مراحل خرید، یک تیم پشتیبانی فعال و کارآمد کنار خود داشته باشید.</li><li>برای راحتی هرچه بیشتر خرید خود، از اپلیکیشن اندروید و IOS مالتینا استفاده کنید.</li><li>از ارسال رایگان داخل کشور لذت ببرید.</li></ul></div>"
     }
   },
-  "trendyol": {
+  "trendyol_meta": {
+    "search": {
+      "mostPopularKeywords": [
+        {
+          "text": "لباس",
+          "link": "/sr?os=1&q=kahvaltı takımı&qt=kahvaltı takımı&st=kahvaltı takımı"
+        },
+        {
+          "text": "جوراب",
+          "link": "/sr?os=2&q=kahvaltı takımı"
+        }
+      ],
+      "popularItems": [
+        {
+          "link": "/madmext/siyah-kayik-yaka-kadin-body-mg1840-p-716339179?boutiqueId=61&merchantId=105292",
+          "brand": "Madmext",
+          "text": "Siyah Kayık Yaka Kadın Body Mg1840",
+          "price": "319.99",
+          "img": "https://cdn.dsmcdn.com//ty1017/product/media/images/prod/SPM/PIM/20231019/02/23c033c8-0dc5-3b12-b67d-fb37ea40955e/1_org_zoom.jpg"
+        },
+        {
+          "link": "/bershka/duz-renkli-sal-p-853424847?boutiqueId=61&merchantId=104961",
+          "brand": "Bershka",
+          "text": "Düz renkli şal",
+          "price": "760.00",
+          "img": "https://cdn.dsmcdn.com//ty1504/product/media/images/prod/QC/20240826/13/cc725362-c1e0-3291-bcdf-34e5f6a298a7/1_org_zoom.jpg"
+        },
+        {
+          "link": "/genel-markalar/kadin-beyaz-nakis-islemeli-kalpli-kazak-p-792687130?boutiqueId=61&merchantId=931302",
+          "brand": "Genel Markalar",
+          "text": "Kadın Beyaz Nakış Işlemeli Kalpli Kazak",
+          "price": "615.00",
+          "img": "https://cdn.dsmcdn.com//ty1477/product/media/images/prod/QC/20240731/15/8d1f7e5a-d40a-3beb-944a-e31f94e6f176/1_org_zoom.jpg"
+        },
+        {
+          "link": "/genel-markalar/kadin-beyaz-nakis-islemeli-kalpli-kazak-p-792687130?boutiqueId=61&merchantId=931302",
+          "brand": "Genel Markalar",
+          "text": "Kadın Beyaz Nakış Işlemeli Kalpli Kazak",
+          "price": "615.00",
+          "img": "https://cdn.dsmcdn.com//ty1477/product/media/images/prod/QC/20240731/15/8d1f7e5a-d40a-3beb-944a-e31f94e6f176/1_org_zoom.jpg"
+        }
+      ]
+    },
+    "menus": [
+      {
+        "title": "کالای دیجیتال",
+        "icon": "FaC",
+        "subs": [
+          {
+            "title": "گجت های پوشیدنی",
+            "childs": [
+              {
+                "link": "/products/shoes",
+                "text": "ساعت هوشمند"
+              },
+              {
+                "link": "/products/shoes",
+                "text": "عینک واقعیت مجازی"
+              }
+            ]
+          },
+          {
+            "title": "لوازم جانبی",
+            "childs": [
+              {
+                "link": "/products/accessories",
+                "text": "کمربندها"
+              },
+              {
+                "link": "/products/accessories",
+                "text": "کلاه‌ها"
+              }
+            ]
+          },
+          {
+            "title": "لباس‌ها",
+            "childs": [
+              {
+                "link": "/products/clothing",
+                "text": "تی‌شرت‌ها"
+              },
+              {
+                "link": "/products/clothing",
+                "text": "شلوارها"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "مد و پوشاک",
+        "icon": "FaC",
+        "subs": [
+          {
+            "title": "پوشاک و اکسسوری زنانه",
+            "childs": [
+              {
+                "link": "/products/shoes",
+                "text": "لباس زیر زنانه"
+              },
+              {
+                "link": "/products/shoes",
+                "text": "لباس زنانه"
+              },
+              {
+                "link": "/products/shoes",
+                "text": "کفش زنانه"
+              },
+              {
+                "link": "/products/shoes",
+                "text": "کتونی زنانه"
+              },
+              {
+                "link": "/products/shoes",
+                "text": "کاپشن زنانه"
+              }
+            ]
+          },
+          {
+            "title": "پوشاک و اکسسوری مردانه",
+            "childs": [
+              {
+                "link": "/products/accessories",
+                "text": "لباس مردانه"
+              },
+              {
+                "link": "/products/accessories",
+                "text": "لباس زیر مردانه"
+              },
+              {
+                "link": "/products/accessories",
+                "text": "کاپشن مردانه"
+              },
+              {
+                "link": "/products/accessories",
+                "text": "جوراب مردانه"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "trendyol_main": {
     "mostPopular": [
       {
         "img": "https://cdn.dsmcdn.com/ty1374/product/media/images/prod/QC/20240621/13/4e6c8e6a-84ad-3349-a30c-026f2f15e192/1_org.jpg",
@@ -202,7 +345,7 @@
         "score": 3.9,
         "reviewCount": 1941,
         "finalPrice": "1.399,90",
-        "originalPrice":"249,99"
+        "originalPrice": "249,99"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1601/product/media/images/prod/PIM/20241107/08/82e9448c-ea5c-435c-a01f-f96a022b92dd/1_org.jpg",
@@ -211,7 +354,7 @@
         "score": 4.5,
         "reviewCount": 11227,
         "finalPrice": "349,99",
-        "originalPrice":"0"
+        "originalPrice": "0"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1535/product/media/images/prod/QC/20240910/11/736b7918-0e1b-32d7-84f7-da9c514c750e/1_org.jpg",
@@ -220,10 +363,10 @@
         "score": 4.6,
         "reviewCount": 359,
         "finalPrice": "225,84",
-        "originalPrice":"0"
+        "originalPrice": "0"
       }
     ],
-    "amazingOffer":[
+    "amazingOffer": [
       {
         "img": "https://cdn.dsmcdn.com/ty1374/product/media/images/prod/QC/20240621/13/4e6c8e6a-84ad-3349-a30c-026f2f15e192/1_org.jpg",
         "brand": "Bershka",
@@ -249,7 +392,7 @@
         "score": 3.9,
         "reviewCount": 1941,
         "finalPrice": "1.399,90",
-        "originalPrice":"249,99"
+        "originalPrice": "249,99"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1601/product/media/images/prod/PIM/20241107/08/82e9448c-ea5c-435c-a01f-f96a022b92dd/1_org.jpg",
@@ -258,7 +401,7 @@
         "score": 4.5,
         "reviewCount": 11227,
         "finalPrice": "349,99",
-        "originalPrice":"0"
+        "originalPrice": "0"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1535/product/media/images/prod/QC/20240910/11/736b7918-0e1b-32d7-84f7-da9c514c750e/1_org.jpg",
@@ -267,7 +410,7 @@
         "score": 4.6,
         "reviewCount": 359,
         "finalPrice": "225,84",
-        "originalPrice":"0"
+        "originalPrice": "0"
       }
     ]
   }

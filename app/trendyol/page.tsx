@@ -2,27 +2,29 @@ import Amazing from "@/components/trendyol/amazing";
 import Brands from "@/components/trendyol/brands";
 import Categories from "@/components/trendyol/categories";
 import FavouriteProducts from "@/components/trendyol/favouriteProducts";
-import { Trendyol } from "@/types";
+import { Container } from "@/components/ui/container";
+import { TrendyolMain } from "@/types";
 import React from "react";
 
 export default async function TrendyolComponent() {
-  const initialData = (await fetch(
-    process.env.NEXT_PUBLIC_TRENDYOL?.toString()!,
+  const fetchedData = (await fetch(
+    process.env.NEXT_PUBLIC_TRENDYOL_MAIN?.toString()!,
     {
       next: {
         revalidate: 0,
       },
     }
-  ).then((res) => res.json())) as Trendyol;
+  ).then((res) => res.json())) as TrendyolMain;
 
+ 
   return (
     <div className="w-full flex justify-center">
-      <div className="w-[1200px]">
+      <Container>
         <Categories />
-        <FavouriteProducts data={initialData.mostPopular} />
+        <FavouriteProducts data={fetchedData.mostPopular} />
         <Brands />
-        <Amazing data={initialData.amazingOffer} />
-      </div>
+        <Amazing data={fetchedData.amazingOffer} />
+      </Container>
     </div>
   );
 }
