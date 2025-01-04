@@ -6,6 +6,7 @@ import googlePlay from "@/imgs/googlePlay.png";
 import iapps from "@/imgs/iapps.png";
 import myket from "@/imgs/myket.png";
 import sibapp from "@/imgs/sibapp.png";
+ 
 
 const localImage = (name: string) => {
   if (name.toLowerCase().includes("aliexpress")) return aliexpress.src;

@@ -2,6 +2,7 @@ import { headers } from "next/headers";
 import { Header, Service } from "./header";
 import { Category, Menu, SubHeader } from "./subHeader";
 import { Footer } from "./footer";
+import { AmazingOfffer, MostPopular } from "./trendyol";
 
 export interface Meta {
   headers: Header;
@@ -18,3 +19,9 @@ export const weekDays = {
   thu: "پنج شنبه",
   fri: "جمعه",
 };
+
+
+export interface Trendyol{
+  mostPopular:MostPopular[]
+  amazingOffer:AmazingOfffer[]
+}
