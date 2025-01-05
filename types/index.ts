@@ -2,7 +2,7 @@ import { headers } from "next/headers";
 import { Header, Service } from "./header";
 import { Category, Menu, SubHeader } from "./subHeader";
 import { Footer } from "./footer";
-import { AmazingOfffer, BrandLink, MostPopular, Search } from "./trendyol";
+import { AmazingOfffer, BrandLink, MostPopular, PopularCategory, Search } from "./trendyol";
 import { ReactNode } from "react";
 
 export interface Meta {
@@ -29,6 +29,7 @@ export interface TrendyolMain {
   mostPopular: MostPopular[];
   amazingOffer: AmazingOfffer[];
   brandsLink: BrandLink[];
+  popularCategories:PopularCategory[]
 }
 
 export interface ProductCarouselProps<T> {

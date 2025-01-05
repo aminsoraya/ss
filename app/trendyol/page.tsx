@@ -2,6 +2,7 @@ import Amazing from "@/components/trendyol/amazing";
 import Brands from "@/components/trendyol/brands";
 import Categories from "@/components/trendyol/categories";
 import FavouriteProducts from "@/components/trendyol/favouriteProducts";
+import PopularCategory from "@/components/trendyol/popularCategory";
 import { Container } from "@/components/ui/container";
 import { TrendyolMain } from "@/types";
 import React from "react";
@@ -22,6 +23,7 @@ export default async function TrendyolComponent() {
       <FavouriteProducts data={fetchedData.mostPopular} />
       <Brands brandsLink={fetchedData.brandsLink} />
       <Amazing data={fetchedData.amazingOffer} />
+      <PopularCategory  data={fetchedData.popularCategories} />
     </Container>
   );
 }

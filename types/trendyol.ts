@@ -20,6 +20,12 @@ export type BrandLink={
   link:string,
   img:string
 }
+
+export type PopularCategory={
+  link:string,
+  img:string
+}
+
 export interface Search {
   mostPopularKeywords: Array<{ text: string; link: string }>;
   popularItems: Array<PopularItem>;

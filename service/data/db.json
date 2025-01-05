@@ -422,47 +422,73 @@
         "originalPrice": "0"
       }
     ],
-    "brandsLink":[
+    "brandsLink": [
       {
-        "img":"https://cdn.dsmcdn.com/marketing/datascience/automation/2023/1/27/Prada_202301271558.jpg",
-        "link":"https://www.trendyol.com/prada-x-b458"
+        "img": "https://cdn.dsmcdn.com/marketing/datascience/automation/2023/1/27/Prada_202301271558.jpg",
+        "link": "https://www.trendyol.com/prada-x-b458"
       },
       {
-        "img":"https://cdn.dsmcdn.com/marketing/datascience/automation/2023/1/27/LeviS_202301270443.png",
-        "link":"https://www.trendyol.com/levi-s-x-b289"
+        "img": "https://cdn.dsmcdn.com/marketing/datascience/automation/2023/1/27/LeviS_202301270443.png",
+        "link": "https://www.trendyol.com/levi-s-x-b289"
       },
       {
-        "img":"https://cdn.dsmcdn.com/marketing/datascience/automation/2023/1/27/Doque_202301270049.jpg",
-        "link":"https://www.trendyol.com/doque-x-b637"
+        "img": "https://cdn.dsmcdn.com/marketing/datascience/automation/2023/1/27/Doque_202301270049.jpg",
+        "link": "https://www.trendyol.com/doque-x-b637"
       },
       {
-        "img":"https://cdn.dsmcdn.com/marketing/datascience/automation/2023/1/26/Camper_202301262231.png",
-        "link":"https://www.trendyol.com/magaza/x-m-2538"
+        "img": "https://cdn.dsmcdn.com/marketing/datascience/automation/2023/1/26/Camper_202301262231.png",
+        "link": "https://www.trendyol.com/magaza/x-m-2538"
       },
       {
-        "img":"https://cdn.dsmcdn.com/marketing/datascience/automation/2023/6/22/Panco_202306221323.jpeg",
-        "link":"https://www.trendyol.com/sr?wb=238&os=1&sk=1"
+        "img": "https://cdn.dsmcdn.com/marketing/datascience/automation/2023/6/22/Panco_202306221323.jpeg",
+        "link": "https://www.trendyol.com/sr?wb=238&os=1&sk=1"
       },
       {
-        "img":"https://cdn.dsmcdn.com/marketing/datascience/Automation/BrandBoutique/2021/12/29/converse.png",
-        "link":"https://www.trendyol.com/sr?rb=12"
+        "img": "https://cdn.dsmcdn.com/marketing/datascience/Automation/BrandBoutique/2021/12/29/converse.png",
+        "link": "https://www.trendyol.com/sr?rb=12"
       },
       {
-        "img":"https://cdn.dsmcdn.com/marketing/datascience/automation/2023/1/28/Yargici_202301280236.jpg",
-        "link":"https://www.trendyol.com/magaza/x-m-823"
+        "img": "https://cdn.dsmcdn.com/marketing/datascience/automation/2023/1/28/Yargici_202301280236.jpg",
+        "link": "https://www.trendyol.com/magaza/x-m-823"
       },
       {
-        "img":"https://cdn.dsmcdn.com/marketing/datascience/automation/2023/1/27/Mudo_202301270522.jpg",
-        "link":"https://www.trendyol.com/magaza/x-m-345"
+        "img": "https://cdn.dsmcdn.com/marketing/datascience/automation/2023/1/27/Mudo_202301270522.jpg",
+        "link": "https://www.trendyol.com/magaza/x-m-345"
       },
       {
-        "img":"https://cdn.dsmcdn.com/marketing/datascience/automation/2023/1/27/Loft_202301270443.png",
-        "link":"https://www.trendyol.com/loft-x-b230"
-      },{
-        "img":"https://cdn.dsmcdn.com/marketing/datascience/automation/2023/1/27/Salomon_202301271715.jpg",
-        "link":"https://www.trendyol.com/salomon-x-b636"
+        "img": "https://cdn.dsmcdn.com/marketing/datascience/automation/2023/1/27/Loft_202301270443.png",
+        "link": "https://www.trendyol.com/loft-x-b230"
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/marketing/datascience/automation/2023/1/27/Salomon_202301271715.jpg",
+        "link": "https://www.trendyol.com/salomon-x-b636"
       }
-
+    ],
+    "popularCategories": [
+      {
+        "img": "https://cdn.dsmcdn.com/marketing/datascience/automation/2023/1/3/Kazak_Kadin_202301031347.jpg",
+        "link": "https://www.trendyol.com/sr?wc=1092"
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/marketing/datascience/automation/2022/12/27/Tshirt_202212271855.jpg",
+        "link": "https://www.trendyol.com/sr?wc=73"
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/marketing/datascience/automation/2022/12/27/Ic_Giyim_202212271854.jpg",
+        "link": "https://www.trendyol.com/sr?wc=64"
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/marketing/datascience/automation/2022/12/30/Sweat_202212302146.jpg",
+        "link": "https://www.trendyol.com/sr?wc=1179"
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/marketing/datascience/automation/2023/1/3/Dis_Giyim_Kadin_202301031347.jpg",
+        "link": "https://www.trendyol.com/sr?wc=1130,1030,142613,79,104587,1075,1134,104585,1207,1205"
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/marketing/datascience/automation/2022/12/30/Pantolon_202212302146.jpg",
+        "link": "https://www.trendyol.com/sr?wc=70"
+      }
     ]
   }
 }
