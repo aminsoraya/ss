@@ -18,13 +18,13 @@ export default async function TrendyolComponent() {
 
  
   return (
-    <div className="w-full flex justify-center">
+    
       <Container>
         <Categories />
         <FavouriteProducts data={fetchedData.mostPopular} />
         <Brands />
         <Amazing data={fetchedData.amazingOffer} />
       </Container>
-    </div>
+     
   );
 }
