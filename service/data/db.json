@@ -316,6 +316,48 @@
           }
         ]
       }
+    ],
+    "usefulKeywords":[
+      {
+        "text":"iPhone 15",
+        "link":"/iphone-15-y-s36308"
+      },
+      {
+        "text":"Flo",
+        "link":"/magaza/flo-m-1024"
+      },
+      {
+        "text":"Watsons",
+        "link":"/watsons-x-b862"
+      },
+      {
+        "text":"GS Store",
+        "link":"/galatasaray-x-b50"
+      },
+      {
+        "text":"Airfryer",
+        "link":"/fritoz-x-c1055"
+      },
+      {
+        "text":"جاروبرقی Dyson",
+        "link":"/dyson-supurge-x-b102989-c108939"
+      },
+      {
+        "text":"استنلی ترموس",
+        "link":"/stanley-termos-x-b103138-c1193"
+      },
+      {
+        "text":"ست مبل",
+        "link":"/koltuk-takimi-x-c105457"
+      },
+      {
+        "text":"خشک کن",
+        "link":"/kurutma-makinesi-x-c103636"
+      },
+      {
+        "text":"Playstation 5",
+        "link":"/playstation-5-x-c144046"
+      }
     ]
   },
   "trendyol_main": {
@@ -644,5 +686,6 @@
         }
       ]
     }
+
   }
 }

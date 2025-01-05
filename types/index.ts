@@ -10,6 +10,7 @@ import {
   MostSellingProduct,
   PopularCategory,
   Search,
+  UsefulKeyword,
   UsefulProduct,
 } from "./trendyol";
 import { ReactNode } from "react";
@@ -33,6 +34,7 @@ export const weekDays = {
 export interface TrendyolMeta {
   search: Search;
   menus: Menu[];
+  usefulKeywords:UsefulKeyword[]
 }
 export interface TrendyolMain {
   mostPopular: MostPopular[];
@@ -42,6 +44,7 @@ export interface TrendyolMain {
   mostSellingProducts: MostSellingProduct[];
   usefulProducts: UsefulProduct[];
   batchLinks: BatchLink;
+  
 }
 
 export interface ProductCarouselProps<T> {

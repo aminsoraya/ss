@@ -20,6 +20,11 @@ type TextLink = {
   img: string;
   link: string;
 };
+
+export type UsefulKeyword={
+  text:string,
+  link:string
+}
 export type BatchLink = {
   data: TextLink[];
   totalCount: number;
