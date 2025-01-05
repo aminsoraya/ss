@@ -86,7 +86,7 @@ export default function MenuComonent({ menus }: IProps) {
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
-      <div className="flex items-center gap-2   cursor-pointer">
+      <div className="md:flex hidden items-center gap-2   cursor-pointer">
         <GiHamburgerMenu className="text-xl" />
         <span className="text-xs">دسته بندی</span>
         <FaAngleDown className="text-xs" />

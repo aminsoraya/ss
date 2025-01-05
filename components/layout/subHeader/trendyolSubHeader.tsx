@@ -13,7 +13,7 @@ function TrendyolSubHeader(props: IProps) {
     <Container className="w-full h-8 flex gap-5  items-center px-2 border-b">
       <Menu menus={props.subHeaders} />
       {props.subHeaders.map((item, index) => (
-        <Link href={""} className="text-xs text-gray-600 " key={index}>
+        <Link href={""} className="text-xs   " key={index}>
           {item.title}
         </Link>
       ))}
