@@ -18,7 +18,7 @@ export default function MenuComonent({ menus }: IProps) {
 
   const DarkCoverBackGround: FC = () => {
     return (
-      <div className="fixed w-screen h-screen right-0 top-[129px]  bg-black opacity-40"></div>
+      <div className="fixed w-screen h-screen right-0 top-[95px] z-20 bg-black opacity-40"></div>
     );
   };
 
@@ -31,7 +31,7 @@ export default function MenuComonent({ menus }: IProps) {
   const RenderItems: FC = () => {
     return (
       <div
-        className=" absolute top-[32px] bg-white z-20 w-[1250px] h-[600px] border right-0 text-sm   flex  text-gray-700"
+        className=" absolute top-[31px] bg-white z-30 w-[1250px] h-[600px] border right-0 text-sm   flex  text-gray-700"
         onMouseEnter={() => setHover(true)}
       >
         <aside className="border-l flex flex-col  w-[300px] px-3 py-3 h-full">
@@ -91,7 +91,7 @@ export default function MenuComonent({ menus }: IProps) {
         <span className="text-xs">دسته بندی</span>
         <FaAngleDown className="text-xs" />
       </div>
-      {hover && (
+      {hover&&(
         <>
           <RenderItems />
           <DarkCoverBackGround />

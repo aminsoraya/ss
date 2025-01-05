@@ -15,7 +15,7 @@ export default function Card({
 }: MostPopular) {
   const haveOriginalPrice = parseInt(originalPrice) > 0;
   return (
-    <div className="bg-white   border border-gray-100 relative  h-[400px] w-full  mt-5">
+    <div className="bg-white rounded-lg overflow-hidden shadow  border border-gray-100 relative  h-[400px] w-full  mt-5">
       <strong className="absolute top-0 bg-gray-100 left-0 z-10 w-20 text-sm justify-center text-gray-700 h-8 flex items-center">
         {brand}
       </strong>
