@@ -20,10 +20,10 @@ export default async function TrendyolComponent() {
   return (
     <Container>
       <Categories />
-      <FavouriteProducts data={fetchedData.mostPopular} />
-      <Brands brandsLink={fetchedData.brandsLink} />
-      <Amazing data={fetchedData.amazingOffer} />
-      <PopularCategory  data={fetchedData.popularCategories} />
+      {fetchedData.mostPopular&&<FavouriteProducts data={fetchedData.mostPopular} />}
+      {fetchedData.brandsLink&&<Brands brandsLink={fetchedData.brandsLink} />}
+      {fetchedData.amazingOffer&&<Amazing data={fetchedData.amazingOffer} />}
+      {fetchedData.popularCategories&&<PopularCategory  data={fetchedData.popularCategories} />}
     </Container>
   );
 }
