@@ -15,6 +15,35 @@ export interface PopularItem {
   price: string;
   img: string;
 }
+
+type TextLink = {
+  img: string;
+  link: string;
+};
+
+export type UsefulKeyword={
+  text:string,
+  link:string
+}
+export type BatchLink = {
+  data: TextLink[];
+  totalCount: number;
+  currentPage: number;
+};
+export type MostSellingProduct = MostPopular;
+
+export type UsefulProduct = MostPopular;
+
+export type BrandLink = {
+  link: string;
+  img: string;
+};
+
+export type PopularCategory = {
+  link: string;
+  img: string;
+};
+
 export interface Search {
   mostPopularKeywords: Array<{ text: string; link: string }>;
   popularItems: Array<PopularItem>;

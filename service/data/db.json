@@ -316,6 +316,48 @@
           }
         ]
       }
+    ],
+    "usefulKeywords":[
+      {
+        "text":"iPhone 15",
+        "link":"/iphone-15-y-s36308"
+      },
+      {
+        "text":"Flo",
+        "link":"/magaza/flo-m-1024"
+      },
+      {
+        "text":"Watsons",
+        "link":"/watsons-x-b862"
+      },
+      {
+        "text":"GS Store",
+        "link":"/galatasaray-x-b50"
+      },
+      {
+        "text":"Airfryer",
+        "link":"/fritoz-x-c1055"
+      },
+      {
+        "text":"جاروبرقی Dyson",
+        "link":"/dyson-supurge-x-b102989-c108939"
+      },
+      {
+        "text":"استنلی ترموس",
+        "link":"/stanley-termos-x-b103138-c1193"
+      },
+      {
+        "text":"ست مبل",
+        "link":"/koltuk-takimi-x-c105457"
+      },
+      {
+        "text":"خشک کن",
+        "link":"/kurutma-makinesi-x-c103636"
+      },
+      {
+        "text":"Playstation 5",
+        "link":"/playstation-5-x-c144046"
+      }
     ]
   },
   "trendyol_main": {
@@ -363,6 +405,15 @@
         "score": 4.6,
         "reviewCount": 359,
         "finalPrice": "225,84",
+        "originalPrice": "0"
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/ty1008/product/media/images/prod/SPM/PIM/20231005/06/08deba8c-b2b5-30bd-80d9-09ba740fd2a7/1_org.jpg",
+        "brand": "Pierre Cardin",
+        "name": "کیف شانه زنانه مونوگرام بژ 05PO22Y1534",
+        "score": 4.8,
+        "reviewCount": 314,
+        "finalPrice": "937,49",
         "originalPrice": "0"
       }
     ],
@@ -412,6 +463,229 @@
         "finalPrice": "225,84",
         "originalPrice": "0"
       }
-    ]
+    ],
+    "brandsLink": [
+      {
+        "img": "https://cdn.dsmcdn.com/marketing/datascience/automation/2023/1/27/Prada_202301271558.jpg",
+        "link": "https://www.trendyol.com/prada-x-b458"
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/marketing/datascience/automation/2023/1/27/LeviS_202301270443.png",
+        "link": "https://www.trendyol.com/levi-s-x-b289"
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/marketing/datascience/automation/2023/1/27/Doque_202301270049.jpg",
+        "link": "https://www.trendyol.com/doque-x-b637"
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/marketing/datascience/automation/2023/1/26/Camper_202301262231.png",
+        "link": "https://www.trendyol.com/magaza/x-m-2538"
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/marketing/datascience/automation/2023/6/22/Panco_202306221323.jpeg",
+        "link": "https://www.trendyol.com/sr?wb=238&os=1&sk=1"
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/marketing/datascience/Automation/BrandBoutique/2021/12/29/converse.png",
+        "link": "https://www.trendyol.com/sr?rb=12"
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/marketing/datascience/automation/2023/1/28/Yargici_202301280236.jpg",
+        "link": "https://www.trendyol.com/magaza/x-m-823"
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/marketing/datascience/automation/2023/1/27/Mudo_202301270522.jpg",
+        "link": "https://www.trendyol.com/magaza/x-m-345"
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/marketing/datascience/automation/2023/1/27/Loft_202301270443.png",
+        "link": "https://www.trendyol.com/loft-x-b230"
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/marketing/datascience/automation/2023/1/27/Salomon_202301271715.jpg",
+        "link": "https://www.trendyol.com/salomon-x-b636"
+      }
+    ],
+    "popularCategories": [
+      {
+        "img": "https://cdn.dsmcdn.com/marketing/datascience/automation/2023/1/3/Kazak_Kadin_202301031347.jpg",
+        "link": "https://www.trendyol.com/sr?wc=1092"
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/marketing/datascience/automation/2022/12/27/Tshirt_202212271855.jpg",
+        "link": "https://www.trendyol.com/sr?wc=73"
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/marketing/datascience/automation/2022/12/27/Ic_Giyim_202212271854.jpg",
+        "link": "https://www.trendyol.com/sr?wc=64"
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/marketing/datascience/automation/2022/12/30/Sweat_202212302146.jpg",
+        "link": "https://www.trendyol.com/sr?wc=1179"
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/marketing/datascience/automation/2023/1/3/Dis_Giyim_Kadin_202301031347.jpg",
+        "link": "https://www.trendyol.com/sr?wc=1130,1030,142613,79,104587,1075,1134,104585,1207,1205"
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/marketing/datascience/automation/2022/12/30/Pantolon_202212302146.jpg",
+        "link": "https://www.trendyol.com/sr?wc=70"
+      }
+    ],
+    "mostSellingProducts": [
+      {
+        "img": "https://cdn.dsmcdn.com/ty1571/prod/QC/20240926/11/87d02816-2831-348d-90d8-0d8b4949518b/1_org.jpg",
+        "brand": "AHİ SULTAN",
+        "name": "100 گرم قهوه با 8 قهوه مختلف و اسپیرولینا",
+        "score": 403,
+        "reviewCount": 13076,
+        "finalPrice": "590",
+        "originalPrice": 0
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/ty1527/product/media/images/prod/PIM/20240906/13/92eac147-43d7-4a2f-bf24-f10b91142395/1_org.jpg",
+        "brand": "STOP Forte",
+        "name": "لکه بر",
+        "score": 3.9,
+        "reviewCount": 45351,
+        "finalPrice": "159",
+        "originalPrice": 0
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/ty1586/prod/QC/20241016/00/0f7192e8-b96e-38fb-a863-9ebecd4834be/1_org.jpg",
+        "brand": "Embeauty",
+        "name": "کلاژن و کراتین ضد ریزش مو، رشد سریع مو، حجیم کننده، ترمیم کننده، شامپو مغذی",
+        "score": 4.6,
+        "reviewCount": 19584,
+        "finalPrice": "249",
+        "originalPrice": 0
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/ty1579/prod/QC/20241006/18/0e97a6fd-9e35-304c-9241-38ebfe276d45/1_org.jpg",
+        "brand": "Glint",
+        "name": "پاک کننده سطوح چند منظوره 1 لیتری 100% گیاهی ارگانیک وگان لکه بر",
+        "score": 4.4,
+        "reviewCount": 1539,
+        "finalPrice": "199",
+        "originalPrice": 0
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/ty1585/product/media/images/prod/PIM/20241014/14/dd6983b7-c54d-4747-8e23-af37d8b3f71c/1_org.jpg",
+        "brand": "Cream Co.",
+        "name": "Moisturizer | Su Bazlı Nemlendirici Yüz Kremi Cilt Tonu Eşitleyici Aydınlatıcı | Tüm Cilt Tipleri",
+        "score": 4.7,
+        "reviewCount": 66871,
+        "finalPrice": "294,42",
+        "originalPrice": 0
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/ty1521/product/media/images/prod/QC/20240904/08/7c394d96-737e-3a7b-bb93-28816667f6b1/1_org.jpg",
+        "brand": "KOREACO",
+        "name": "آمپول روشن کننده ضد لک و یکسان کننده رنگ پوست",
+        "score": 4.2,
+        "reviewCount": 19172,
+        "finalPrice": "167,51",
+        "originalPrice": 0
+      }
+    ],
+    "usefulProducts": [
+      {
+        "img": "https://cdn.dsmcdn.com/ty1596/prod/QC/20241104/12/bb128b18-1f69-3c3e-b527-4d4cf223c233/1_org.jpg",
+        "brand": "ysftasarım",
+        "name": "سقف تزئینی فوم طرح پاریس (1 عدد)",
+        "score": 4.9,
+        "reviewCount": 11,
+        "finalPrice": "20,61",
+        "originalPrice": 0
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/ty1481/product/media/images/prod/QC/20240814/23/1f312b0d-c607-3678-b50b-dc0a969aa813/1_org.jpg",
+        "brand": "MDBeauty",
+        "name": "Leke Karşıtı Aydınlatıcı Besleyici Yağ Bazlı Serum",
+        "score": 4.7,
+        "reviewCount": 90,
+        "finalPrice": "374,66",
+        "originalPrice": "428,73"
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/ty1466/product/media/images/prod/QC/20240718/13/b9e4695d-64c7-39db-b379-3754d295337b/1_org.jpg",
+        "brand": "Nautical English Council Yayıncılık",
+        "name": "کتاب آماده سازی رایتینگ و اسپیکینگ راهنمای موثر برای مکالمه و رایتینگ انگلیسی Ielts و Toefl",
+        "score": 5,
+        "reviewCount": 22,
+        "finalPrice": "400",
+        "originalPrice": 0
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/ty1596/prod/QC/20241104/12/bb128b18-1f69-3c3e-b527-4d4cf223c233/1_org.jpg",
+        "brand": "ysftasarım",
+        "name": "سقف تزئینی فوم طرح پاریس (1 عدد)",
+        "score": 4.9,
+        "reviewCount": 11,
+        "finalPrice": "20,61",
+        "originalPrice": 0
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/ty1596/prod/QC/20241104/12/bb128b18-1f69-3c3e-b527-4d4cf223c233/1_org.jpg",
+        "brand": "ysftasarım",
+        "name": "سقف تزئینی فوم طرح پاریس (1 عدد)",
+        "score": 4.9,
+        "reviewCount": 11,
+        "finalPrice": "20,61",
+        "originalPrice": 0
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/ty1596/prod/QC/20241104/12/bb128b18-1f69-3c3e-b527-4d4cf223c233/1_org.jpg",
+        "brand": "ysftasarım",
+        "name": "سقف تزئینی فوم طرح پاریس (1 عدد)",
+        "score": 4.9,
+        "reviewCount": 11,
+        "finalPrice": "20,61",
+        "originalPrice": 0
+      }
+    ],
+    "batchLinks": {
+      "totalCount": 12,
+      "currentPage": 1,
+      "data": [
+        {
+          "img": "https://cdn.dsmcdn.com/ty1617/pimWidgetApi/mobile_20241226113447_2702142KadinMobile202412261202.jpg",
+          "link": "/sr?wb=148432&os=1&sk=1&sst=BEST_SELLER"
+        },
+        {
+          "img": "https://cdn.dsmcdn.com/ty1611/pimWidgetApi/mobile_20241212134242_3208519KadinMobile202412111802.jpg",
+          "link": "/sr?wb=148432&os=1&sk=1&sst=BEST_SELLER"
+        },
+        {
+          "img": "https://cdn.dsmcdn.com/ty1617/pimWidgetApi/mobile_20250101143148_2331032KadinMobile202412261701.jpg",
+          "link": "/sr?wb=148432&os=1&sk=1&sst=BEST_SELLER"
+        },
+        {
+          "img": "https://cdn.dsmcdn.com/ty1618/pimWidgetApi/mobile_20250101160627_2970506KadinMobile202412051902.jpg",
+          "link": "/sr?wb=148432&os=1&sk=1&sst=BEST_SELLER"
+        },
+        {
+          "img": "https://cdn.dsmcdn.com/ty1611/pimWidgetApi/mobile_20241209140549_3210020EvAmpAmpAmpAmpAmpAmpAmpAmpAmpAmpAmpAmpAmpAmpAmpYasamMobile202412091202.jpg",
+          "link": "/sr?wb=148432&os=1&sk=1&sst=BEST_SELLER"
+        },
+        {
+          "img": "https://cdn.dsmcdn.com/ty1619/pimWidgetApi/mobile_20250101101036_2919528KadinMobile202412241801.jpg",
+          "link": "/sr?wb=148432&os=1&sk=1&sst=BEST_SELLER"
+        },
+        {
+          "img": "https://cdn.dsmcdn.com/ty1619/pimWidgetApi/mobile_20250101101036_2919528KadinMobile202412241801.jpg",
+          "link": "/sr?wb=148432&os=1&sk=1&sst=BEST_SELLER"
+        },
+        {
+          "img": "https://cdn.dsmcdn.com/ty1611/pimWidgetApi/mobile_20241210060817_3209683KadinMobile202412091402.jpg",
+          "link": "/sr?wb=148432&os=1&sk=1&sst=BEST_SELLER"
+        },
+        {
+          "img": "https://cdn.dsmcdn.com/ty1611/pimWidgetApi/mobile_20241209102145_2358957KadinMobile202412091302.jpg",
+          "link": "/sr?wb=148432&os=1&sk=1&sst=BEST_SELLER"
+        }
+      ]
+    }
+
   }
 }

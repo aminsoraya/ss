@@ -3,7 +3,7 @@ import React, { Fragment } from "react";
 
 export default function Categories() {
   return (
-    <div className="px-5 w-full py-3 flex  items-center gap-5 justify-between">
+    <div className="px-5 w-full py-3 lg:flex  items-center gap-5 justify-between hidden">
       {trendyolCatList.map((item, index) => (
         <div
           key={index}
