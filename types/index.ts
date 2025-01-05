@@ -4,6 +4,7 @@ import { Category, Menu, SubHeader } from "./subHeader";
 import { Footer } from "./footer";
 import {
   AmazingOfffer,
+  BatchLink,
   BrandLink,
   MostPopular,
   MostSellingProduct,
@@ -40,6 +41,7 @@ export interface TrendyolMain {
   popularCategories: PopularCategory[];
   mostSellingProducts: MostSellingProduct[];
   usefulProducts: UsefulProduct[];
+  batchLinks: BatchLink[];
 }
 
 export interface ProductCarouselProps<T> {

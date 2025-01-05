@@ -1,4 +1,5 @@
 import Amazing from "@/components/trendyol/amazing";
+import BatchLinks from "@/components/trendyol/batchLinks";
 import Brands from "@/components/trendyol/brands";
 import Categories from "@/components/trendyol/categories";
 import FavouriteProducts from "@/components/trendyol/favouriteProducts";
@@ -36,6 +37,9 @@ export default async function TrendyolComponent() {
       {fetchedData.usefulProducts && (
         <UsefulProductComponent data={fetchedData.usefulProducts} />
       )}
+      {
+        fetchedData.batchLinks&&<BatchLinks data={fetchedData.batchLinks}/>
+      }
     </Container>
   );
 }

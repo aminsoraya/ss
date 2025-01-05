@@ -16,6 +16,11 @@ export interface PopularItem {
   img: string;
 }
 
+
+export type BatchLink={
+  img:string,
+  link:string
+}
 export type MostSellingProduct = MostPopular;
 
 export type UsefulProduct=MostPopular
