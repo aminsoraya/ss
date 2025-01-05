@@ -12,7 +12,7 @@ interface IProps {
 
 export default function MostSellingProductComponent({ data }: IProps) {
   const AllProductsButton: FC = () => {
-    return <Button className="bg-transparent text-gray-800 hover:bg-gray-300" >مشاهده همه محصولات</Button>;
+    return <Button className="bg-transparent text-gray-800 hover:bg-gray-300 rounded-2xl" >مشاهده همه محصولات</Button>;
   };
   return (
     <ProductCarousel
