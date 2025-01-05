@@ -3,6 +3,7 @@ import { Header, Service } from "./header";
 import { Category, Menu, SubHeader } from "./subHeader";
 import { Footer } from "./footer";
 import { AmazingOfffer, MostPopular, Search } from "./trendyol";
+import { ReactNode } from "react";
 
 export interface Meta {
   headers: Header;
@@ -27,4 +28,13 @@ export interface TrendyolMeta {
 export interface TrendyolMain {
   mostPopular: MostPopular[];
   amazingOffer: AmazingOfffer[];
+}
+
+export interface ProductCarouselProps<T> {
+  data: T[];
+  title: ReactNode;
+  backgroundImage?: string;
+  renderItem: (item: T) => React.ReactNode;
+  viewAllLink?: string;
+  viewAllText?: string;
 }
