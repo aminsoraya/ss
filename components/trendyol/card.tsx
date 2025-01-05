@@ -4,7 +4,6 @@ import Image from "next/image";
 import React from "react";
 import { FaStar } from "react-icons/fa6";
 import { twMerge } from "tailwind-merge";
-import { CarouselItem } from "../ui/carousel";
 
 export default function Card({
   brand,
@@ -16,10 +15,13 @@ export default function Card({
   score,
 }: MostPopular) {
   const haveOriginalPrice = parseInt(originalPrice) > 0;
+
+  const concatibleBrand =
+    brand?.length! > 10 ? brand.slice(0, 10).concat("...")! : brand;
   return (
     <div className="bg-white rounded-lg overflow-hidden shadow  border border-gray-100 relative  h-[400px] w-full  mt-5">
       <strong className="absolute top-0 bg-gray-100 left-0 z-10 w-24 text-sm justify-center text-gray-700 h-8 flex items-center">
-        {brand}
+        {concatibleBrand}
       </strong>
       <div className="h-72 px-2 py-2 bg-gray-200 flex items-center relative">
         <div className="w-full relative h-64 ">

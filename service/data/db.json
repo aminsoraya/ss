@@ -489,6 +489,117 @@
         "img": "https://cdn.dsmcdn.com/marketing/datascience/automation/2022/12/30/Pantolon_202212302146.jpg",
         "link": "https://www.trendyol.com/sr?wc=70"
       }
+    ],
+    "mostSellingProducts": [
+      {
+        "img": "https://cdn.dsmcdn.com/ty1571/prod/QC/20240926/11/87d02816-2831-348d-90d8-0d8b4949518b/1_org.jpg",
+        "brand": "AHİ SULTAN",
+        "name": "100 گرم قهوه با 8 قهوه مختلف و اسپیرولینا",
+        "score": 403,
+        "reviewCount": 13076,
+        "finalPrice": "590",
+        "originalPrice": 0
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/ty1527/product/media/images/prod/PIM/20240906/13/92eac147-43d7-4a2f-bf24-f10b91142395/1_org.jpg",
+        "brand": "STOP Forte",
+        "name": "لکه بر",
+        "score": 3.9,
+        "reviewCount": 45351,
+        "finalPrice": "159",
+        "originalPrice": 0
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/ty1586/prod/QC/20241016/00/0f7192e8-b96e-38fb-a863-9ebecd4834be/1_org.jpg",
+        "brand": "Embeauty",
+        "name": "کلاژن و کراتین ضد ریزش مو، رشد سریع مو، حجیم کننده، ترمیم کننده، شامپو مغذی",
+        "score": 4.6,
+        "reviewCount": 19584,
+        "finalPrice": "249",
+        "originalPrice": 0
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/ty1579/prod/QC/20241006/18/0e97a6fd-9e35-304c-9241-38ebfe276d45/1_org.jpg",
+        "brand": "Glint",
+        "name": "پاک کننده سطوح چند منظوره 1 لیتری 100% گیاهی ارگانیک وگان لکه بر",
+        "score": 4.4,
+        "reviewCount": 1539,
+        "finalPrice": "199",
+        "originalPrice": 0
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/ty1585/product/media/images/prod/PIM/20241014/14/dd6983b7-c54d-4747-8e23-af37d8b3f71c/1_org.jpg",
+        "brand": "Cream Co.",
+        "name": "Moisturizer | Su Bazlı Nemlendirici Yüz Kremi Cilt Tonu Eşitleyici Aydınlatıcı | Tüm Cilt Tipleri",
+        "score": 4.7,
+        "reviewCount": 66871,
+        "finalPrice": "294,42",
+        "originalPrice": 0
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/ty1521/product/media/images/prod/QC/20240904/08/7c394d96-737e-3a7b-bb93-28816667f6b1/1_org.jpg",
+        "brand": "KOREACO",
+        "name": "آمپول روشن کننده ضد لک و یکسان کننده رنگ پوست",
+        "score": 4.2,
+        "reviewCount": 19172,
+        "finalPrice": "167,51",
+        "originalPrice": 0
+      }
+    ],
+    "usefulProducts": [
+      {
+        "img": "https://cdn.dsmcdn.com/ty1596/prod/QC/20241104/12/bb128b18-1f69-3c3e-b527-4d4cf223c233/1_org.jpg",
+        "brand": "ysftasarım",
+        "name": "سقف تزئینی فوم طرح پاریس (1 عدد)",
+        "score": 4.9,
+        "reviewCount": 11,
+        "finalPrice": "20,61",
+        "originalPrice": 0
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/ty1481/product/media/images/prod/QC/20240814/23/1f312b0d-c607-3678-b50b-dc0a969aa813/1_org.jpg",
+        "brand": "MDBeauty",
+        "name": "Leke Karşıtı Aydınlatıcı Besleyici Yağ Bazlı Serum",
+        "score": 4.7,
+        "reviewCount": 90,
+        "finalPrice": "374,66",
+        "originalPrice": "428,73"
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/ty1466/product/media/images/prod/QC/20240718/13/b9e4695d-64c7-39db-b379-3754d295337b/1_org.jpg",
+        "brand": "Nautical English Council Yayıncılık",
+        "name": "کتاب آماده سازی رایتینگ و اسپیکینگ راهنمای موثر برای مکالمه و رایتینگ انگلیسی Ielts و Toefl",
+        "score": 5,
+        "reviewCount": 22,
+        "finalPrice": "400",
+        "originalPrice": 0
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/ty1596/prod/QC/20241104/12/bb128b18-1f69-3c3e-b527-4d4cf223c233/1_org.jpg",
+        "brand": "ysftasarım",
+        "name": "سقف تزئینی فوم طرح پاریس (1 عدد)",
+        "score": 4.9,
+        "reviewCount": 11,
+        "finalPrice": "20,61",
+        "originalPrice": 0
+      },{
+        "img": "https://cdn.dsmcdn.com/ty1596/prod/QC/20241104/12/bb128b18-1f69-3c3e-b527-4d4cf223c233/1_org.jpg",
+        "brand": "ysftasarım",
+        "name": "سقف تزئینی فوم طرح پاریس (1 عدد)",
+        "score": 4.9,
+        "reviewCount": 11,
+        "finalPrice": "20,61",
+        "originalPrice": 0
+      },
+      {
+        "img": "https://cdn.dsmcdn.com/ty1596/prod/QC/20241104/12/bb128b18-1f69-3c3e-b527-4d4cf223c233/1_org.jpg",
+        "brand": "ysftasarım",
+        "name": "سقف تزئینی فوم طرح پاریس (1 عدد)",
+        "score": 4.9,
+        "reviewCount": 11,
+        "finalPrice": "20,61",
+        "originalPrice": 0
+      }
     ]
   }
 }

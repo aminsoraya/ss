@@ -17,7 +17,7 @@ export default function Brands({
   const router = useRouter();
 
   return (
-    <div className="w-full  h-28 mt-32 flex items-center justify-evenly">
+    <div className="w-full  h-28  my-2 flex items-center justify-evenly">
       <Carousel
         className="w-full"
         opts={{

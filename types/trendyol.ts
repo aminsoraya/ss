@@ -16,15 +16,19 @@ export interface PopularItem {
   img: string;
 }
 
-export type BrandLink={
-  link:string,
-  img:string
-}
+export type MostSellingProduct = MostPopular;
 
-export type PopularCategory={
-  link:string,
-  img:string
-}
+export type UsefulProduct=MostPopular
+
+export type BrandLink = {
+  link: string;
+  img: string;
+};
+
+export type PopularCategory = {
+  link: string;
+  img: string;
+};
 
 export interface Search {
   mostPopularKeywords: Array<{ text: string; link: string }>;
