@@ -16,14 +16,18 @@ export interface PopularItem {
   img: string;
 }
 
-
-export type BatchLink={
-  img:string,
-  link:string
-}
+type TextLink = {
+  img: string;
+  link: string;
+};
+export type BatchLink = {
+  data: TextLink[];
+  totalCount: number;
+  currentPage: number;
+};
 export type MostSellingProduct = MostPopular;
 
-export type UsefulProduct=MostPopular
+export type UsefulProduct = MostPopular;
 
 export type BrandLink = {
   link: string;

@@ -41,7 +41,7 @@ export interface TrendyolMain {
   popularCategories: PopularCategory[];
   mostSellingProducts: MostSellingProduct[];
   usefulProducts: UsefulProduct[];
-  batchLinks: BatchLink[];
+  batchLinks: BatchLink;
 }
 
 export interface ProductCarouselProps<T> {

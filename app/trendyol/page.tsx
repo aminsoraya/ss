@@ -20,6 +20,7 @@ export default async function TrendyolComponent() {
     }
   ).then((res) => res.json())) as TrendyolMain;
 
+
   return (
     <Container>
       <Categories />
@@ -38,7 +39,7 @@ export default async function TrendyolComponent() {
         <UsefulProductComponent data={fetchedData.usefulProducts} />
       )}
       {
-        fetchedData.batchLinks&&<BatchLinks data={fetchedData.batchLinks}/>
+        fetchedData.batchLinks&&<BatchLinks data={fetchedData.batchLinks} />
       }
     </Container>
   );

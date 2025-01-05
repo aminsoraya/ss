@@ -582,7 +582,8 @@
         "reviewCount": 11,
         "finalPrice": "20,61",
         "originalPrice": 0
-      },{
+      },
+      {
         "img": "https://cdn.dsmcdn.com/ty1596/prod/QC/20241104/12/bb128b18-1f69-3c3e-b527-4d4cf223c233/1_org.jpg",
         "brand": "ysftasarım",
         "name": "سقف تزئینی فوم طرح پاریس (1 عدد)",
@@ -601,43 +602,47 @@
         "originalPrice": 0
       }
     ],
-    "batchLinks":[
-      {
-        "img":"https://cdn.dsmcdn.com/ty1617/pimWidgetApi/mobile_20241226113447_2702142KadinMobile202412261202.jpg",
-        "link":"/sr?wb=148432&os=1&sk=1&sst=BEST_SELLER"
-      },
-      {
-        "img":"https://cdn.dsmcdn.com/ty1611/pimWidgetApi/mobile_20241212134242_3208519KadinMobile202412111802.jpg",
-        "link":"/sr?wb=148432&os=1&sk=1&sst=BEST_SELLER"
-      },
-      {
-        "img":"https://cdn.dsmcdn.com/ty1617/pimWidgetApi/mobile_20250101143148_2331032KadinMobile202412261701.jpg",
-        "link":"/sr?wb=148432&os=1&sk=1&sst=BEST_SELLER"
-      },
-      {
-        "img":"https://cdn.dsmcdn.com/ty1618/pimWidgetApi/mobile_20250101160627_2970506KadinMobile202412051902.jpg",
-        "link":"/sr?wb=148432&os=1&sk=1&sst=BEST_SELLER"
-      },
-      {
-        "img":"https://cdn.dsmcdn.com/ty1611/pimWidgetApi/mobile_20241209140549_3210020EvAmpAmpAmpAmpAmpAmpAmpAmpAmpAmpAmpAmpAmpAmpAmpYasamMobile202412091202.jpg",
-        "link":"/sr?wb=148432&os=1&sk=1&sst=BEST_SELLER"
-      },
-      {
-        "img":"https://cdn.dsmcdn.com/ty1619/pimWidgetApi/mobile_20250101101036_2919528KadinMobile202412241801.jpg",
-        "link":"/sr?wb=148432&os=1&sk=1&sst=BEST_SELLER"
-      },
-      {
-        "img":"https://cdn.dsmcdn.com/ty1619/pimWidgetApi/mobile_20250101101036_2919528KadinMobile202412241801.jpg",
-        "link":"/sr?wb=148432&os=1&sk=1&sst=BEST_SELLER"
-      },
-      {
-        "img":"https://cdn.dsmcdn.com/ty1611/pimWidgetApi/mobile_20241210060817_3209683KadinMobile202412091402.jpg",
-        "link":"/sr?wb=148432&os=1&sk=1&sst=BEST_SELLER"
-      },
-      {
-        "img":"https://cdn.dsmcdn.com/ty1611/pimWidgetApi/mobile_20241209102145_2358957KadinMobile202412091302.jpg",
-        "link":"/sr?wb=148432&os=1&sk=1&sst=BEST_SELLER"
-      }
-    ]
+    "batchLinks": {
+      "totalCount": 12,
+      "currentPage": 1,
+      "data": [
+        {
+          "img": "https://cdn.dsmcdn.com/ty1617/pimWidgetApi/mobile_20241226113447_2702142KadinMobile202412261202.jpg",
+          "link": "/sr?wb=148432&os=1&sk=1&sst=BEST_SELLER"
+        },
+        {
+          "img": "https://cdn.dsmcdn.com/ty1611/pimWidgetApi/mobile_20241212134242_3208519KadinMobile202412111802.jpg",
+          "link": "/sr?wb=148432&os=1&sk=1&sst=BEST_SELLER"
+        },
+        {
+          "img": "https://cdn.dsmcdn.com/ty1617/pimWidgetApi/mobile_20250101143148_2331032KadinMobile202412261701.jpg",
+          "link": "/sr?wb=148432&os=1&sk=1&sst=BEST_SELLER"
+        },
+        {
+          "img": "https://cdn.dsmcdn.com/ty1618/pimWidgetApi/mobile_20250101160627_2970506KadinMobile202412051902.jpg",
+          "link": "/sr?wb=148432&os=1&sk=1&sst=BEST_SELLER"
+        },
+        {
+          "img": "https://cdn.dsmcdn.com/ty1611/pimWidgetApi/mobile_20241209140549_3210020EvAmpAmpAmpAmpAmpAmpAmpAmpAmpAmpAmpAmpAmpAmpAmpYasamMobile202412091202.jpg",
+          "link": "/sr?wb=148432&os=1&sk=1&sst=BEST_SELLER"
+        },
+        {
+          "img": "https://cdn.dsmcdn.com/ty1619/pimWidgetApi/mobile_20250101101036_2919528KadinMobile202412241801.jpg",
+          "link": "/sr?wb=148432&os=1&sk=1&sst=BEST_SELLER"
+        },
+        {
+          "img": "https://cdn.dsmcdn.com/ty1619/pimWidgetApi/mobile_20250101101036_2919528KadinMobile202412241801.jpg",
+          "link": "/sr?wb=148432&os=1&sk=1&sst=BEST_SELLER"
+        },
+        {
+          "img": "https://cdn.dsmcdn.com/ty1611/pimWidgetApi/mobile_20241210060817_3209683KadinMobile202412091402.jpg",
+          "link": "/sr?wb=148432&os=1&sk=1&sst=BEST_SELLER"
+        },
+        {
+          "img": "https://cdn.dsmcdn.com/ty1611/pimWidgetApi/mobile_20241209102145_2358957KadinMobile202412091302.jpg",
+          "link": "/sr?wb=148432&os=1&sk=1&sst=BEST_SELLER"
+        }
+      ]
+    }
   }
 }
