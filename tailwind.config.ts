@@ -8,21 +8,29 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-  	extend: {
-  		backgroundColor: {
-  			'header': '#0b2a9c',
-  			'subHeader': '#082488'
-  		},
-  		colors: {
-  			background: 'var(--background)',
-  			foreground: 'var(--foreground)'
-  		},
-  		borderRadius: {
-  			lg: 'var(--radius)',
-  			md: 'calc(var(--radius) - 2px)',
-  			sm: 'calc(var(--radius) - 4px)'
-  		}
-  	}
+    extend: {
+      backgroundColor: {
+        'header': '#0b2a9c',
+        'subHeader': '#082488'
+      },
+      colors: {
+        background: 'var(--background)',
+        foreground: 'var(--foreground)'
+      },
+      borderRadius: {
+        lg: 'var(--radius)',
+        md: 'calc(var(--radius) - 2px)',
+        sm: 'calc(var(--radius) - 4px)'
+      },
+      flexBasis: {
+        '1/7': '14.2857143%',
+        '1/8': '12.5%',
+        '1/9': '11.1111111%',
+        '1/10': '10%',
+        '1/11': '9.0909091%',
+        '1/12': '8.3333333%',
+      }
+    }
   },
   plugins: [require("tailwindcss-animate")],
 };
