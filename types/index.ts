@@ -36,6 +36,5 @@ export interface ProductCarouselProps<T> {
   title: ReactNode;
   backgroundImage?: string;
   renderItem: (item: T) => React.ReactNode;
-  viewAllLink?: string;
-  viewAllText?: string;
+  additionalElement?: ReactNode;
 }

@@ -7,7 +7,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { FaChevronLeft } from "react-icons/fa6";
 import { ProductCarouselProps } from "@/types";
 
 export default function ProductCarousel<T>({
@@ -15,25 +14,20 @@ export default function ProductCarousel<T>({
   title,
   backgroundImage,
   renderItem,
-  viewAllLink,
-  viewAllText = "ادامه لیست",
+  additionalElement,
 }: ProductCarouselProps<T>) {
   return (
     <div
-      className="w-full pt-3 px-3 my-10 rounded-lg bg-cover  "
+      className="w-full py-3 px-3 my-10 rounded-lg bg-cover  "
       style={{
         background: `url('${backgroundImage}')  `,
-        backgroundRepeat: "round",
+        backgroundRepeat: "no-repeat",
+        backgroundSize:"cover" 
       }}
     >
-      <div className="w-full flex justify-between text-gray-700">
+      <div className="w-full flex justify-between text-gray-700 px-2 py-2">
         <div>{title}</div>
-        {viewAllLink && (
-          <button className="py-2 border rounded-lg hover:bg-gray-300 transition-all delay-100 flex items-center px-2 text-sm">
-            <span>{viewAllText}</span>
-            <FaChevronLeft />
-          </button>
-        )}
+        {additionalElement}
       </div>
       <div className="relative md:px-10 px-3">
         <Carousel
