@@ -15,7 +15,8 @@ import { FaChevronLeft, FaRegUser } from "react-icons/fa6";
 import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
 import { IoCartOutline } from "react-icons/io5";
-import { Menu as MenuType } from "@/types/subHeader";
+import { Menu as MenuType, Sub } from "@/types/subHeader";
+import { FaArrowLeftLong } from "react-icons/fa6";
 
 interface IProps {
   responsiveMenuItems: MenuType[];
@@ -23,6 +24,37 @@ interface IProps {
 
 export default function MobileNavigation({ responsiveMenuItems }: IProps) {
   const [searchFocus, setSearchFocus] = useState(false);
+  const [subs, setSubs] = useState<Sub[] | undefined>();
+  const [childsSub, setChildsSubs] = useState<
+    Array<
+      | {
+          link: string;
+          text: string;
+        }
+      | undefined
+    >
+  >();
+
+  const RenderHeader = () => {
+    if (!subs && !childsSub) {
+      return <span>منو</span>;
+    } else if (subs && childsSub) {
+      return (
+        <FaArrowLeftLong
+          className="text-xl text-gray-600 mt-2"
+          onClick={() => setChildsSubs(undefined)}
+        />
+      );
+    } else {
+      return (
+        <FaArrowLeftLong
+          className="text-xl text-gray-600 mt-2"
+          onClick={() => setSubs(undefined)}
+        />
+      );
+    }
+  };
+
   return (
     <div className="flex items-center flex-col md:hidden justify-between w-full my-2">
       <div className="flex items-center h-10 justify-between w-full">
@@ -38,7 +70,7 @@ export default function MobileNavigation({ responsiveMenuItems }: IProps) {
             >
               <SheetHeader className="relative h-14 border-b flex  items-center justify-between px-6 bg-gray-100">
                 <SheetTitle className="!m-0 absolute left-0 px-5 top-2">
-                  منو
+                  <RenderHeader />
                 </SheetTitle>
                 <SheetClose className="rounded-sm opacity-70 hover:opacity-100 absolute right-0 top-1 px-5">
                   <X className="h-7 w-7" />
@@ -46,16 +78,46 @@ export default function MobileNavigation({ responsiveMenuItems }: IProps) {
               </SheetHeader>
               <div className="flex flex-col gap-4 mt-6 px-2">
                 <ul className="flex flex-col space-y-4 ">
-                  {responsiveMenuItems.map((item, index) => (
-                    <Fragment>
-                      <li
-                        key={index}
-                        className="text-xs flex items-center justify-between"
+                  {!subs &&
+                    responsiveMenuItems.map((item, index) => (
+                      <Fragment key={index}>
+                        {index >0 && <hr />}
+                        <li
+                          onClick={() => {
+                            setSubs(item.subs);
+                          }}
+                          className="text-xs flex items-center justify-between cursor-pointer"
+                        >
+                          <span>{item.title}</span>
+                          <FaChevronLeft className="text-gray-500" />
+                        </li>
+                        
+                      </Fragment>
+                    ))}
+                  {!childsSub &&
+                    subs?.map((item, index) => (
+                      <Fragment key={index}>
+                        {index > 0 && <hr />}
+                        <li
+                          onClick={() => {
+                            setChildsSubs(item.childs);
+                          }}
+                          className="text-xs flex items-center justify-between cursor-pointer"
+                        >
+                          <span>{item.title}</span>
+                          <FaChevronLeft className="text-gray-500" />
+                        </li>
+                      </Fragment>
+                    ))}
+                  {childsSub?.map((item, index) => (
+                    <Fragment key={index}>
+                      {index > 0 && <hr />}
+                      <Link
+                        href={item!.link}
+                        className="text-xs flex items-center justify-between cursor-pointer"
                       >
-                        <span>{item.title}</span>
-                        <FaChevronLeft className="text-gray-500" />
-                      </li>
-                      {index<responsiveMenuItems.length-1&&<hr/>}
+                        <span>{item!.text}</span>
+                      </Link>
                     </Fragment>
                   ))}
                 </ul>

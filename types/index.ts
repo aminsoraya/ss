@@ -46,6 +46,8 @@ export interface TrendyolMain {
   batchLinks: BatchLink;
   
 }
+ 
+ 
 
 export interface ProductCarouselProps<T> {
   data: T[];
