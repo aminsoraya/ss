@@ -406,7 +406,8 @@
         "score": 4.6,
         "reviewCount": 610,
         "finalPrice": "1.390",
-        "originalPrice": 0
+        "originalPrice": 0,
+        "link":"/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1536/prod/QC/20240912/13/9e541604-7949-3c55-8dae-fa256cddda85/1_org.jpg",
@@ -415,7 +416,8 @@
         "score": 4.4,
         "reviewCount": 3814,
         "finalPrice": "1.399,90",
-        "originalPrice": 0
+        "originalPrice": 0,
+        "link":"/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1012/product/media/images/prod/SPM/PIM/20231008/13/042a7fd4-2b58-3497-b371-d8d2d05ea69b/1_org.jpg",
@@ -424,7 +426,8 @@
         "score": 3.9,
         "reviewCount": 1941,
         "finalPrice": "1.399,90",
-        "originalPrice": "249,99"
+        "originalPrice": "249,99",
+        "link":"/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1601/product/media/images/prod/PIM/20241107/08/82e9448c-ea5c-435c-a01f-f96a022b92dd/1_org.jpg",
@@ -433,7 +436,8 @@
         "score": 4.5,
         "reviewCount": 11227,
         "finalPrice": "349,99",
-        "originalPrice": "0"
+        "originalPrice": "0",
+        "link":"/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1535/product/media/images/prod/QC/20240910/11/736b7918-0e1b-32d7-84f7-da9c514c750e/1_org.jpg",
@@ -442,7 +446,8 @@
         "score": 4.6,
         "reviewCount": 359,
         "finalPrice": "225,84",
-        "originalPrice": "0"
+        "originalPrice": "0",
+        "link":"/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1008/product/media/images/prod/SPM/PIM/20231005/06/08deba8c-b2b5-30bd-80d9-09ba740fd2a7/1_org.jpg",
@@ -451,7 +456,8 @@
         "score": 4.8,
         "reviewCount": 314,
         "finalPrice": "937,49",
-        "originalPrice": "0"
+        "originalPrice": "0",
+        "link":"/link"
       }
     ],
     "amazingOffer": [
@@ -462,7 +468,8 @@
         "score": 4.6,
         "reviewCount": 610,
         "finalPrice": "1.390",
-        "originalPrice": 0
+        "originalPrice": 0,
+        "link":"/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1536/prod/QC/20240912/13/9e541604-7949-3c55-8dae-fa256cddda85/1_org.jpg",
@@ -471,7 +478,8 @@
         "score": 4.4,
         "reviewCount": 3814,
         "finalPrice": "1.399,90",
-        "originalPrice": 0
+        "originalPrice": 0,
+        "link":"/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1012/product/media/images/prod/SPM/PIM/20231008/13/042a7fd4-2b58-3497-b371-d8d2d05ea69b/1_org.jpg",
@@ -480,7 +488,8 @@
         "score": 3.9,
         "reviewCount": 1941,
         "finalPrice": "1.399,90",
-        "originalPrice": "249,99"
+        "originalPrice": "249,99",
+        "link":"/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1601/product/media/images/prod/PIM/20241107/08/82e9448c-ea5c-435c-a01f-f96a022b92dd/1_org.jpg",
@@ -489,7 +498,8 @@
         "score": 4.5,
         "reviewCount": 11227,
         "finalPrice": "349,99",
-        "originalPrice": "0"
+        "originalPrice": "0",
+        "link":"/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1535/product/media/images/prod/QC/20240910/11/736b7918-0e1b-32d7-84f7-da9c514c750e/1_org.jpg",
@@ -498,7 +508,8 @@
         "score": 4.6,
         "reviewCount": 359,
         "finalPrice": "225,84",
-        "originalPrice": "0"
+        "originalPrice": "0",
+        "link":"/link"
       }
     ],
     "brandsLink": [
@@ -577,7 +588,8 @@
         "score": 403,
         "reviewCount": 13076,
         "finalPrice": "590",
-        "originalPrice": 0
+        "originalPrice": 0,
+        "link":"/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1527/product/media/images/prod/PIM/20240906/13/92eac147-43d7-4a2f-bf24-f10b91142395/1_org.jpg",
@@ -586,7 +598,8 @@
         "score": 3.9,
         "reviewCount": 45351,
         "finalPrice": "159",
-        "originalPrice": 0
+        "originalPrice": 0,
+        "link":"/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1586/prod/QC/20241016/00/0f7192e8-b96e-38fb-a863-9ebecd4834be/1_org.jpg",
@@ -595,7 +608,8 @@
         "score": 4.6,
         "reviewCount": 19584,
         "finalPrice": "249",
-        "originalPrice": 0
+        "originalPrice": 0,
+        "link":"/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1579/prod/QC/20241006/18/0e97a6fd-9e35-304c-9241-38ebfe276d45/1_org.jpg",
@@ -604,7 +618,8 @@
         "score": 4.4,
         "reviewCount": 1539,
         "finalPrice": "199",
-        "originalPrice": 0
+        "originalPrice": 0,
+        "link":"/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1585/product/media/images/prod/PIM/20241014/14/dd6983b7-c54d-4747-8e23-af37d8b3f71c/1_org.jpg",
@@ -613,7 +628,8 @@
         "score": 4.7,
         "reviewCount": 66871,
         "finalPrice": "294,42",
-        "originalPrice": 0
+        "originalPrice": 0,
+        "link":"/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1521/product/media/images/prod/QC/20240904/08/7c394d96-737e-3a7b-bb93-28816667f6b1/1_org.jpg",
@@ -622,7 +638,8 @@
         "score": 4.2,
         "reviewCount": 19172,
         "finalPrice": "167,51",
-        "originalPrice": 0
+        "originalPrice": 0,
+        "link":"/link"
       }
     ],
     "usefulProducts": [
@@ -633,7 +650,8 @@
         "score": 4.9,
         "reviewCount": 11,
         "finalPrice": "20,61",
-        "originalPrice": 0
+        "originalPrice": 0,
+        "link":"/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1481/product/media/images/prod/QC/20240814/23/1f312b0d-c607-3678-b50b-dc0a969aa813/1_org.jpg",
@@ -642,7 +660,8 @@
         "score": 4.7,
         "reviewCount": 90,
         "finalPrice": "374,66",
-        "originalPrice": "428,73"
+        "originalPrice": "428,73",
+        "link":"/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1466/product/media/images/prod/QC/20240718/13/b9e4695d-64c7-39db-b379-3754d295337b/1_org.jpg",
@@ -651,7 +670,8 @@
         "score": 5,
         "reviewCount": 22,
         "finalPrice": "400",
-        "originalPrice": 0
+        "originalPrice": 0,
+        "link":"/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1596/prod/QC/20241104/12/bb128b18-1f69-3c3e-b527-4d4cf223c233/1_org.jpg",
@@ -660,7 +680,8 @@
         "score": 4.9,
         "reviewCount": 11,
         "finalPrice": "20,61",
-        "originalPrice": 0
+        "originalPrice": 0,
+        "link":"/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1596/prod/QC/20241104/12/bb128b18-1f69-3c3e-b527-4d4cf223c233/1_org.jpg",
@@ -669,7 +690,8 @@
         "score": 4.9,
         "reviewCount": 11,
         "finalPrice": "20,61",
-        "originalPrice": 0
+        "originalPrice": 0,
+        "link":"/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1596/prod/QC/20241104/12/bb128b18-1f69-3c3e-b527-4d4cf223c233/1_org.jpg",
@@ -678,7 +700,8 @@
         "score": 4.9,
         "reviewCount": 11,
         "finalPrice": "20,61",
-        "originalPrice": 0
+        "originalPrice": 0,
+        "link":"/link"
       }
     ],
     "batchLinks": {

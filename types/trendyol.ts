@@ -6,6 +6,7 @@ export interface MostPopular {
   reviewCount: number;
   finalPrice: string;
   originalPrice: string;
+  link:string
 }
 
 export interface PopularItem {
