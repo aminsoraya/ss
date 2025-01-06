@@ -22,7 +22,10 @@ export default function Layout(props: IProps) {
       case Routes.Trendyol:
         return (
           <Fragment>
-            <TrendyolHeader {...props.trendoyl.search} />
+            <TrendyolHeader
+              {...props.trendoyl.search}
+              responsiveMenuItems={props.trendoyl.menus}
+            />
             <TrendyolSubHeader subHeaders={props.trendoyl.menus} />
           </Fragment>
         );
