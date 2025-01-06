@@ -1,7 +1,7 @@
 import { headers } from "next/headers";
 import { Header, Service } from "./header";
 import {  Menu, SubHeader } from "./subHeader";
-import { Footer } from "./footer";
+import { BestShopMark, FavouritePage, Footer } from "./footer";
 import {
   AmazingOfffer,
   BatchLink,
@@ -36,6 +36,8 @@ export interface TrendyolMeta {
   search: Search;
   menus: Menu[];
   usefulKeywords:UsefulKeyword[]
+  bestShopMarks :BestShopMark [],
+  favouritePages:FavouritePage[]
 }
 export interface TrendyolMain {
   categories:Category[]
