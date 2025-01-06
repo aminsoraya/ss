@@ -1,11 +1,12 @@
 import { headers } from "next/headers";
 import { Header, Service } from "./header";
-import { Category, Menu, SubHeader } from "./subHeader";
+import {  Menu, SubHeader } from "./subHeader";
 import { Footer } from "./footer";
 import {
   AmazingOfffer,
   BatchLink,
   BrandLink,
+  Category,
   MostPopular,
   MostSellingProduct,
   PopularCategory,
@@ -37,6 +38,7 @@ export interface TrendyolMeta {
   usefulKeywords:UsefulKeyword[]
 }
 export interface TrendyolMain {
+  categories:Category[]
   mostPopular: MostPopular[];
   amazingOffer: AmazingOfffer[];
   brandsLink: BrandLink[];

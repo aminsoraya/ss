@@ -23,7 +23,7 @@ export default async function TrendyolComponent() {
 
   return (
     <Container>
-      <Categories />
+      {fetchedData.categories && <Categories data={fetchedData.categories} />}
       {fetchedData.mostPopular && (
         <FavouriteProducts data={fetchedData.mostPopular} />
       )}
