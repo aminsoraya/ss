@@ -39,7 +39,6 @@ export default async function TrendyolComponent() {
         <UsefulProductComponent data={fetchedData.usefulProducts} />
       )}
       {fetchedData.batchLinks && <BatchLinks data={fetchedData.batchLinks} />}
-      
     </Container>
   );
 }
