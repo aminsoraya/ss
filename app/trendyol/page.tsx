@@ -23,22 +23,24 @@ export default async function TrendyolComponent() {
 
   return (
     <Container>
-      {fetchedData.categories && <Categories data={fetchedData.categories} />}
-       {fetchedData.mostPopular && (
-        <FavouriteProducts data={fetchedData.mostPopular} />
-      )}
-      {fetchedData.brandsLink && <Brands brandsLink={fetchedData.brandsLink} />}
-      {fetchedData.amazingOffer && <Amazing data={fetchedData.amazingOffer} />}
-      {fetchedData.popularCategories && (
-        <PopularCategory data={fetchedData.popularCategories} />
-      )}
-      {fetchedData.mostSellingProducts && (
-        <MostSellingProduct data={fetchedData.mostSellingProducts} />
-      )}
-      {fetchedData.usefulProducts && (
-        <UsefulProductComponent data={fetchedData.usefulProducts} />
-      )}
-      {fetchedData.batchLinks && <BatchLinks data={fetchedData.batchLinks} />} 
+       
+        {fetchedData.categories && <Categories data={fetchedData.categories} />}
+        {fetchedData.mostPopular && (
+          <FavouriteProducts data={fetchedData.mostPopular} />
+        )}
+        {fetchedData.brandsLink && <Brands brandsLink={fetchedData.brandsLink} />}
+        {fetchedData.amazingOffer && <Amazing data={fetchedData.amazingOffer} />}
+        {fetchedData.popularCategories && (
+          <PopularCategory data={fetchedData.popularCategories} />
+        )}
+        {fetchedData.mostSellingProducts && (
+          <MostSellingProduct data={fetchedData.mostSellingProducts} />
+        )}
+        {fetchedData.usefulProducts && (
+          <UsefulProductComponent data={fetchedData.usefulProducts} />
+        )}
+        {fetchedData.batchLinks && <BatchLinks data={fetchedData.batchLinks} />}
+       
     </Container>
   );
 }
