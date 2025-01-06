@@ -44,6 +44,11 @@ export type PopularCategory = {
   img: string;
 };
 
+export type Category={
+  image:string,
+  text:string,
+  link:string
+}
 export interface Search {
   mostPopularKeywords: Array<{ text: string; link: string }>;
   popularItems: Array<PopularItem>;
