@@ -24,7 +24,7 @@ export default async function TrendyolComponent() {
   return (
     <Container>
       {fetchedData.categories && <Categories data={fetchedData.categories} />}
-      {fetchedData.mostPopular && (
+       {fetchedData.mostPopular && (
         <FavouriteProducts data={fetchedData.mostPopular} />
       )}
       {fetchedData.brandsLink && <Brands brandsLink={fetchedData.brandsLink} />}
@@ -38,7 +38,7 @@ export default async function TrendyolComponent() {
       {fetchedData.usefulProducts && (
         <UsefulProductComponent data={fetchedData.usefulProducts} />
       )}
-      {fetchedData.batchLinks && <BatchLinks data={fetchedData.batchLinks} />}
+      {fetchedData.batchLinks && <BatchLinks data={fetchedData.batchLinks} />} 
     </Container>
   );
 }

@@ -1,6 +1,7 @@
 "use client";
 import { MostPopular } from "@/types/trendyol";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import React from "react";
 import { FaStar } from "react-icons/fa6";
 import { twMerge } from "tailwind-merge";
@@ -13,13 +14,20 @@ export default function Card({
   originalPrice,
   reviewCount,
   score,
+  link,
 }: MostPopular) {
   const haveOriginalPrice = parseInt(originalPrice) > 0;
+  const router = useRouter();
 
   const concatibleBrand =
     brand?.length! > 10 ? brand.slice(0, 10).concat("...")! : brand;
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow  border border-gray-100 relative  h-[400px] w-full  mt-5">
+    <div
+      onClick={() => {
+        router.push(link);
+      }}
+      className="bg-white cursor-pointer rounded-lg overflow-hidden shadow  border border-gray-100 relative  h-[400px] w-full  mt-5"
+    >
       <strong className="absolute top-0 bg-gray-100 left-0 z-10 w-24 text-sm justify-center text-gray-700 h-8 flex items-center">
         {concatibleBrand}
       </strong>
