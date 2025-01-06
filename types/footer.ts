@@ -14,5 +14,13 @@ export type Footer = {
   timesWork: TimesWork;
   appsDownload: string[];
   social: string[];
-  about:string
+  about: string;
 };
+
+export type Linkable = {
+  text: string;
+  link: string;
+};
+
+export type BestShopMark = Linkable;
+export type FavouritePage = Linkable;

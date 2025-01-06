@@ -317,85 +317,165 @@
         ]
       }
     ],
-    "usefulKeywords":[
+    "usefulKeywords": [
       {
-        "text":"iPhone 15",
-        "link":"/iphone-15-y-s36308"
+        "text": "iPhone 15",
+        "link": "/iphone-15-y-s36308"
       },
       {
-        "text":"Flo",
-        "link":"/magaza/flo-m-1024"
+        "text": "Flo",
+        "link": "/magaza/flo-m-1024"
       },
       {
-        "text":"Watsons",
-        "link":"/watsons-x-b862"
+        "text": "Watsons",
+        "link": "/watsons-x-b862"
       },
       {
-        "text":"GS Store",
-        "link":"/galatasaray-x-b50"
+        "text": "GS Store",
+        "link": "/galatasaray-x-b50"
       },
       {
-        "text":"Airfryer",
-        "link":"/fritoz-x-c1055"
+        "text": "Airfryer",
+        "link": "/fritoz-x-c1055"
       },
       {
-        "text":"جاروبرقی Dyson",
-        "link":"/dyson-supurge-x-b102989-c108939"
+        "text": "جاروبرقی Dyson",
+        "link": "/dyson-supurge-x-b102989-c108939"
       },
       {
-        "text":"استنلی ترموس",
-        "link":"/stanley-termos-x-b103138-c1193"
+        "text": "استنلی ترموس",
+        "link": "/stanley-termos-x-b103138-c1193"
       },
       {
-        "text":"ست مبل",
-        "link":"/koltuk-takimi-x-c105457"
+        "text": "ست مبل",
+        "link": "/koltuk-takimi-x-c105457"
       },
       {
-        "text":"خشک کن",
-        "link":"/kurutma-makinesi-x-c103636"
+        "text": "خشک کن",
+        "link": "/kurutma-makinesi-x-c103636"
       },
       {
-        "text":"Playstation 5",
-        "link":"/playstation-5-x-c144046"
+        "text": "Playstation 5",
+        "link": "/playstation-5-x-c144046"
+      }
+    ],
+    "bestShopMarks": [
+      {
+        "text": "Penti",
+        "link": "/link"
+      },
+      {
+        "text": "Watsons",
+        "link": "/link"
+      },
+      {
+        "text": "Stradivarius",
+        "link": "/link"
+      },
+      {
+        "text": "Mango",
+        "link": "/link"
+      },
+      {
+        "text": "Vivense",
+        "link": "/link"
+      },
+      {
+        "text": "DYSON",
+        "link": "/link"
+      },
+      {
+        "text": "Beymen",
+        "link": "/link"
+      },
+      {
+        "text": "The North Face",
+        "link": "/link"
+      },
+      {
+        "text": "English Home",
+        "link": "/link"
+      },
+      {
+        "text": "Bershka",
+        "link": "/link"
+      }
+    ],
+    "favouritePages": [
+      {
+        "text": "Bluetooth Kulaklık",
+        "link": "/link"
+      },
+      {
+        "text": "iPhone",
+        "link": "/link"
+      },
+      {
+        "text": "Samsung Cep Telefonu",
+        "link": "/link"
+      },
+      {
+        "text": "Azerbaycan'dan Alışveriş",
+        "link": "/link"
+      },
+      {
+        "text": "Nike Air Max",
+        "link": "/link"
+      },
+      {
+        "text": "Robot Süpürge",
+        "link": "/link"
+      },
+      {
+        "text": "Laptop",
+        "link": "/link"
+      },
+      {
+        "text": "iPhone 15",
+        "link": "/link"
+      },
+      {
+        "text": "Soba & Isıtıcı",
+        "link": "/link"
       }
     ]
   },
   "trendyol_main": {
-    "categories":[
+    "categories": [
       {
-        "image":"https://cdn.dsmcdn.com/mnresize/200/200/homepage/prod/2024-12-03/2194f8d3-f1f7-4f2b-8ba4-b4ff23d9187c.png",
-        "text":"شروع به خرید کنید",
-        "link":"/link"
+        "image": "https://cdn.dsmcdn.com/mnresize/200/200/homepage/prod/2024-12-03/2194f8d3-f1f7-4f2b-8ba4-b4ff23d9187c.png",
+        "text": "شروع به خرید کنید",
+        "link": "/link"
       },
       {
-        "image":"https://cdn.dsmcdn.com/mnresize/200/200/homepage/prod/2024-12-03/85e24984-319b-4927-a127-ac3295d0152d.png",
+        "image": "https://cdn.dsmcdn.com/mnresize/200/200/homepage/prod/2024-12-03/85e24984-319b-4927-a127-ac3295d0152d.png",
         "text": "اکنون آن را بررسی کنید",
-        "link":"/link"
+        "link": "/link"
       },
       {
-        "image":"https://cdn.dsmcdn.com/mnresize/200/200/homepage/prod/2024-12-03/4dbbf828-dbe2-4f79-a049-4de11755eac1.png",
+        "image": "https://cdn.dsmcdn.com/mnresize/200/200/homepage/prod/2024-12-03/4dbbf828-dbe2-4f79-a049-4de11755eac1.png",
         "text": "محصولات با قیمت خوب",
-        "link":"/link"
+        "link": "/link"
       },
       {
-        "image":"https://cdn.dsmcdn.com/mnresize/200/200/homepage/prod/2024-12-03/af030a99-0c34-40a0-9228-64e3cf462eae.png",
+        "image": "https://cdn.dsmcdn.com/mnresize/200/200/homepage/prod/2024-12-03/af030a99-0c34-40a0-9228-64e3cf462eae.png",
         "text": "آن را هم بخرید!",
-        "link":"/link"
+        "link": "/link"
       },
       {
-        "image":"https://cdn.dsmcdn.com/mnresize/200/200/homepage/prod/2024-12-03/5c5faf07-c9f5-495a-895d-985be2ae3afd.png",
+        "image": "https://cdn.dsmcdn.com/mnresize/200/200/homepage/prod/2024-12-03/5c5faf07-c9f5-495a-895d-985be2ae3afd.png",
         "text": "محصولات سودمند",
-        "link":"/link"
+        "link": "/link"
       },
       {
-        "image":"https://cdn.dsmcdn.com/mnresize/200/200/homepage/prod/2024-12-03/7cd35a01-594f-40c6-b0fc-755973c57f15.png",
+        "image": "https://cdn.dsmcdn.com/mnresize/200/200/homepage/prod/2024-12-03/7cd35a01-594f-40c6-b0fc-755973c57f15.png",
         "text": "کوپن های تخفیف من",
-        "link":"/link"
+        "link": "/link"
       },
       {
-        "image":"https://cdn.dsmcdn.com/mnresize/200/200/homepage/prod/2024-12-03/fd783d97-77c9-4def-bc34-6a3baad268be.png",
+        "image": "https://cdn.dsmcdn.com/mnresize/200/200/homepage/prod/2024-12-03/fd783d97-77c9-4def-bc34-6a3baad268be.png",
         "text": "اعتبارات",
-        "link":"/link"
+        "link": "/link"
       }
     ],
     "mostPopular": [
@@ -407,7 +487,7 @@
         "reviewCount": 610,
         "finalPrice": "1.390",
         "originalPrice": 0,
-        "link":"/link"
+        "link": "/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1536/prod/QC/20240912/13/9e541604-7949-3c55-8dae-fa256cddda85/1_org.jpg",
@@ -417,7 +497,7 @@
         "reviewCount": 3814,
         "finalPrice": "1.399,90",
         "originalPrice": 0,
-        "link":"/link"
+        "link": "/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1012/product/media/images/prod/SPM/PIM/20231008/13/042a7fd4-2b58-3497-b371-d8d2d05ea69b/1_org.jpg",
@@ -427,7 +507,7 @@
         "reviewCount": 1941,
         "finalPrice": "1.399,90",
         "originalPrice": "249,99",
-        "link":"/link"
+        "link": "/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1601/product/media/images/prod/PIM/20241107/08/82e9448c-ea5c-435c-a01f-f96a022b92dd/1_org.jpg",
@@ -437,7 +517,7 @@
         "reviewCount": 11227,
         "finalPrice": "349,99",
         "originalPrice": "0",
-        "link":"/link"
+        "link": "/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1535/product/media/images/prod/QC/20240910/11/736b7918-0e1b-32d7-84f7-da9c514c750e/1_org.jpg",
@@ -447,7 +527,7 @@
         "reviewCount": 359,
         "finalPrice": "225,84",
         "originalPrice": "0",
-        "link":"/link"
+        "link": "/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1008/product/media/images/prod/SPM/PIM/20231005/06/08deba8c-b2b5-30bd-80d9-09ba740fd2a7/1_org.jpg",
@@ -457,7 +537,7 @@
         "reviewCount": 314,
         "finalPrice": "937,49",
         "originalPrice": "0",
-        "link":"/link"
+        "link": "/link"
       }
     ],
     "amazingOffer": [
@@ -469,7 +549,7 @@
         "reviewCount": 610,
         "finalPrice": "1.390",
         "originalPrice": 0,
-        "link":"/link"
+        "link": "/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1536/prod/QC/20240912/13/9e541604-7949-3c55-8dae-fa256cddda85/1_org.jpg",
@@ -479,7 +559,7 @@
         "reviewCount": 3814,
         "finalPrice": "1.399,90",
         "originalPrice": 0,
-        "link":"/link"
+        "link": "/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1012/product/media/images/prod/SPM/PIM/20231008/13/042a7fd4-2b58-3497-b371-d8d2d05ea69b/1_org.jpg",
@@ -489,7 +569,7 @@
         "reviewCount": 1941,
         "finalPrice": "1.399,90",
         "originalPrice": "249,99",
-        "link":"/link"
+        "link": "/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1601/product/media/images/prod/PIM/20241107/08/82e9448c-ea5c-435c-a01f-f96a022b92dd/1_org.jpg",
@@ -499,7 +579,7 @@
         "reviewCount": 11227,
         "finalPrice": "349,99",
         "originalPrice": "0",
-        "link":"/link"
+        "link": "/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1535/product/media/images/prod/QC/20240910/11/736b7918-0e1b-32d7-84f7-da9c514c750e/1_org.jpg",
@@ -509,7 +589,7 @@
         "reviewCount": 359,
         "finalPrice": "225,84",
         "originalPrice": "0",
-        "link":"/link"
+        "link": "/link"
       }
     ],
     "brandsLink": [
@@ -589,7 +669,7 @@
         "reviewCount": 13076,
         "finalPrice": "590",
         "originalPrice": 0,
-        "link":"/link"
+        "link": "/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1527/product/media/images/prod/PIM/20240906/13/92eac147-43d7-4a2f-bf24-f10b91142395/1_org.jpg",
@@ -599,7 +679,7 @@
         "reviewCount": 45351,
         "finalPrice": "159",
         "originalPrice": 0,
-        "link":"/link"
+        "link": "/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1586/prod/QC/20241016/00/0f7192e8-b96e-38fb-a863-9ebecd4834be/1_org.jpg",
@@ -609,7 +689,7 @@
         "reviewCount": 19584,
         "finalPrice": "249",
         "originalPrice": 0,
-        "link":"/link"
+        "link": "/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1579/prod/QC/20241006/18/0e97a6fd-9e35-304c-9241-38ebfe276d45/1_org.jpg",
@@ -619,7 +699,7 @@
         "reviewCount": 1539,
         "finalPrice": "199",
         "originalPrice": 0,
-        "link":"/link"
+        "link": "/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1585/product/media/images/prod/PIM/20241014/14/dd6983b7-c54d-4747-8e23-af37d8b3f71c/1_org.jpg",
@@ -629,7 +709,7 @@
         "reviewCount": 66871,
         "finalPrice": "294,42",
         "originalPrice": 0,
-        "link":"/link"
+        "link": "/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1521/product/media/images/prod/QC/20240904/08/7c394d96-737e-3a7b-bb93-28816667f6b1/1_org.jpg",
@@ -639,7 +719,7 @@
         "reviewCount": 19172,
         "finalPrice": "167,51",
         "originalPrice": 0,
-        "link":"/link"
+        "link": "/link"
       }
     ],
     "usefulProducts": [
@@ -651,7 +731,7 @@
         "reviewCount": 11,
         "finalPrice": "20,61",
         "originalPrice": 0,
-        "link":"/link"
+        "link": "/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1481/product/media/images/prod/QC/20240814/23/1f312b0d-c607-3678-b50b-dc0a969aa813/1_org.jpg",
@@ -661,7 +741,7 @@
         "reviewCount": 90,
         "finalPrice": "374,66",
         "originalPrice": "428,73",
-        "link":"/link"
+        "link": "/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1466/product/media/images/prod/QC/20240718/13/b9e4695d-64c7-39db-b379-3754d295337b/1_org.jpg",
@@ -671,7 +751,7 @@
         "reviewCount": 22,
         "finalPrice": "400",
         "originalPrice": 0,
-        "link":"/link"
+        "link": "/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1596/prod/QC/20241104/12/bb128b18-1f69-3c3e-b527-4d4cf223c233/1_org.jpg",
@@ -681,7 +761,7 @@
         "reviewCount": 11,
         "finalPrice": "20,61",
         "originalPrice": 0,
-        "link":"/link"
+        "link": "/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1596/prod/QC/20241104/12/bb128b18-1f69-3c3e-b527-4d4cf223c233/1_org.jpg",
@@ -691,7 +771,7 @@
         "reviewCount": 11,
         "finalPrice": "20,61",
         "originalPrice": 0,
-        "link":"/link"
+        "link": "/link"
       },
       {
         "img": "https://cdn.dsmcdn.com/ty1596/prod/QC/20241104/12/bb128b18-1f69-3c3e-b527-4d4cf223c233/1_org.jpg",
@@ -701,7 +781,7 @@
         "reviewCount": 11,
         "finalPrice": "20,61",
         "originalPrice": 0,
-        "link":"/link"
+        "link": "/link"
       }
     ],
     "batchLinks": {
@@ -746,6 +826,5 @@
         }
       ]
     }
-
   }
 }

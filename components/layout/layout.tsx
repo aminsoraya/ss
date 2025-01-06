@@ -8,6 +8,8 @@ import TrendyolHeader from "./header/trendyol/page";
 import TrendyolSubHeader from "./subHeader/trendyolSubHeader";
 import UsefulKeywordComponent from "@/components/trendyol/usefulKeyword";
 import { Container } from "../ui/container";
+import BestMarketsAndShoppings from "./footer/bestMarketsAndShopping";
+import PopularPages from "./footer/popularPages";
 
 interface IProps extends Meta {
   children: ReactNode;
@@ -46,6 +48,11 @@ export default function Layout(props: IProps) {
           props.trendoyl.usefulKeywords && (
             <Container>
               <UsefulKeywordComponent data={props.trendoyl.usefulKeywords} />
+              <hr className="my-5"/>
+              <div className="grid md:grid-cols-2 grid-cols-1 ">
+                <BestMarketsAndShoppings data={props.trendoyl.bestShopMarks} />
+                <PopularPages data={props.trendoyl.favouritePages} />
+              </div>
             </Container>
           )
         );
