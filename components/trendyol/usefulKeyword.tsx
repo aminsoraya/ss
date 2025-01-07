@@ -16,7 +16,7 @@ export default function UsefulKeywordComponent({ data }: IProps) {
             <Link
               href={item.link}
               key={index}
-              className="px-3 py-2   text-xs border rounded-2xl text-gray-700"
+              className="px-5 py-3 hover:text-orange-500 hover:border-orange-500  delay-75 md:text-xs text-[10px] border rounded-2xl text-gray-700"
             >
               {item.text}
             </Link>

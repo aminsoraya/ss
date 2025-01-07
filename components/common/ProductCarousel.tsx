@@ -18,7 +18,7 @@ export default function ProductCarousel<T>({
 }: ProductCarouselProps<T>) {
   return (
     <div
-      className="w-full py-3 px-3 my-10 rounded-lg bg-cover  "
+      className="w-full py-3  px-3 my-10 rounded-lg bg-cover  "
       style={{
         background: `url('${backgroundImage}')  `,
         backgroundRepeat: "no-repeat",

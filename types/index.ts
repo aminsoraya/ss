@@ -37,7 +37,8 @@ export interface TrendyolMeta {
   menus: Menu[];
   usefulKeywords:UsefulKeyword[]
   bestShopMarks :BestShopMark [],
-  favouritePages:FavouritePage[]
+  favouritePages:FavouritePage[],
+  about:string
 }
 export interface TrendyolMain {
   categories:Category[]
