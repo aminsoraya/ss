@@ -1,58 +1,63 @@
-export interface MostPopular {
+// Base Types
+type Link = {
+  link: string;
+};
+
+type Image = {
   img: string;
+};
+
+type Text = {
+  text: string;
+};
+
+type TextLink = Link & Text;
+
+type ImageLink = Link & Image;
+
+type PricedItem = {
+  price: string;
+};
+
+type PricedWithComparison = PricedItem & {
+  finalPrice: string;
+  originalPrice: string;
+};
+
+// Specific Types
+export type MostPopular = ImageLink & {
   brand: string;
   name: string;
   score: number;
   reviewCount: number;
-  finalPrice: string;
-  originalPrice: string;
-  link:string
-}
+} & PricedWithComparison;
 
-export interface PopularItem {
-  link: string;
+
+export type PopularItem = ImageLink & Text & PricedItem & {
   brand: string;
-  text: string;
-  price: string;
-  img: string;
-}
-
-type TextLink = {
-  img: string;
-  link: string;
 };
 
-export type UsefulKeyword={
-  text:string,
-  link:string
-}
+export type UsefulKeyword = TextLink;
+
 export type BatchLink = {
   data: TextLink[];
   totalCount: number;
   currentPage: number;
 };
+
 export type MostSellingProduct = MostPopular;
 
 export type UsefulProduct = MostPopular;
 
-export type BrandLink = {
-  link: string;
-  img: string;
-};
+export type BrandLink = ImageLink;
 
-export type PopularCategory = {
-  link: string;
-  img: string;
-};
+export type PopularCategory = ImageLink;
 
-export type Category={
-  image:string,
-  text:string,
-  link:string
-}
+export type Category = ImageLink & Text;
+
 export interface Search {
-  mostPopularKeywords: Array<{ text: string; link: string }>;
-  popularItems: Array<PopularItem>;
+  mostPopularKeywords: UsefulKeyword[];
+  popularItems: PopularItem[];
 }
 
-export type AmazingOfffer = MostPopular;
+export type AmazingOffer = MostPopular;
