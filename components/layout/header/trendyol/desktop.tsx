@@ -1,4 +1,3 @@
-"use client";
 import React, { Dispatch, Fragment, SetStateAction, useRef } from "react";
 import { FaRegUser } from "react-icons/fa6";
 import { Container } from "@/components/ui/container";

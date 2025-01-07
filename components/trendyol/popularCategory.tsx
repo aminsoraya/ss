@@ -1,5 +1,3 @@
-"use client"
-import { TrendyolMain } from "@/types";
 import React from "react";
 import Image from "next/image";
 import { PopularCategory } from "@/types/trendyol";
@@ -14,7 +12,11 @@ export default function PopularCategoryComponent({ data }: IProps) {
       <span className="py-5">دسته بندی های محبوب </span>
       <div className="w-full   gap-3 flex flex-wrap justify-between">
         {data.map((item, index) => (
-          <Link href={item.link} className="relative overflow-hidden rounded " key={index}>
+          <Link
+            href={item.link}
+            className="relative overflow-hidden rounded "
+            key={index}
+          >
             <Image
               className="bg-cover"
               alt=""

@@ -1,4 +1,3 @@
-"use client"
 import React, { Fragment } from "react";
 import { Search as SearchType } from "@/types/trendyol";
 import { FaAngleRight, FaChevronLeft, FaFire } from "react-icons/fa6";

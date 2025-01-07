@@ -1,4 +1,3 @@
-"use client";
 import KeywordsLink from "@/components/common/KeywordsLink";
 import {  FavouritePage } from "@/types/footer";
 import Link from "next/link";

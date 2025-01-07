@@ -1,4 +1,3 @@
-"use client";
 import { UsefulKeyword } from "@/types/trendyol";
 import Link from "next/link";
 import React, { Fragment } from "react";

@@ -1,4 +1,3 @@
-"use client";
 import { Footer } from "@/types/footer";
 import React from "react";
 import { MdSlowMotionVideo } from "react-icons/md";

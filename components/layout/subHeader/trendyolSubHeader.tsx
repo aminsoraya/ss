@@ -1,4 +1,4 @@
-"use client";
+
 import { Menu as MenuType } from "@/types/subHeader";
 import React from "react";
 import Menu from "./menu";
