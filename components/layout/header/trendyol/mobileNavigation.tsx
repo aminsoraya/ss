@@ -1,4 +1,3 @@
-"use client";
 import React, { Fragment, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import {
@@ -18,12 +17,17 @@ import { IoCartOutline } from "react-icons/io5";
 import { Menu as MenuType, Sub } from "@/types/subHeader";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import SearchDetailMobile from "./searchDetailMobile";
+import { Search as SearchType } from "@/types/trendyol";
 
 interface IProps {
   responsiveMenuItems: MenuType[];
+  search: SearchType;
 }
 
-export default function MobileNavigation({ responsiveMenuItems }: IProps) {
+export default function MobileNavigation({
+  responsiveMenuItems,
+  search,
+}: IProps) {
   const [searchFocus, setSearchFocus] = useState(false);
   const [subs, setSubs] = useState<Sub[] | undefined>();
   const [childsSub, setChildsSubs] = useState<
@@ -56,8 +60,8 @@ export default function MobileNavigation({ responsiveMenuItems }: IProps) {
     }
   };
 
-  return (
-    <div className="flex items-center flex-col md:hidden justify-between w-full my-2">
+  const Menu = () => {
+    return (
       <div className="flex items-center h-10 justify-between w-full">
         <div className="flex items-center gap-2">
           <Sheet>
@@ -131,9 +135,13 @@ export default function MobileNavigation({ responsiveMenuItems }: IProps) {
           <FaRegUser className="text-xl" />
         </div>
       </div>
+    );
+  };
+
+  const SearchSection = () => {
+    return (
       <div
-        onBlur={() => setSearchFocus((state) => !state)}
-        onFocus={() => setSearchFocus((state) => !state)}
+        onFocus={() => setSearchFocus(true)}
         className="w-full relative transition-all group focus-within:rounded-b-none focus-within:outline focus-within:outline-2 focus-within:shadow focus-within:outline-orange-500 rounded-md"
       >
         <Input
@@ -142,8 +150,20 @@ export default function MobileNavigation({ responsiveMenuItems }: IProps) {
           className="pr-10 bg-gray-100 focus-within:shadow-lg focus-within:bg-white border-none focus:!ring-0 focus:!ring-offset-0 text-xs placeholder:text-xs w-full"
         />
         <Search className="absolute right-3 top-2.5 h-5 w-5 text-orange-500" />
-        {searchFocus && <SearchDetailMobile />}
+        {searchFocus && (
+          <SearchDetailMobile
+            search={search}
+            close={() => setSearchFocus(false)}
+          />
+        )}
       </div>
+    );
+  };
+
+  return (
+    <div className="flex items-center flex-col md:hidden justify-between w-full my-2">
+      <Menu />
+      <SearchSection />
     </div>
   );
 }
