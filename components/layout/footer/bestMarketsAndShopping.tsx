@@ -1,4 +1,3 @@
-"use client";
 import KeywordsLink from "@/components/common/KeywordsLink";
 import { BestShopMark } from "@/types/footer";
 import Link from "next/link";

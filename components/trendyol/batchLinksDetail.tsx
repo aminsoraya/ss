@@ -1,4 +1,3 @@
-"use client";
 import { BatchLink } from "@/types/trendyol";
 import React from "react";
 import Image from "next/image";

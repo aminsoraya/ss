@@ -1,4 +1,4 @@
-"use client";
+ 
 import { Category } from "@/types/subHeader";
 import localImage from "@/utils/localImage";
 import Link from "next/link";

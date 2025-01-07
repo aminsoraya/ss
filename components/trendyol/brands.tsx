@@ -1,7 +1,5 @@
-"use client";
 import { TrendyolMain } from "@/types";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 import React from "react";
 import {
   Carousel,
@@ -10,15 +8,16 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "../ui/carousel";
+import Link from "next/link";
 
 export default function Brands({
   brandsLink,
 }: Pick<TrendyolMain, "brandsLink">) {
-  const router = useRouter();
-
   return (
     <div className="w-full h-28 my-2 flex items-center justify-evenly">
-      <div className="relative px-12"> {/* Added wrapper with padding */}
+      <div className="relative px-12">
+        {" "}
+        {/* Added wrapper with padding */}
         <Carousel
           className="w-full"
           opts={{
@@ -32,15 +31,17 @@ export default function Brands({
                 key={index}
                 className="pl-1 basis-1/2 md:basis-1/6 lg:basis-1/9  relative"
               >
-                <Image
-                  className="border rounded-lg shadow cursor-pointer"
-                  onClick={() => router.push(item.link)}
-                  src={item.img}
-                  key={index}
-                  alt=""
-                  width={100}
-                  height={100}
-                />
+                <Link href={item.link}>
+                  <Image
+                    className="border rounded-lg shadow cursor-pointer"
+                    
+                    src={item.img}
+                    key={index}
+                    alt=""
+                    width={100}
+                    height={100}
+                  />
+                </Link>
               </CarouselItem>
             ))}
           </CarouselContent>

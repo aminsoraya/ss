@@ -14,7 +14,7 @@ interface IProps {
 export default function MenuComonent({ menus }: IProps) {
   const [hover, setHover] = useState(false);
   const [activeCatIndex, setActiveCatIndex] = useState(0);
-  console.log("hover", hover);
+ 
 
   const DarkCoverBackGround: FC = () => {
     return (

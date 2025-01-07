@@ -1,4 +1,4 @@
-"use client";
+ 
 import { MostPopular } from "@/types/trendyol";
 import Card from "./card";
 import ProductCarousel from "../common/ProductCarousel";

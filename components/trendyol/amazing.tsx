@@ -1,4 +1,4 @@
-"use client";
+ 
 import { AmazingOfffer } from "@/types/trendyol";
 import React, { FC } from "react";
 import Card from "./card";

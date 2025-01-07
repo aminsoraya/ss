@@ -1,4 +1,3 @@
-"use client";
 import { Footer } from "@/types/footer";
 import Features from "./features";
 import Contact from "./contact";
