@@ -11,6 +11,7 @@ import { Container } from "../ui/container";
 import BestMarketsAndShoppings from "./footer/bestMarketsAndShopping";
 import PopularPages from "./footer/popularPages";
 import About from "./footer/about";
+import FooterResources from "./footer/footerResources";
 
 interface IProps extends Meta {
   children: ReactNode;
@@ -47,17 +48,32 @@ export default function Layout(props: IProps) {
       case Routes.Trendyol:
         return (
           props.trendoyl.usefulKeywords && (
-            <Container>
-              <UsefulKeywordComponent data={props.trendoyl.usefulKeywords} />
-              <hr className="my-5" />
-              <About about={props.trendoyl.about} />
-              <hr />
-              <div className="grid md:grid-cols-2 grid-cols-1 py-5">
-                <BestMarketsAndShoppings data={props.trendoyl.bestShopMarks} />
-                <PopularPages data={props.trendoyl.favouritePages} />
+            <Fragment>
+              <Container className="md:p-6 p-0">
+                <div className="w-full px-2 ">
+                  <UsefulKeywordComponent
+                    data={props.trendoyl.usefulKeywords}
+                  />
+                  <hr className="my-5" />
+                  <About about={props.trendoyl.about} />
+                  <hr />
+                  <div className="grid md:grid-cols-2 grid-cols-1 py-5">
+                    <BestMarketsAndShoppings
+                      data={props.trendoyl.bestShopMarks}
+                    />
+                    <PopularPages data={props.trendoyl.favouritePages} />
+                  </div>
+                </div>
+              </Container>
+              <div className="w-full bg-gray-100 h-52">
+                <Container>
+                  <FooterResources />
+                </Container>
+                <div className="w-full h-12 flex items-center bg-black text-[12px] justify-center text-white">
+                  <span>تمامی حقوق سایت محفوظ است</span>
+                </div>
               </div>
-              
-            </Container>
+            </Fragment>
           )
         );
       default:

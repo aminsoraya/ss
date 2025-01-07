@@ -1,10 +1,8 @@
 "use client";
 import { BatchLink } from "@/types/trendyol";
-import React, { useCallback, useEffect, useRef, useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
+import React, { useEffect, useState } from "react";
 import Loading from "../common/Loading";
-import { InView, useInView } from "react-intersection-observer";
+import { useInView } from "react-intersection-observer";
 import BatchLinksDetail from "./batchLinksDetail";
 
 interface IProps {
@@ -14,7 +12,7 @@ interface IProps {
 export default function BatchLinks({ data }: IProps) {
   const { ref: inViewRef, inView } = useInView();
   const [page, setPage] = useState(0);
-  const{currentPage,totalCount,...remain}=data
+  const { currentPage, totalCount, ...remain } = data;
 
   useEffect(() => {
     setPage((state) => state + 1);

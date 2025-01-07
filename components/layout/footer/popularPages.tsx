@@ -13,7 +13,7 @@ export default function PopularPages({ data }: IProps) {
       data={data}
       title= "صفحات محبوب"
       render={(item, index) => (
-        <Link href={item.link} key={index} className="text-xs text-gray-800">
+        <Link href={item.link} key={index} className="text-[10px] md:text-xs text-gray-600">
           {item.text}
         </Link>
       )}

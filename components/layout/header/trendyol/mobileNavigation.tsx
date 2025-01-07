@@ -17,6 +17,7 @@ import { Search } from "lucide-react";
 import { IoCartOutline } from "react-icons/io5";
 import { Menu as MenuType, Sub } from "@/types/subHeader";
 import { FaArrowLeftLong } from "react-icons/fa6";
+import SearchDetailMobile from "./searchDetailMobile";
 
 interface IProps {
   responsiveMenuItems: MenuType[];
@@ -81,7 +82,7 @@ export default function MobileNavigation({ responsiveMenuItems }: IProps) {
                   {!subs &&
                     responsiveMenuItems.map((item, index) => (
                       <Fragment key={index}>
-                        {index >0 && <hr />}
+                        {index > 0 && <hr />}
                         <li
                           onClick={() => {
                             setSubs(item.subs);
@@ -91,7 +92,6 @@ export default function MobileNavigation({ responsiveMenuItems }: IProps) {
                           <span>{item.title}</span>
                           <FaChevronLeft className="text-gray-500" />
                         </li>
-                        
                       </Fragment>
                     ))}
                   {!childsSub &&
@@ -142,9 +142,7 @@ export default function MobileNavigation({ responsiveMenuItems }: IProps) {
           className="pr-10 bg-gray-100 focus-within:shadow-lg focus-within:bg-white border-none focus:!ring-0 focus:!ring-offset-0 text-xs placeholder:text-xs w-full"
         />
         <Search className="absolute right-3 top-2.5 h-5 w-5 text-orange-500" />
-        {searchFocus && (
-          <div className="absolute inset-x-[-2px] border-t-0 bg-white border-2 border-orange-500 min-h-[200px] top-[100%] mt-[2px] rounded-b"></div>
-        )}
+        {searchFocus && <SearchDetailMobile />}
       </div>
     </div>
   );
