@@ -42,7 +42,6 @@ export default function SearchDetail(props: SearchType) {
             className="w-full"
             opts={{
               align: "start",
-              
             }}
           >
             <CarouselContent className="-ml-2 md:-ml-4">

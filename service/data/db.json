@@ -439,7 +439,7 @@
         "link": "/link"
       }
     ],
-    "about":"Türkiye’nin önemli online alışveriş "
+    "about": "Türkiye’nin önemli online alışveriş "
   },
   "trendyol_main": {
     "categories": [
@@ -827,5 +827,92 @@
         }
       ]
     }
-  }
+  },
+  "trendyol_search": [
+    {
+      "image": "https://samanpc.com/wp-content/uploads/2022/11/intel-core-i9-13900k-tray-1.jpg",
+      "name": "Intel Core i9-13900K",
+      "sideNote": "CPU",
+      "link": "https://www.intel.com/content/www/us/en/products/sku/226709/intel-core-i9-13900k/specifications.html"
+    },
+    {
+      "image": "https://images.hothardware.com/contentimages/article/3284/content/small_ryzen-7-7950x3d-top.jpg",
+      "name": "AMD Ryzen 9 7950X3D",
+      "sideNote": "CPU",
+      "link": "https://www.amd.com/en/products/cpu/ryzen-9-7950x3d"
+    },
+    {
+      "image": "https://dkstatics-public.digikala.com/digikala-products/638c7b3d905a527bebe3bcb70f09a9d9249b246c_1665914422.jpg",
+      "name": "NVIDIA GeForce RTX 4090",
+      "sideNote": "GPU",
+      "link": "https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4090/"
+    },
+    {
+      "name": "AMD Radeon RX 7900 XTX",
+      "sideNote": "GPU",
+      "link": "https://www.amd.com/en/products/graphics/radeon-rx-7900-xtx"
+    },
+    {
+      "image": "https://www.bhphotovideo.com/cdn-cgi/image/fit=scale-down,width=500,quality=95/https://www.bhphotovideo.com/images/images500x500/corsair_cmk64gx4m2e3200c16_vengeance_lpx_64gb_2_1727280004_1830606.jpg",
+      "name": "Corsair Dominator Platinum RGB 64GB (4x16GB)",
+      "sideNote": "RAM",
+      "link": "https://www.corsair.com/us/en/Categories/Components/Memory/Dominator-Platinum-RGB/p/CMT64GX5M2B6400C32"
+    },
+    {
+      "image": "https://allneeds.com.au/pub/media/catalog/product/cache/e4d64343b1bc593f1c5348fe05efa4a6/f/5/f5-6000j3038f16gx2-tz5nr_pic1.jpg",
+      "name": "G.Skill Trident Z5 Neo 32GB (2x16GB)",
+      "sideNote": "RAM",
+      "link": "https://www.gskill.com/en/product/trident-z5-neo"
+    },
+    {
+      "name": "Samsung 990 Pro 2TB",
+      "sideNote": "SSD",
+      "link": "https://semiconductor.samsung.com/consumer/ssd/990-pro"
+    },
+    {
+      "name": "WD Black SN850X 2TB",
+      "link": "https://www.wd.com/content/wdc/en/products/internal-drives/ssd/wd-black-sn850x.html"
+    },
+    {
+      "image": "https://dkstatics-public.digikala.com/digikala-products/b53527763c9aa6d6acd5641f8cee262a89143d70_1704782313.jpg",
+      "name": "ASUS ROG Maximus Z790 Hero",
+      "link": "https://rog.asus.com/us/motherboards/rog-maximus/rog-maximus-z790-hero/"
+    },
+    {
+      "name": "MSI MEG Z790 Godlike",
+      "sideNote": "Motherboard",
+      "link": "https://www.msi.com/Motherboard/MEG-Z790-GODLIKE"
+    },
+    {
+      "name": "Corsair RMx Series 2000W",
+      "sideNote": "PSU",
+      "link": "https://www.corsair.com/us/en/Categories/Components/Power-Supply-Units/RMx-Series-PSU/p/CP-9020230-NA"
+    },
+    {
+      "image": "https://www.caseking.de/dw/image/v2/BKRR_PRD/on/demandware.static/-/Sites-master-catalog-caseking/default/dw189a8a55/images/pim/NESE/NESE-167/NESE-167_2010b55db6dfead2507963033e1f4508deaa5d00.jpg",
+      "name": "Seasonic Prime TX-1500",
+      "link": "https://seasonic.com/prime-tx-1500"
+    },
+    {
+      "image": "https://m.media-amazon.com/images/I/71iuHPQP2XL._AC_UF894,1000_QL80_.jpg",
+      "name": "Lian Li PC-O11 Dynamic EVO",
+      "sideNote": "Case",
+      "link": "https://lian-li.com/product/pc-o11-dynamic-evo/"
+    },
+    {
+      "name": "Phanteks P600S",
+      "link": "https://www.phanteks.com/phanteks-p600s"
+    },
+    {
+      "name": "NZXT Kraken X73",
+      "sideNote": "CPU Cooler",
+      "link": "https://www.nzxt.com/product/kraken-x73"
+    },
+    {
+      "image": "https://assets.corsair.com/image/upload/c_pad,q_auto,h_1024,w_1024,f_auto/products/Liquid-Cooling/base-icue-elite-cooler-config/Gallery/H170i_ELITE_CAPELLIX_RENDER_13.webp",
+      "name": "Corsair iCUE H170i Elite Capellix",
+      "sideNote": "CPU Cooler",
+      "link": "https://www.corsair.com/us/en/Categories/Components/Liquid-Coolers/iCUE-Elite-Capellix-Liquid-Coolers/p/CW-9060054-WW"
+    }
+  ]
 }
