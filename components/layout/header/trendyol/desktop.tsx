@@ -2,7 +2,7 @@ import React, { Dispatch, Fragment, SetStateAction, useRef } from "react";
 import { FaRegUser } from "react-icons/fa6";
 import { Container } from "@/components/ui/container";
 import { Input } from "@/components/ui/input";
-import { Search } from "lucide-react";
+import { Search as SearchIcon } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { IoCartOutline } from "react-icons/io5";
@@ -57,7 +57,7 @@ export default function DesktopNavigation({
             placeholder="محصول، دسته یا برند مورد نظر خود را تایپ کنید"
             className="pr-10 bg-gray-100 focus-within:shadow-lg focus-within:bg-white border-none focus:!ring-0 focus:!ring-offset-0 text-xs placeholder:text-xs w-full"
           />
-          <Search className="absolute right-3 top-2.5 h-5 w-5 text-orange-500" />
+          <SearchIcon className="absolute right-3 top-2.5 h-5 w-5 text-orange-500" />
           {searchFocus && <SearchDetail {...search} />}
         </div>
       </div>

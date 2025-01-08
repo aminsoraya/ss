@@ -28,7 +28,7 @@ export default function Layout(props: IProps) {
           <Fragment>
             <TrendyolHeader
               {...props.trendoyl.search}
-              responsiveMenuItems={props.trendoyl.menus}
+              menuItems={props.trendoyl.menus}
             />
             <TrendyolSubHeader subHeaders={props.trendoyl.menus} />
           </Fragment>
