@@ -59,5 +59,11 @@ export interface Search {
   mostPopularKeywords: UsefulKeyword[];
   popularItems: PopularItem[];
 }
-
+export interface SearchDetailType{
+  image:string,
+  name:string,
+  sideNote:string,
+  link:string
+}
 export type AmazingOffer = MostPopular;
+ 

@@ -1,5 +1,5 @@
-import React from "react";
-import { Search as SearchType } from "@/types/trendyol";
+import React, { FC, Fragment, useEffect, useMemo } from "react";
+import { SearchDetailType, Search as SearchType } from "@/types/trendyol";
 import Link from "next/link";
 import {
   Carousel,
@@ -8,10 +8,11 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
 import CardComponent from "./card";
 
-export default function SearchDetail(props: SearchType) {
+export default function SearchDetail(
+  props: SearchType & { searchResults: SearchDetailType[] | undefined }
+) {
   const MostPopularKeywords = () => {
     return (
       <div className="w-full flex flex-col  px-2 py-2">
@@ -32,10 +33,6 @@ export default function SearchDetail(props: SearchType) {
   };
 
   const MostPopularProduct = () => {
-    const plugin = React.useRef(
-      Autoplay({ delay: 2000, stopOnInteraction: false })
-    );
-
     return (
       <div className="w-full flex flex-col px-2 py-5 overflow-hidden">
         <h4 className="text-sm text-gray-700 mb-4">محبوب ترین محصولات</h4>
@@ -43,11 +40,9 @@ export default function SearchDetail(props: SearchType) {
           <div className="absolute inset-y-0 left-0 w-8 bg-gradient-to-r from-white to-transparent z-10"></div>
           <div className="absolute inset-y-0 right-0 w-8 bg-gradient-to-l from-white to-transparent z-10"></div>
           <Carousel
-            plugins={[plugin.current]}
             className="w-full"
             opts={{
               align: "start",
-              loop: true,
             }}
           >
             <CarouselContent className="-ml-2 md:-ml-4">
@@ -61,7 +56,7 @@ export default function SearchDetail(props: SearchType) {
               ))}
             </CarouselContent>
             <div className="absolute -left-6 top-1/2 -translate-y-1/2 z-20">
-              <CarouselNext className="rotate-180 bg-white border-2 cursor-pointer"/>
+              <CarouselNext className="rotate-180 bg-white border-2 cursor-pointer" />
             </div>
             <div className="absolute -right-6 top-1/2 -translate-y-1/2 z-20">
               <CarouselPrevious className="rotate-180 bg-white border-2 cursor-pointer" />
@@ -72,10 +67,47 @@ export default function SearchDetail(props: SearchType) {
     );
   };
 
+  const RenderSearch = ({ data }: { data: SearchDetailType[] | undefined }) => {
+    let sortItems = useMemo(() => {
+      return data?.sort((a, b) => {
+        const firstImage = a.image ? 1 : 0;
+        const secondImage = b.image ? 1 : 0;
+
+        return firstImage - secondImage;
+      });
+    }, [data]);
+
+    return sortItems?.map((item, index) => (
+      <Link href={item.link} key={index}>
+        {index > 0 && <hr />}
+        <div
+          className="w-full h-12 flex items-center justify-between px-3 text-xs"
+          dir="ltr"
+        >
+          <div className="flex items-center gap-3">
+            {item.image && <img src={item.image} className="w-6 h-6" />}
+            <span>{item.name}</span>
+          </div>
+          <span className="text-gray-500">{item.sideNote}</span>
+        </div>
+      </Link>
+    ));
+  };
+
   return (
     <div className="absolute px-3 inset-x-[-2px]   bg-white   border-2  border-orange-500 min-h-[200px] top-[100%] mt-[1px] rounded-b">
-      <MostPopularKeywords />
-      <MostPopularProduct />
+      {props.searchResults&&props.searchResults.length>0 ? (
+        <Fragment>
+          
+          <span className="mx-3 my-3">نتایج جستجو</span>
+          <RenderSearch data={props.searchResults} />
+        </Fragment>
+      ) : (
+        <Fragment>
+          <MostPopularKeywords />
+          <MostPopularProduct />
+        </Fragment>
+      )}
     </div>
   );
 }
