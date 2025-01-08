@@ -32,10 +32,6 @@ export default function SearchDetail(props: SearchType) {
   };
 
   const MostPopularProduct = () => {
-    const plugin = React.useRef(
-      Autoplay({ delay: 2000, stopOnInteraction: false })
-    );
-
     return (
       <div className="w-full flex flex-col px-2 py-5 overflow-hidden">
         <h4 className="text-sm text-gray-700 mb-4">محبوب ترین محصولات</h4>
@@ -43,11 +39,10 @@ export default function SearchDetail(props: SearchType) {
           <div className="absolute inset-y-0 left-0 w-8 bg-gradient-to-r from-white to-transparent z-10"></div>
           <div className="absolute inset-y-0 right-0 w-8 bg-gradient-to-l from-white to-transparent z-10"></div>
           <Carousel
-            plugins={[plugin.current]}
             className="w-full"
             opts={{
               align: "start",
-              loop: true,
+              
             }}
           >
             <CarouselContent className="-ml-2 md:-ml-4">
@@ -61,7 +56,7 @@ export default function SearchDetail(props: SearchType) {
               ))}
             </CarouselContent>
             <div className="absolute -left-6 top-1/2 -translate-y-1/2 z-20">
-              <CarouselNext className="rotate-180 bg-white border-2 cursor-pointer"/>
+              <CarouselNext className="rotate-180 bg-white border-2 cursor-pointer" />
             </div>
             <div className="absolute -right-6 top-1/2 -translate-y-1/2 z-20">
               <CarouselPrevious className="rotate-180 bg-white border-2 cursor-pointer" />
