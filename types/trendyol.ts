@@ -40,7 +40,7 @@ export type PopularItem = ImageLink & Text & PricedItem & {
 export type UsefulKeyword = TextLink;
 
 export type BatchLink = {
-  data: TextLink[];
+  data: ImageLink[];
   totalCount: number;
   currentPage: number;
 };

@@ -16,7 +16,6 @@ export default function Brands({
   return (
     <div className="w-full h-28 my-2 flex items-center justify-evenly">
       <div className="relative px-12">
-        {" "}
         {/* Added wrapper with padding */}
         <Carousel
           className="w-full"
@@ -29,12 +28,11 @@ export default function Brands({
             {brandsLink.map((item, index) => (
               <CarouselItem
                 key={index}
-                className="pl-1 basis-1/2 md:basis-1/6 lg:basis-1/9  relative"
+                className="pl-1 basis-1/3 sm:basis-1/4 md:basis-1/6 lg:basis-1/9  relative"
               >
                 <Link href={item.link}>
                   <Image
                     className="border rounded-lg shadow cursor-pointer"
-                    
                     src={item.img}
                     key={index}
                     alt=""
@@ -45,13 +43,13 @@ export default function Brands({
               </CarouselItem>
             ))}
           </CarouselContent>
-          <div className="absolute -left-4 top-1/2 -translate-y-1/2">
+          <div className="absolute left-3 md:left-0 top-1/2 -translate-y-1/2">
             <CarouselPrevious
               variant="outline"
               className="h-8 w-8 rounded-full bg-white hover:bg-gray-100"
             />
           </div>
-          <div className="absolute -right-4 top-1/2 -translate-y-1/2">
+          <div className="absolute right-3 md:right-0 top-1/2 -translate-y-1/2">
             <CarouselNext
               variant="outline"
               className="h-8 w-8 rounded-full bg-white hover:bg-gray-100"
