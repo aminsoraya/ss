@@ -9,6 +9,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import CardComponent from "./card";
+import DynamicSearchDetail from "./dynamicSearchDetail";
 
 export default function SearchDetail(
   props: SearchType & { searchResults: SearchDetailType[] | undefined }
@@ -67,32 +68,7 @@ export default function SearchDetail(
     );
   };
 
-  const RenderSearch = ({ data }: { data: SearchDetailType[] | undefined }) => {
-    let sortItems = useMemo(() => {
-      return data?.sort((a, b) => {
-        const firstImage = a.image ? 1 : 0;
-        const secondImage = b.image ? 1 : 0;
-
-        return firstImage - secondImage;
-      });
-    }, [data]);
-
-    return sortItems?.map((item, index) => (
-      <Link href={item.link} key={index}>
-        {index > 0 && <hr />}
-        <div
-          className="w-full h-12 flex items-center justify-between px-3 text-xs"
-          dir="ltr"
-        >
-          <div className="flex items-center gap-3">
-            {item.image && <img src={item.image} className="w-6 h-6" />}
-            <span>{item.name}</span>
-          </div>
-          <span className="text-gray-500">{item.sideNote}</span>
-        </div>
-      </Link>
-    ));
-  };
+ 
 
   return (
     <div className="absolute px-3 inset-x-[-2px]   bg-white   border-2  border-orange-500 min-h-[200px] top-[100%] mt-[1px] rounded-b">
@@ -100,7 +76,7 @@ export default function SearchDetail(
         <Fragment>
           
           <span className="mx-3 my-3">نتایج جستجو</span>
-          <RenderSearch data={props.searchResults} />
+          <DynamicSearchDetail data={props.searchResults} />
         </Fragment>
       ) : (
         <Fragment>

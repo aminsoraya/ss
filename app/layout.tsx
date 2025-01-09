@@ -25,7 +25,7 @@ export default async function RootLayout({
   const headersList = headers();
   const currentRoute = headersList.get("x-route") || "/";
 
-  const isTrendyolRoute = currentRoute.includes(Routes.Trendyol);
+  const isTrendyolRoute = currentRoute.includes(Routes.Trendyol)||currentRoute.includes(Routes.Sr);
 
   const initialData = await fetch(
     process.env.NEXT_PUBLIC_META_URL?.toString()!,

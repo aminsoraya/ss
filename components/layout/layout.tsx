@@ -24,6 +24,7 @@ export default function Layout(props: IProps) {
   const ConditionalyRenderHeader: FC = () => {
     switch (props.pathName) {
       case Routes.Trendyol:
+      case Routes.Sr:
         return (
           <Fragment>
             <TrendyolHeader
@@ -46,6 +47,7 @@ export default function Layout(props: IProps) {
   const ConditionalyRenderFooter: FC = () => {
     switch (props.pathName) {
       case Routes.Trendyol:
+      case Routes.Sr:
         return (
           props.trendoyl.usefulKeywords && (
             <Fragment>

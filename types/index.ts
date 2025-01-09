@@ -3,7 +3,8 @@ import { Header, Service } from "./header";
 import {  Menu, SubHeader } from "./subHeader";
 import { BestShopMark, FavouritePage, Footer } from "./footer";
 import {
-  AmazingOfffer,
+  AmazingOffer,
+  
   BatchLink,
   BrandLink,
   Category,
@@ -43,7 +44,7 @@ export interface TrendyolMeta {
 export interface TrendyolMain {
   categories:Category[]
   mostPopular: MostPopular[];
-  amazingOffer: AmazingOfffer[];
+  amazingOffer: AmazingOffer[];
   brandsLink: BrandLink[];
   popularCategories: PopularCategory[];
   mostSellingProducts: MostSellingProduct[];
@@ -60,4 +61,15 @@ export interface ProductCarouselProps<T> {
   backgroundImage?: string;
   renderItem: (item: T) => React.ReactNode;
   additionalElement?: ReactNode;
+}
+
+
+export type CategoriesResponseItem={
+  title:string,
+  value:string
+}
+export interface CategoriesResponse{
+  key:string,
+  title:string,
+  items:Array<CategoriesResponseItem>
 }

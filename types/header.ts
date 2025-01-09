@@ -11,5 +11,6 @@ export type Header = {
 
 export enum Routes {
   Trendyol = "/trendyol",
+  Sr = "/sr",
   Amazon = "/amazon",
 }

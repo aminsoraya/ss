@@ -10,7 +10,7 @@ export default function PopularCategoryComponent({ data }: IProps) {
   return (
     <div className="w-full flex flex-col">
       <span className="py-5">دسته بندی های محبوب </span>
-      <div className="w-full   gap-3 flex flex-wrap justify-between">
+      <div className="w-full   gap-3 grid-flow-col px-3 flex flex-wrap justify-between">
         {data.map((item, index) => (
           <Link
             href={item.link}
