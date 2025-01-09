@@ -32,10 +32,11 @@ export type MostPopular = ImageLink & {
   reviewCount: number;
 } & PricedWithComparison;
 
-
-export type PopularItem = ImageLink & Text & PricedItem & {
-  brand: string;
-};
+export type PopularItem = ImageLink &
+  Text &
+  PricedItem & {
+    brand: string;
+  };
 
 export type UsefulKeyword = TextLink;
 
@@ -59,11 +60,10 @@ export interface Search {
   mostPopularKeywords: UsefulKeyword[];
   popularItems: PopularItem[];
 }
-export interface SearchDetailType{
-  image:string,
-  name:string,
-  sideNote:string,
-  link:string
+export interface SearchDetailType {
+  image: string;
+  name: string;
+  sideNote: string;
+  link: string;
 }
 export type AmazingOffer = MostPopular;
- 

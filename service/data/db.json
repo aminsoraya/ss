@@ -905,5 +905,61 @@
       "sideNote": "CPU Cooler",
       "link": "/magaza/ABCED?sk=1"
     }
+  ],
+  "trendyol_categories_by_params": [
+    {
+      "key":"clr",
+      "title": "رنگ بندی",
+      "items": [
+        {
+          "title": "زرد",
+          "value": "yellow"
+        },
+        {
+          "title": "بنفش",
+          "value": "purple"
+        },
+        {
+          "title": "آبی",
+          "value": "blue"
+        }
+      ]
+    },
+    {
+      "key":"sze",
+      "title": "سایز",
+      "items": [
+        {
+          "title": "38",
+          "value": 38
+        },
+        {
+          "title": "39",
+          "value": 39
+        },
+        {
+          "title": 42,
+          "value": 42
+        }
+      ]
+    },
+    {
+      "key":"typ",
+      "title": "نوع",
+      "items": [
+        {
+          "title": "زنانه",
+          "value": "female"
+        },
+        {
+          "title": "مردانه",
+          "value": "male"
+        },
+        {
+          "title": "بچه گانه",
+          "value": "child"
+        }
+      ]
+    }
   ]
 }
