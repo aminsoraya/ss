@@ -22,14 +22,18 @@ export default async function TrendyolComponent() {
   ).then((res) => res.json())) as TrendyolMain;
 
   return (
-    <Container>
-       
+    <div className="w-full overflow-hidden">
+      <Container className="p-0 md:p-6">
         {fetchedData.categories && <Categories data={fetchedData.categories} />}
         {fetchedData.mostPopular && (
           <FavouriteProducts data={fetchedData.mostPopular} />
         )}
-        {fetchedData.brandsLink && <Brands brandsLink={fetchedData.brandsLink} />}
-        {fetchedData.amazingOffer && <Amazing data={fetchedData.amazingOffer} />}
+        {fetchedData.brandsLink && (
+          <Brands brandsLink={fetchedData.brandsLink} />
+        )}
+        {fetchedData.amazingOffer && (
+          <Amazing data={fetchedData.amazingOffer} />
+        )}
         {fetchedData.popularCategories && (
           <PopularCategory data={fetchedData.popularCategories} />
         )}
@@ -40,7 +44,7 @@ export default async function TrendyolComponent() {
           <UsefulProductComponent data={fetchedData.usefulProducts} />
         )}
         {fetchedData.batchLinks && <BatchLinks data={fetchedData.batchLinks} />}
-       
-    </Container>
+      </Container>{" "}
+    </div>
   );
 }

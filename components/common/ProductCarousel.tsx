@@ -48,11 +48,11 @@ export default function ProductCarousel<T>({
           </CarouselContent>
           <CarouselPrevious
             variant="outline"
-            className="h-8 w-8 rounded-full bg-white hover:bg-gray-100"
+            className="h-8 w-8 rounded-full bg-white hover:bg-gray-100 absolute -left-5 md:flex md:-left-10"
           />
           <CarouselNext
             variant="outline"
-            className="h-8 w-8 rounded-full bg-white hover:bg-gray-100"
+            className="h-8 w-8 rounded-full bg-white hover:bg-gray-100 absolute -right-5 md:flex md:-right-10"
           />
         </Carousel>
       </div>
