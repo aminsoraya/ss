@@ -1,5 +1,5 @@
 "use client";
-import SearchDetail from "./serachDetail";
+import SearchDetail from "./desktopInitialSerachDetail";
 import { SearchDetailType, Search as SearchType } from "@/types/trendyol";
 import useOutsideClick from "@/hooks/useOutSideClickDetector";
 import { Input } from "@/components/ui/input";

@@ -15,7 +15,7 @@ import { Search } from "lucide-react";
 import { IoCartOutline } from "react-icons/io5";
 import { Menu as MenuType, Sub } from "@/types/subHeader";
 import { FaArrowLeftLong } from "react-icons/fa6";
-import SearchDetailMobile from "./searchDetailMobile";
+import SearchDetailMobile from "./mobileInitialSearchDetail";
 import { Search as SearchType } from "@/types/trendyol";
 
 interface IProps {
