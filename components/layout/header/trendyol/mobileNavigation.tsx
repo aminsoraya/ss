@@ -1,4 +1,4 @@
-import React, { Fragment, memo, useState, useCallback } from "react";
+import React, { Fragment,  useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import {
   Sheet,
@@ -163,6 +163,7 @@ export default function MobileNavigation({
   };
 
   const SearchBar = () => {
+    
     return (
       <div
         onFocus={() => setSearchFocus(true)}
