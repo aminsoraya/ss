@@ -22,7 +22,7 @@ export default function SearchDetailMobile({ search, close }: IProps) {
     return [];
   }, [searchResults, searchKeyword]);
 
-  const BodySection = () => {
+  const InitialSearchDetail = () => {
     return (
       <Fragment>
         <div className="w-full flex items-center justify-between px-3 h-10">
@@ -75,9 +75,12 @@ export default function SearchDetailMobile({ search, close }: IProps) {
         value={searchKeyword}
       />
       {checkedData.length > 0 ? (
-        <DynamicSearchDetail data={checkedData} />
+        <div >
+          <span className="px-5 py-5 text-sm">نتایج جستجو</span>
+          <DynamicSearchDetail data={checkedData} />
+        </div>
       ) : (
-        <BodySection />
+        <InitialSearchDetail />
       )}
     </div>
   );
