@@ -1,11 +1,11 @@
-import { AmazingOfffer } from "@/types/trendyol";
+import { AmazingOffer } from "@/types/trendyol";
 import React, { FC } from "react";
 import Card from "../common/card";
 import ProductCarousel from "../common/ProductCarousel";
 import backgroundImage from "@/imgs/trendyolback2.png";
 
 interface IProps {
-  data: AmazingOfffer[];
+  data: AmazingOffer[];
 }
 export default function Amazing({ data }: IProps) {
   const Title: FC = () => {
