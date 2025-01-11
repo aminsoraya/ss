@@ -7,7 +7,7 @@ import {
   BatchLink,
   BrandLink,
   Category,
-  MostPopular,
+  Card,
   MostSellingProduct,
   PopularCategory,
   Search,
@@ -42,7 +42,7 @@ export interface TrendyolMeta {
 }
 export interface TrendyolMain {
   categories: Category[];
-  mostPopular: MostPopular[];
+  mostPopular: Card[];
   amazingOffer: AmazingOffer[];
   brandsLink: BrandLink[];
   popularCategories: PopularCategory[];

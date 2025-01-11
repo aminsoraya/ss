@@ -1,27 +1,28 @@
- 
-import { MostPopular } from "@/types/trendyol";
-import Card from "./card";
+import { Card } from "@/types/trendyol";
+import CardComponent from "../common/card";
 import ProductCarousel from "../common/ProductCarousel";
-import backgroundImage from "@/imgs/trendyolback1.png"
+import backgroundImage from "@/imgs/trendyolback1.png";
 import { Button } from "../ui/button";
 
 interface IProps {
-  data: MostPopular[];
+  data: Card[];
 }
 
 export default function FavouriteProducts({ data }: IProps) {
-  const ShowAll=()=>{
+  const ShowAll = () => {
     return (
-      <Button className="bg-transparent hover:bg-gray-300 rounded-2xl text-black">مشاهده همه</Button>
-    )
-  }
+      <Button className="bg-transparent hover:bg-gray-300 rounded-2xl text-black">
+        مشاهده همه
+      </Button>
+    );
+  };
   return (
     <ProductCarousel
       data={data}
       title="محبوب ترینها"
       backgroundImage={backgroundImage.src}
-      renderItem={(item) => <Card {...item} />}
-      additionalElement={<ShowAll/>}
+      renderItem={(item) => <CardComponent {...item} />}
+      additionalElement={<ShowAll />}
     />
   );
 }

@@ -25,7 +25,7 @@ type PricedWithComparison = PricedItem & {
 };
 
 // Specific Types
-export type MostPopular = ImageLink & {
+export type Card = ImageLink & {
   brand: string;
   name: string;
   score: number;
@@ -46,9 +46,9 @@ export type BatchLink = {
   currentPage: number;
 };
 
-export type MostSellingProduct = MostPopular;
+export type MostSellingProduct = Card;
 
-export type UsefulProduct = MostPopular;
+export type UsefulProduct = Card;
 
 export type BrandLink = ImageLink;
 
@@ -66,7 +66,7 @@ export interface SearchDetailType {
   sideNote: string;
   link: string;
 }
-export type AmazingOffer = MostPopular;
+export type AmazingOffer = Card;
 
 export enum TrendyolSorts {
   RECOMENDED = "RECOMENDED",

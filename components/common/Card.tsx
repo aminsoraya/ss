@@ -1,11 +1,11 @@
-import { MostPopular } from "@/types/trendyol";
+import { Card } from "@/types/trendyol";
 import Image from "next/image";
 import React from "react";
 import { FaStar } from "react-icons/fa6";
 import { twMerge } from "tailwind-merge";
 import Link from "next/link";
 
-export default function Card({
+export default function CardComponent({
   brand,
   finalPrice,
   img,
@@ -14,7 +14,7 @@ export default function Card({
   reviewCount,
   score,
   link,
-}: MostPopular) {
+}: Card) {
   const haveOriginalPrice = parseInt(originalPrice) > 0;
 
   const concatibleBrand =

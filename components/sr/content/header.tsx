@@ -1,3 +1,4 @@
+"use client"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -7,10 +8,13 @@ import {
 import { BiSortAlt2 } from "react-icons/bi";
 import { trendyolSortOptions } from "@/service/data/static";
 import { TrendyolSorts } from "@/types/trendyol";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import useNavigation from "@/hooks/useNavigation";
 
-const Header = () => {
+interface IProps{
+    countAll:number
+}
+const Header = ({countAll}:IProps) => {
   const [itemSelected, setItemSelected] = useState<
     { text: string; value: TrendyolSorts } | undefined
   >();
@@ -35,7 +39,7 @@ const Header = () => {
 
   return (
     <div className="h-12   flex items-center justify-between ">
-      <span>تعداد نتایج</span>
+      <span dir="ltr">{`${countAll} تعداد نتایح`}</span>
       <DropdownMenu>
         <DropdownMenuTrigger className="outline-none border px-3 text-xs  flex  justify-between items-center rounded-md   h-10">
           <span>{`${itemSelected?.text ?? "مرتب سازی"}`}</span>
