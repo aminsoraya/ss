@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Content() {
   return (
-    <div>content</div>
+    <div className='  w-full px-3 py-3'>content</div>
   )
 }
 
