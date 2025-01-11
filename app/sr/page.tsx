@@ -23,9 +23,10 @@ export default async function Page(props: Promise<Partial<IPageProps>>) {
     // { body: JSON.stringify(searchParams) }
   ).then((data) => data.json())) as CategoriesResponse[];
 
+ 
   return (
     <Container className="min-h-screen">
-      <Sidebar data={fetchedCategoriesData} />
+      {fetchedCategoriesData&&<Sidebar data={fetchedCategoriesData} />}
       
     </Container>
   );
