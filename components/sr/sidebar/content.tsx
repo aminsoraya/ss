@@ -10,12 +10,6 @@ import { CategoriesResponse, CategoriesResponseItem } from "@/types";
 import useNavigation from "@/hooks/useNavigation";
 
 interface IProps {
-  search:
-    | {
-        keyword: string | undefined;
-        index: number | undefined;
-      }
-    | undefined;
   setSearch: React.Dispatch<
     React.SetStateAction<
       | {
@@ -30,7 +24,7 @@ interface IProps {
 }
 
 export default function Content(props: IProps) {
-  const { setSearch, data, search, filteredItems } = props;
+  const { setSearch, data, filteredItems } = props;
   const { updateUrl, getValuesByKey } = useNavigation();
 
   return (
@@ -42,7 +36,7 @@ export default function Content(props: IProps) {
     >
       {data.map(({ items, title, key }, index) => {
         const [values] = getValuesByKey(key);
-        const splittedValues=values?.split(",")??[]
+        const splittedValues = values?.split(",") ?? [];
 
         return (
           <AccordionItem value={index.toString()} key={index}>

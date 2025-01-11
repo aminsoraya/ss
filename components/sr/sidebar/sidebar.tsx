@@ -31,15 +31,15 @@ export default function Sidebar({ route }: IProps) {
     }
   }, [search, data]);
 
- 
   return (
     <aside className="w-[300px] h-[calc(100vh-100px)] px-3 py-3 text-xs fixed border-l">
-      {data&&<SidebarContent
-        setSearch={setSearch}
-        data={data}
-        filteredItems={filteredItems!}
-        search={search}
-      />}
+      {data && (
+        <SidebarContent
+          setSearch={setSearch}
+          data={data}
+          filteredItems={filteredItems!}
+        />
+      )}
     </aside>
   );
 }
