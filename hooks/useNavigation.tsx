@@ -5,15 +5,31 @@ import { useState } from "react";
 const useNavigation = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const [searchParamsState, setSearchParamsState] = useState(searchParams);
 
   const updateUrl = (key: string, value: string, op: "add" | "rmv") => {
-    const params = new URLSearchParams(searchParamsState.toString());
+    const params = new URLSearchParams(searchParams.toString());
+
+    //get value by key
+    const previous = params.get(key);
 
     if (value && op == "add") {
-      params.set(key, value);
+      //once set
+      if (previous == null) params.set(key, value);
+      else {
+        const splittedPrevious = previous.split(",");
+
+        const newValues = [...splittedPrevious, value];
+        params.set(key, newValues.join(","));
+      }
     } else {
-      params.delete(key);
+      const splittedPrevious = previous!.split(",");
+
+      if (splittedPrevious.length == 1) {
+        params.delete(key);
+      } else {
+        const newValues = splittedPrevious.filter((s) => s != value);
+        params.set(key, newValues.join(","));
+      }
     }
 
     router.replace(`?${params.toString()}`);

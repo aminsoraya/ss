@@ -18,16 +18,11 @@ interface IPageProps {
 export default async function Page(props: Promise<Partial<IPageProps>>) {
   const searchParams = (await props).searchParams;
 
-  const fetchedCategoriesData = (await fetch(
-    process.env.NEXT_PUBLIC_TRENDYOL_CATEGORIES_BY_PARAMS!
-    // { body: JSON.stringify(searchParams) }
-  ).then((data) => data.json())) as CategoriesResponse[];
+  const route = process.env.NEXT_PUBLIC_TRENDYOL_CATEGORIES_BY_PARAMS!;
 
- 
   return (
     <Container className="min-h-screen">
-      {fetchedCategoriesData&&<Sidebar data={fetchedCategoriesData} />}
-      
+      <Sidebar route={route} />
     </Container>
   );
 }
