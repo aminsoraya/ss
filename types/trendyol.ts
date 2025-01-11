@@ -67,3 +67,13 @@ export interface SearchDetailType {
   link: string;
 }
 export type AmazingOffer = MostPopular;
+
+export enum TrendyolSorts {
+  RECOMENDED = "RECOMENDED",
+  MIN_PRICE = "MIN_PRICE",
+  MAX_PRICE = "MAX_PRICE",
+  MOST_SELLING = "MOST_SELLING",
+  MOST_POPULAR = "MOST_POPULAR",
+  NEWEST = "NEWEST",
+  MOST_REVIEWS = "MOST_REVIEWS",
+}
