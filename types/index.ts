@@ -1,10 +1,9 @@
 import { headers } from "next/headers";
 import { Header, Service } from "./header";
-import {  Menu, SubHeader } from "./subHeader";
+import { Menu, SubHeader } from "./subHeader";
 import { BestShopMark, FavouritePage, Footer } from "./footer";
 import {
   AmazingOffer,
-  
   BatchLink,
   BrandLink,
   Category,
@@ -36,13 +35,13 @@ export const weekDays = {
 export interface TrendyolMeta {
   search: Search;
   menus: Menu[];
-  usefulKeywords:UsefulKeyword[]
-  bestShopMarks :BestShopMark [],
-  favouritePages:FavouritePage[],
-  about:string
+  usefulKeywords: UsefulKeyword[];
+  bestShopMarks: BestShopMark[];
+  favouritePages: FavouritePage[];
+  about: string;
 }
 export interface TrendyolMain {
-  categories:Category[]
+  categories: Category[];
   mostPopular: MostPopular[];
   amazingOffer: AmazingOffer[];
   brandsLink: BrandLink[];
@@ -50,10 +49,7 @@ export interface TrendyolMain {
   mostSellingProducts: MostSellingProduct[];
   usefulProducts: UsefulProduct[];
   batchLinks: BatchLink;
-  
 }
- 
- 
 
 export interface ProductCarouselProps<T> {
   data: T[];
@@ -63,13 +59,15 @@ export interface ProductCarouselProps<T> {
   additionalElement?: ReactNode;
 }
 
-
-export type CategoriesResponseItem={
-  title:string,
-  value:string
-}
-export interface CategoriesResponse{
-  key:string,
-  title:string,
-  items:Array<CategoriesResponseItem>
+export type CategoriesResponseItem = {
+  title: string;
+  value: string;
+};
+export interface CategoriesResponse {
+  key: string;
+  title: string;
+  items: {
+    searchable?: boolean;
+    items: Array<CategoriesResponseItem>;
+  };
 }

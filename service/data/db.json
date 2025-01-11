@@ -908,58 +908,74 @@
   ],
   "trendyol_categories_by_params": [
     {
-      "key":"clr",
+      "key": "clr",
       "title": "رنگ بندی",
-      "items": [
-        {
-          "title": "زرد",
-          "value": "yellow"
-        },
-        {
-          "title": "بنفش",
-          "value": "purple"
-        },
-        {
-          "title": "آبی",
-          "value": "blue"
-        }
-      ]
+      "items": {
+        "searchable": true,
+        "items": [
+          {
+            "title": "زرد",
+            "value": "yellow"
+          },
+          {
+            "title": "بنفش",
+            "value": "purple"
+          },
+          {
+            "title": "آبی",
+            "value": "blue"
+          },
+          {
+            "title": "سبز",
+            "value": "green"
+          },
+          {
+            "title": "قهوه ای",
+            "value": "brown"
+          }
+        ]
+      }
     },
     {
-      "key":"sze",
+      "key": "sze",
       "title": "سایز",
-      "items": [
-        {
-          "title": "38",
-          "value": 38
-        },
-        {
-          "title": "39",
-          "value": 39
-        },
-        {
-          "title": 42,
-          "value": 42
-        }
-      ]
+      "items": {
+        "searchable": true,
+        "items": [
+          {
+            "title": "38",
+            "value": 38
+          },
+          {
+            "title": "39",
+            "value": 39
+          },
+          {
+            "title": "42",
+            "value": 42
+          }
+        ]
+      }
     },
     {
-      "key":"typ",
+      "key": "typ",
       "title": "نوع",
-      "items": [
-        {
-          "title": "زنانه",
-          "value": "female"
-        },
-        {
-          "title": "مردانه",
-          "value": "male"
-        },
-        {
-          "title": "بچه گانه",
-          "value": "child"
-        }
-      ]
+      "items": {
+        "items": [
+          {
+            "title": "زنانه",
+            "value": "female"
+          },
+          {
+            "title": "مردانه",
+            "value": "male"
+          },
+          {
+            "title": "بچه گانه",
+            "value": "child"
+          }
+        ]
+      }
     }
   ]
 }

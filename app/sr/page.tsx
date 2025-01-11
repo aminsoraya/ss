@@ -1,5 +1,5 @@
 import Content from "@/components/sr/content";
-import Sidebar from "@/components/sr/sidebar";
+import Sidebar from "@/components/sr/sidebar/sidebar";
 import { Container } from "@/components/ui/container";
 import { CategoriesResponse } from "@/types";
 import React from "react";
