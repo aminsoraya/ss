@@ -978,66 +978,189 @@
       }
     }
   ],
-  "trendyol_items_by_params": [
-    {
-      "img": [
-        "https://cdn.dsmcdn.com/ty1609/prod/QC/20241202/10/c7705fc2-88e6-3361-b9aa-a42a16a3f566/1_org.jpg",
-        "https://cdn.dsmcdn.com/mnresize/128/192/ty1608/prod/QC/20241202/10/9e4f964d-8d89-3c84-996f-7dab64e9b8e0/1_org_zoom.jpg",
-        "https://cdn.dsmcdn.com/mnresize/128/192/ty1608/prod/QC/20241202/10/0d94bcaf-30c6-32b1-9c9e-4768aa7e7660/1_org_zoom.jpg",
-        "https://cdn.dsmcdn.com/mnresize/128/192/ty1608/prod/QC/20241202/10/60d1b00e-5323-3000-a809-19f3e914b4d4/1_org_zoom.jpg"
-      ],
-      "brand": "Apple",
-      "name": "آیفون 16 پرو 256GB",
-      "score": 4.5,
-      "reviewCount": 53,
-      "finalPrice": "84.060",
-      "originalPrice": 0,
-      "link": "/apple/iphone-16-pro-256gb-naturel-titanyum-p-857296103?boutiqueId=61&merchantId=355135"
-    },
-    {
-      "img": [
-        "https://cdn.dsmcdn.com/mnresize/128/192/ty1608/prod/QC/20241202/10/0a2aa6cd-32ba-3246-b435-3da46c3cab95/1_org_zoom.jpg",
-        "https://cdn.dsmcdn.com/mnresize/128/192/ty1610/prod/QC/20241202/10/5c206e5a-fb76-308d-b378-737f62eac7e9/1_org_zoom.jpg",
-        "https://cdn.dsmcdn.com/mnresize/128/192/ty1610/prod/QC/20241202/10/eb392ef5-d74f-32ae-a619-0bf9f4ac090b/1_org_zoom.jpg",
-        "https://cdn.dsmcdn.com/mnresize/128/192/ty1608/prod/QC/20241202/10/1dcce0a7-ada9-3fe3-adcb-689f090d0bfe/1_org_zoom.jpg"
-      ],
-      "brand": "Apple",
-      "name": "آیفون 16 پرو 128",
-      "score": 4.8,
-      "reviewCount": 56,
-      "finalPrice": "59.749",
-      "originalPrice": "60.899",
-      "link": "/apple/iphone-16-pro-256gb-naturel-titanyum-p-857296103?boutiqueId=61&merchantId=355135"
-    },
-    {
-      "img": [
-        "https://cdn.dsmcdn.com/mnresize/128/192/ty1608/prod/QC/20241202/10/0ac10e2e-037c-3eef-b8a2-6b7aa7d9563e/1_org_zoom.jpg",
-        "https://cdn.dsmcdn.com/mnresize/128/192/ty1610/prod/QC/20241202/10/88051139-7c55-3304-926e-9e1cdccca6ef/1_org_zoom.jpg",
-        "https://cdn.dsmcdn.com/mnresize/128/192/ty1609/prod/QC/20241202/10/4cea92d2-8ca7-35ce-b37d-0375b3bc5b5b/1_org_zoom.jpg",
-        "https://cdn.dsmcdn.com/mnresize/128/192/ty1610/prod/QC/20241202/10/5090d75f-d933-3ce9-8082-1507fc71aae3/1_org_zoom.jpg"
-      ],
-      "brand": "Apple",
-      "name": "تیتانیوم آیفون 16 پرو 128",
-      "score": 4.7,
-      "reviewCount": 26,
-      "finalPrice": "79.162",
-      "originalPrice": 0,
-      "link": "/apple/iphone-16-pro-256gb-naturel-titanyum-p-857296103?boutiqueId=61&merchantId=355135"
-    },
-        {
-      "img": [
-        "https://cdn.dsmcdn.com/mnresize/128/192/ty1610/prod/QC/20241202/10/f378129e-169c-3428-8285-0b09aa742117/1_org_zoom.jpg",
-        "https://cdn.dsmcdn.com/mnresize/128/192/ty1609/prod/QC/20241202/10/b9395f66-079c-3ac5-b0d3-bd95d486955f/1_org_zoom.jpg",
-        "https://cdn.dsmcdn.com/mnresize/128/192/ty1609/prod/QC/20241202/10/63d4130c-e0b6-316b-8ec8-ab42b9bbf93c/1_org_zoom.jpg",
-        "https://cdn.dsmcdn.com/mnresize/128/192/ty1610/prod/QC/20241202/10/554e091d-2e0b-3024-affe-ee19945da2e5/1_org_zoom.jpg"
-      ],
-      "brand": "Apple",
-      "name": "pembe آیفون 16 پرو 128",
-      "score": 4.8,
-      "reviewCount": 32,
-      "finalPrice": "59.749",
-      "originalPrice": 0,
-      "link": "/apple/iphone-16-pro-256gb-naturel-titanyum-p-857296103?boutiqueId=61&merchantId=355135"
-    }
-  ]
+  "trendyol_items_by_params": {
+    "totalCount": 4,
+    "items": [
+      {
+        "img": [
+          "https://cdn.dsmcdn.com/ty1609/prod/QC/20241202/10/c7705fc2-88e6-3361-b9aa-a42a16a3f566/1_org.jpg",
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1608/prod/QC/20241202/10/9e4f964d-8d89-3c84-996f-7dab64e9b8e0/1_org_zoom.jpg",
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1608/prod/QC/20241202/10/0d94bcaf-30c6-32b1-9c9e-4768aa7e7660/1_org_zoom.jpg",
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1608/prod/QC/20241202/10/60d1b00e-5323-3000-a809-19f3e914b4d4/1_org_zoom.jpg"
+        ],
+        "brand": "Apple",
+        "name": "آیفون 16 پرو 256GB",
+        "score": 4.5,
+        "reviewCount": 53,
+        "finalPrice": "84.060",
+        "originalPrice": 0,
+        "link": "/apple/iphone-16-pro-256gb-naturel-titanyum-p-857296103?boutiqueId=61&merchantId=355135"
+      },
+      {
+        "img": [
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1608/prod/QC/20241202/10/0a2aa6cd-32ba-3246-b435-3da46c3cab95/1_org_zoom.jpg",
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1610/prod/QC/20241202/10/5c206e5a-fb76-308d-b378-737f62eac7e9/1_org_zoom.jpg",
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1610/prod/QC/20241202/10/eb392ef5-d74f-32ae-a619-0bf9f4ac090b/1_org_zoom.jpg",
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1608/prod/QC/20241202/10/1dcce0a7-ada9-3fe3-adcb-689f090d0bfe/1_org_zoom.jpg"
+        ],
+        "brand": "Apple",
+        "name": "آیفون 16 پرو 128",
+        "score": 4.8,
+        "reviewCount": 56,
+        "finalPrice": "59.749",
+        "originalPrice": "60.899",
+        "link": "/apple/iphone-16-pro-256gb-naturel-titanyum-p-857296103?boutiqueId=61&merchantId=355135"
+      },
+      {
+        "img": [
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1608/prod/QC/20241202/10/0ac10e2e-037c-3eef-b8a2-6b7aa7d9563e/1_org_zoom.jpg",
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1610/prod/QC/20241202/10/88051139-7c55-3304-926e-9e1cdccca6ef/1_org_zoom.jpg",
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1609/prod/QC/20241202/10/4cea92d2-8ca7-35ce-b37d-0375b3bc5b5b/1_org_zoom.jpg",
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1610/prod/QC/20241202/10/5090d75f-d933-3ce9-8082-1507fc71aae3/1_org_zoom.jpg"
+        ],
+        "brand": "Apple",
+        "name": "تیتانیوم آیفون 16 پرو 128",
+        "score": 4.7,
+        "reviewCount": 26,
+        "finalPrice": "79.162",
+        "originalPrice": 0,
+        "link": "/apple/iphone-16-pro-256gb-naturel-titanyum-p-857296103?boutiqueId=61&merchantId=355135"
+      },
+      {
+        "img": [
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1610/prod/QC/20241202/10/f378129e-169c-3428-8285-0b09aa742117/1_org_zoom.jpg",
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1609/prod/QC/20241202/10/b9395f66-079c-3ac5-b0d3-bd95d486955f/1_org_zoom.jpg",
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1609/prod/QC/20241202/10/63d4130c-e0b6-316b-8ec8-ab42b9bbf93c/1_org_zoom.jpg",
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1610/prod/QC/20241202/10/554e091d-2e0b-3024-affe-ee19945da2e5/1_org_zoom.jpg"
+        ],
+        "brand": "Apple",
+        "name": "pembe آیفون 16 پرو 128",
+        "score": 4.8,
+        "reviewCount": 32,
+        "finalPrice": "59.749",
+        "originalPrice": 0,
+        "link": "/apple/iphone-16-pro-256gb-naturel-titanyum-p-857296103?boutiqueId=61&merchantId=355135"
+      },
+      {
+        "img": [
+          "https://cdn.dsmcdn.com/ty1609/prod/QC/20241202/10/c7705fc2-88e6-3361-b9aa-a42a16a3f566/1_org.jpg",
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1608/prod/QC/20241202/10/9e4f964d-8d89-3c84-996f-7dab64e9b8e0/1_org_zoom.jpg",
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1608/prod/QC/20241202/10/0d94bcaf-30c6-32b1-9c9e-4768aa7e7660/1_org_zoom.jpg",
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1608/prod/QC/20241202/10/60d1b00e-5323-3000-a809-19f3e914b4d4/1_org_zoom.jpg"
+        ],
+        "brand": "Apple",
+        "name": "آیفون 16 پرو 256GB",
+        "score": 4.5,
+        "reviewCount": 53,
+        "finalPrice": "84.060",
+        "originalPrice": 0,
+        "link": "/apple/iphone-16-pro-256gb-naturel-titanyum-p-857296103?boutiqueId=61&merchantId=355135"
+      },
+      {
+        "img": [
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1608/prod/QC/20241202/10/0a2aa6cd-32ba-3246-b435-3da46c3cab95/1_org_zoom.jpg",
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1610/prod/QC/20241202/10/5c206e5a-fb76-308d-b378-737f62eac7e9/1_org_zoom.jpg",
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1610/prod/QC/20241202/10/eb392ef5-d74f-32ae-a619-0bf9f4ac090b/1_org_zoom.jpg",
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1608/prod/QC/20241202/10/1dcce0a7-ada9-3fe3-adcb-689f090d0bfe/1_org_zoom.jpg"
+        ],
+        "brand": "Apple",
+        "name": "آیفون 16 پرو 128",
+        "score": 4.8,
+        "reviewCount": 56,
+        "finalPrice": "59.749",
+        "originalPrice": "60.899",
+        "link": "/apple/iphone-16-pro-256gb-naturel-titanyum-p-857296103?boutiqueId=61&merchantId=355135"
+      },
+      {
+        "img": [
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1608/prod/QC/20241202/10/0ac10e2e-037c-3eef-b8a2-6b7aa7d9563e/1_org_zoom.jpg",
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1610/prod/QC/20241202/10/88051139-7c55-3304-926e-9e1cdccca6ef/1_org_zoom.jpg",
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1609/prod/QC/20241202/10/4cea92d2-8ca7-35ce-b37d-0375b3bc5b5b/1_org_zoom.jpg",
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1610/prod/QC/20241202/10/5090d75f-d933-3ce9-8082-1507fc71aae3/1_org_zoom.jpg"
+        ],
+        "brand": "Apple",
+        "name": "تیتانیوم آیفون 16 پرو 128",
+        "score": 4.7,
+        "reviewCount": 26,
+        "finalPrice": "79.162",
+        "originalPrice": 0,
+        "link": "/apple/iphone-16-pro-256gb-naturel-titanyum-p-857296103?boutiqueId=61&merchantId=355135"
+      },
+      {
+        "img": [
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1610/prod/QC/20241202/10/f378129e-169c-3428-8285-0b09aa742117/1_org_zoom.jpg",
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1609/prod/QC/20241202/10/b9395f66-079c-3ac5-b0d3-bd95d486955f/1_org_zoom.jpg",
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1609/prod/QC/20241202/10/63d4130c-e0b6-316b-8ec8-ab42b9bbf93c/1_org_zoom.jpg",
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1610/prod/QC/20241202/10/554e091d-2e0b-3024-affe-ee19945da2e5/1_org_zoom.jpg"
+        ],
+        "brand": "Apple",
+        "name": "pembe آیفون 16 پرو 128",
+        "score": 4.8,
+        "reviewCount": 32,
+        "finalPrice": "59.749",
+        "originalPrice": 0,
+        "link": "/apple/iphone-16-pro-256gb-naturel-titanyum-p-857296103?boutiqueId=61&merchantId=355135"
+      },
+      {
+        "img": [
+          "https://cdn.dsmcdn.com/ty1609/prod/QC/20241202/10/c7705fc2-88e6-3361-b9aa-a42a16a3f566/1_org.jpg",
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1608/prod/QC/20241202/10/9e4f964d-8d89-3c84-996f-7dab64e9b8e0/1_org_zoom.jpg",
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1608/prod/QC/20241202/10/0d94bcaf-30c6-32b1-9c9e-4768aa7e7660/1_org_zoom.jpg",
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1608/prod/QC/20241202/10/60d1b00e-5323-3000-a809-19f3e914b4d4/1_org_zoom.jpg"
+        ],
+        "brand": "Apple",
+        "name": "آیفون 16 پرو 256GB",
+        "score": 4.5,
+        "reviewCount": 53,
+        "finalPrice": "84.060",
+        "originalPrice": 0,
+        "link": "/apple/iphone-16-pro-256gb-naturel-titanyum-p-857296103?boutiqueId=61&merchantId=355135"
+      },
+      {
+        "img": [
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1608/prod/QC/20241202/10/0a2aa6cd-32ba-3246-b435-3da46c3cab95/1_org_zoom.jpg",
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1610/prod/QC/20241202/10/5c206e5a-fb76-308d-b378-737f62eac7e9/1_org_zoom.jpg",
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1610/prod/QC/20241202/10/eb392ef5-d74f-32ae-a619-0bf9f4ac090b/1_org_zoom.jpg",
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1608/prod/QC/20241202/10/1dcce0a7-ada9-3fe3-adcb-689f090d0bfe/1_org_zoom.jpg"
+        ],
+        "brand": "Apple",
+        "name": "آیفون 16 پرو 128",
+        "score": 4.8,
+        "reviewCount": 56,
+        "finalPrice": "59.749",
+        "originalPrice": "60.899",
+        "link": "/apple/iphone-16-pro-256gb-naturel-titanyum-p-857296103?boutiqueId=61&merchantId=355135"
+      },
+      {
+        "img": [
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1608/prod/QC/20241202/10/0ac10e2e-037c-3eef-b8a2-6b7aa7d9563e/1_org_zoom.jpg",
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1610/prod/QC/20241202/10/88051139-7c55-3304-926e-9e1cdccca6ef/1_org_zoom.jpg",
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1609/prod/QC/20241202/10/4cea92d2-8ca7-35ce-b37d-0375b3bc5b5b/1_org_zoom.jpg",
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1610/prod/QC/20241202/10/5090d75f-d933-3ce9-8082-1507fc71aae3/1_org_zoom.jpg"
+        ],
+        "brand": "Apple",
+        "name": "تیتانیوم آیفون 16 پرو 128",
+        "score": 4.7,
+        "reviewCount": 26,
+        "finalPrice": "79.162",
+        "originalPrice": 0,
+        "link": "/apple/iphone-16-pro-256gb-naturel-titanyum-p-857296103?boutiqueId=61&merchantId=355135"
+      },
+      {
+        "img": [
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1610/prod/QC/20241202/10/f378129e-169c-3428-8285-0b09aa742117/1_org_zoom.jpg",
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1609/prod/QC/20241202/10/b9395f66-079c-3ac5-b0d3-bd95d486955f/1_org_zoom.jpg",
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1609/prod/QC/20241202/10/63d4130c-e0b6-316b-8ec8-ab42b9bbf93c/1_org_zoom.jpg",
+          "https://cdn.dsmcdn.com/mnresize/128/192/ty1610/prod/QC/20241202/10/554e091d-2e0b-3024-affe-ee19945da2e5/1_org_zoom.jpg"
+        ],
+        "brand": "Apple",
+        "name": "pembe آیفون 16 پرو 128",
+        "score": 4.8,
+        "reviewCount": 32,
+        "finalPrice": "59.749",
+        "originalPrice": 0,
+        "link": "/apple/iphone-16-pro-256gb-naturel-titanyum-p-857296103?boutiqueId=61&merchantId=355135"
+      }
+    ]
+  }
 }

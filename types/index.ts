@@ -71,3 +71,7 @@ export interface CategoriesResponse {
     items: Array<CategoriesResponseItem>;
   };
 }
+export type TrendyolItemsByParams = {
+  totalCount: number;
+  items: Card[];
+};

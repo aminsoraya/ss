@@ -4,7 +4,7 @@ type Link = {
 };
 
 type Image = {
-  img: string;
+  img: string|string[];
 };
 
 type Text = {
