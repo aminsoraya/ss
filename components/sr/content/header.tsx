@@ -45,7 +45,7 @@ const Header = ({ countAll, title }: IProps) => {
   }, [itemSelected]);
 
   const DesktopRender: FC = () => (
-    <div className="h-12   flex items-center justify-between ">
+    <div className="h-12 px-3  flex items-center justify-between ">
       <span dir="ltr">
         {`${countAll} تعداد کل نتایح`} {`"${title}"`}
       </span>
