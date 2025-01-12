@@ -21,7 +21,7 @@ interface IProps {
   title: string;
 }
 const Header = ({ countAll, title }: IProps) => {
-  const { setShowSort } = useTrendyolContext();
+  const { setShowSort, setShowFilters } = useTrendyolContext();
   const [itemSelected, setItemSelected] = useState<
     { text: string; value: TrendyolSorts } | undefined
   >();
@@ -76,15 +76,17 @@ const Header = ({ countAll, title }: IProps) => {
   );
 
   const SmallRender: FC = () => {
-    const {simpleGetValueByKey}=useNavigation()
+    const { simpleGetValueByKey } = useNavigation();
 
-    const sortingkey=simpleGetValueByKey("sort")
-    const sortingKeyAlias=useMemo(()=>{
-      if(sortingkey){
-        const sortAlias=trendyolSortOptions.find(s=>s.value==sortingkey)
-        return sortAlias?.text
+    const sortingkey = simpleGetValueByKey("sort");
+    const sortingKeyAlias = useMemo(() => {
+      if (sortingkey) {
+        const sortAlias = trendyolSortOptions.find(
+          (s) => s.value == sortingkey
+        );
+        return sortAlias?.text;
       }
-    },[sortingkey])
+    }, [sortingkey]);
 
     return (
       <Fragment>
@@ -103,8 +105,11 @@ const Header = ({ countAll, title }: IProps) => {
           className=" h-10 grid grid-cols-2 w-full border divide-x mt-3"
           dir="ltr"
         >
-          <Sort onClick={() => setShowSort(true)} sortingText={sortingKeyAlias} />
-          <Filter onClick={() => {}} />
+          <Sort
+            onClick={() => setShowSort(true)}
+            sortingText={sortingKeyAlias}
+          />
+          <Filter onClick={() => setShowFilters(true)} />
         </div>
       </Fragment>
     );

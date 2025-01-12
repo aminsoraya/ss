@@ -31,7 +31,7 @@ export default async function Page(props: Promise<Partial<IPageProps>>) {
       <div className=" hidden lg:flex">
         <Sidebar route={sidebarRoute} />
       </div>
-      <Content {...dataContent} title={searchParams?.q!} />
+      <Content {...dataContent} title={searchParams?.q!} categoriesRoute={sidebarRoute} />
       
     </Container>
   );
