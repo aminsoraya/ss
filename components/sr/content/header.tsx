@@ -8,14 +8,16 @@ import {
 import { BiSortAlt2 } from "react-icons/bi";
 import { trendyolSortOptions } from "@/service/data/static";
 import { TrendyolSorts } from "@/types/trendyol";
-import { useEffect, useState } from "react";
+import { FC, Fragment, useEffect, useState } from "react";
 import useNavigation from "@/hooks/useNavigation";
+import { FaChevronLeft } from "react-icons/fa6";
+import Link from "next/link";
 
 interface IProps {
   countAll: number;
   title: string;
 }
-const Header = ({ countAll,title }: IProps) => {
+const Header = ({ countAll, title }: IProps) => {
   const [itemSelected, setItemSelected] = useState<
     { text: string; value: TrendyolSorts } | undefined
   >();
@@ -38,9 +40,11 @@ const Header = ({ countAll,title }: IProps) => {
     }
   }, [itemSelected]);
 
-  return (
+  const DesktopRender: FC = () => (
     <div className="h-12   flex items-center justify-between ">
-      <span dir="ltr">{`${countAll} تعداد کل نتایح`} {`"${title}"`}</span>
+      <span dir="ltr">
+        {`${countAll} تعداد کل نتایح`} {`"${title}"`}
+      </span>
       <DropdownMenu>
         <DropdownMenuTrigger className="outline-none border px-3 text-xs  flex  justify-between items-center rounded-md   h-10">
           <span>{`${itemSelected?.text ?? "مرتب سازی"}`}</span>
@@ -65,6 +69,30 @@ const Header = ({ countAll,title }: IProps) => {
         </DropdownMenuContent>
       </DropdownMenu>
     </div>
+  );
+
+  const SmallRender: FC = () => (
+    <div className="w-full flex items-center justify-center">
+      <div className="flex flex-col justify-center items-center gap-2">
+        <span>{title}</span>
+        <span dir="ltr" className="text-xs text-gray-400">
+          {countAll} تعداد کل نتایج
+        </span>
+      </div>
+      <Link href="/trendyol">
+        <FaChevronLeft className="absolute left-5 text-2xl" />
+      </Link>
+    </div>
+  );
+  return (
+    <Fragment>
+      <section className="hidden lg:block">
+        <DesktopRender />
+      </section>
+      <section className="block lg:hidden">
+        <SmallRender />
+      </section>
+    </Fragment>
   );
 };
 
