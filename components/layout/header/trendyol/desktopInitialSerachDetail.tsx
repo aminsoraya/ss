@@ -73,11 +73,11 @@ export default function SearchDetail(
   return (
     <div className="absolute px-3 inset-x-[-2px]   bg-white   border-2  border-orange-500 min-h-[200px] top-[100%] mt-[1px] rounded-b">
       {props.searchResults&&props.searchResults.length>0 ? (
-        <Fragment>
+        <div className="py-3">
           
           <span className="mx-3 my-3">نتایج جستجو</span>
           <DynamicSearchDetail data={props.searchResults} />
-        </Fragment>
+        </div>
       ) : (
         <Fragment>
           <MostPopularKeywords />

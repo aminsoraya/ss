@@ -39,7 +39,7 @@ const Header = ({countAll}:IProps) => {
 
   return (
     <div className="h-12   flex items-center justify-between ">
-      <span dir="ltr">{`${countAll} تعداد نتایح`}</span>
+      <span dir="ltr">{`${countAll} تعداد کل نتایح`}</span>
       <DropdownMenu>
         <DropdownMenuTrigger className="outline-none border px-3 text-xs  flex  justify-between items-center rounded-md   h-10">
           <span>{`${itemSelected?.text ?? "مرتب سازی"}`}</span>
