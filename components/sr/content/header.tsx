@@ -6,12 +6,14 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { BiSortAlt2 } from "react-icons/bi";
+import { FiFilter } from "react-icons/fi";
 import { trendyolSortOptions } from "@/service/data/static";
 import { TrendyolSorts } from "@/types/trendyol";
 import { FC, Fragment, useEffect, useState } from "react";
 import useNavigation from "@/hooks/useNavigation";
 import { FaChevronLeft } from "react-icons/fa6";
 import Link from "next/link";
+import { TbArrowsSort } from "react-icons/tb";
 
 interface IProps {
   countAll: number;
@@ -72,17 +74,40 @@ const Header = ({ countAll, title }: IProps) => {
   );
 
   const SmallRender: FC = () => (
-    <div className="w-full flex items-center justify-center">
-      <div className="flex flex-col justify-center items-center gap-2">
-        <span>{title}</span>
-        <span dir="ltr" className="text-xs text-gray-400">
-          {countAll} تعداد کل نتایج
-        </span>
+    <Fragment>
+      <div className="w-full flex items-center justify-center">
+        <div className="flex flex-col justify-center items-center gap-2">
+          <span>{title}</span>
+          <span dir="ltr" className="text-xs text-gray-400">
+            {countAll} تعداد کل نتایج
+          </span>
+        </div>
+        <Link href="/trendyol">
+          <FaChevronLeft className="absolute left-5 text-2xl" />
+        </Link>
       </div>
-      <Link href="/trendyol">
-        <FaChevronLeft className="absolute left-5 text-2xl" />
-      </Link>
-    </div>
+      <div
+        className=" h-10 grid grid-cols-2 w-full border divide-x mt-3"
+        dir="ltr"
+      >
+        <div
+          className="w-full flex items-center justify-center gap-1"
+          dir="rtl"
+        >
+          <TbArrowsSort   className="text-xl text-orange-500" />
+          <span className="text-sm text-gray-700">مرتب سازی</span>
+           
+        </div>
+        <div
+          className="w-full flex items-center justify-center gap-1"
+          dir="rtl"
+        >
+          <FiFilter className="text-xl text-orange-500" />
+          <span className="text-sm text-gray-700">فیلتر</span>
+          <span className="text-orange-500 text-sm">(2)</span>
+        </div>
+      </div>
+    </Fragment>
   );
   return (
     <Fragment>
