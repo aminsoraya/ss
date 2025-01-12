@@ -1,6 +1,6 @@
 import { AmazingOffer } from "@/types/trendyol";
 import React, { FC } from "react";
-import Card from "../common/card";
+import Card from "../common/Card";
 import ProductCarousel from "../common/ProductCarousel";
 import backgroundImage from "@/imgs/trendyolback2.png";
 
