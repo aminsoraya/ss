@@ -10,7 +10,7 @@ const CardImage: FC<Pick<Card, "img">> = ({ img }) => {
   return Array.isArray(img) ? (
     <div className="flex relative w-full h-64">
       <Image src={img.at(imgIndex)!} alt="" fill className="object-cover" />
-      <div className="absolute bottom-2 right-[50%] translate-x-[50%] bg-gray-400 rounded-lg px-1 h-3 flex items-center justify-center gap-1">
+      <div className="absolute hidden bottom-2 right-[50%] translate-x-[50%] bg-gray-400 rounded-lg px-1 h-3 lg:flex items-center justify-center gap-1">
         {(img as string[]).map((_, index) => (
           <span
             key={index}
@@ -23,7 +23,7 @@ const CardImage: FC<Pick<Card, "img">> = ({ img }) => {
       </div>
       <div
         className={twMerge(
-          "absolute top-0 right-0     w-full h-full flex items-center justify-center gap-1",
+          "absolute top-0 right-0  hidden   w-full h-full lg:flex items-center justify-center gap-1",
           `grid-cols-${img.length}`
         )}
       >
