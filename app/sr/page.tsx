@@ -27,8 +27,8 @@ export default async function Page(props: Promise<Partial<IPageProps>>) {
     
   return (
     <Container className="min-h-screen !px-0 flex">
-      <Sidebar route={sidebarRoute} />
-      <Content {...dataContent} />
+      <Sidebar route={sidebarRoute}  />
+      <Content {...dataContent} title={searchParams?.q!}/>
     </Container>
   );
 }

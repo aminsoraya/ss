@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -11,10 +11,11 @@ import { TrendyolSorts } from "@/types/trendyol";
 import { useEffect, useState } from "react";
 import useNavigation from "@/hooks/useNavigation";
 
-interface IProps{
-    countAll:number
+interface IProps {
+  countAll: number;
+  title: string;
 }
-const Header = ({countAll}:IProps) => {
+const Header = ({ countAll,title }: IProps) => {
   const [itemSelected, setItemSelected] = useState<
     { text: string; value: TrendyolSorts } | undefined
   >();
@@ -39,7 +40,7 @@ const Header = ({countAll}:IProps) => {
 
   return (
     <div className="h-12   flex items-center justify-between ">
-      <span dir="ltr">{`${countAll} تعداد کل نتایح`}</span>
+      <span dir="ltr">{`${countAll} تعداد کل نتایح`} {`"${title}"`}</span>
       <DropdownMenu>
         <DropdownMenuTrigger className="outline-none border px-3 text-xs  flex  justify-between items-center rounded-md   h-10">
           <span>{`${itemSelected?.text ?? "مرتب سازی"}`}</span>

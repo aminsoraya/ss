@@ -6,6 +6,7 @@ import useSWR from "swr";
 
 interface IProps {
   route: string;
+ 
 }
 
 export default function Sidebar({ route }: IProps) {
