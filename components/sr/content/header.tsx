@@ -8,7 +8,7 @@ import {
 import { BiSortAlt2 } from "react-icons/bi";
 import { trendyolSortOptions } from "@/service/data/static";
 import { TrendyolSorts } from "@/types/trendyol";
-import { FC, Fragment, useEffect, useState } from "react";
+import { FC, Fragment, useEffect, useMemo, useState } from "react";
 import useNavigation from "@/hooks/useNavigation";
 import { FaChevronLeft } from "react-icons/fa6";
 import Link from "next/link";
@@ -75,28 +75,40 @@ const Header = ({ countAll, title }: IProps) => {
     </div>
   );
 
-  const SmallRender: FC = () => (
-    <Fragment>
-      <div className="w-full flex items-center justify-center">
-        <div className="flex flex-col justify-center items-center gap-2">
-          <span>{title}</span>
-          <span dir="ltr" className="text-xs text-gray-400">
-            {countAll} تعداد کل نتایج
-          </span>
+  const SmallRender: FC = () => {
+    const {simpleGetValueByKey}=useNavigation()
+
+    const sortingkey=simpleGetValueByKey("sort")
+    const sortingKeyAlias=useMemo(()=>{
+      if(sortingkey){
+        const sortAlias=trendyolSortOptions.find(s=>s.value==sortingkey)
+        return sortAlias?.text
+      }
+    },[sortingkey])
+
+    return (
+      <Fragment>
+        <div className="w-full flex items-center justify-center">
+          <div className="flex flex-col justify-center items-center gap-2">
+            <span>{title}</span>
+            <span dir="ltr" className="text-xs text-gray-400">
+              {countAll} تعداد کل نتایج
+            </span>
+          </div>
+          <Link href="/trendyol">
+            <FaChevronLeft className="absolute left-5 text-2xl" />
+          </Link>
         </div>
-        <Link href="/trendyol">
-          <FaChevronLeft className="absolute left-5 text-2xl" />
-        </Link>
-      </div>
-      <div
-        className=" h-10 grid grid-cols-2 w-full border divide-x mt-3"
-        dir="ltr"
-      >
-        <Sort onClick={() => setShowSort(true)} />
-        <Filter onClick={() => {}} />
-      </div>
-    </Fragment>
-  );
+        <div
+          className=" h-10 grid grid-cols-2 w-full border divide-x mt-3"
+          dir="ltr"
+        >
+          <Sort onClick={() => setShowSort(true)} sortingText={sortingKeyAlias} />
+          <Filter onClick={() => {}} />
+        </div>
+      </Fragment>
+    );
+  };
   return (
     <Fragment>
       <section className="hidden lg:block">

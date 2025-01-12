@@ -48,7 +48,13 @@ const useNavigation = () => {
 
     return params.getAll(key);
   };
-  return { updateUrl, getValuesByKey,simpleUpdateUrl };
+  const simpleGetValueByKey = (key: string) => {
+    const params = new URLSearchParams(searchParams.toString());
+
+    return params.get(key);
+  };
+  
+  return { updateUrl, getValuesByKey,simpleUpdateUrl,simpleGetValueByKey };
 };
 
 export default useNavigation;

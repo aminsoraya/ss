@@ -1,5 +1,5 @@
-"use client"
-import React from "react";
+"use client";
+import React, { useMemo } from "react";
 import { TbArrowsSort } from "react-icons/tb";
 import {
   Drawer,
@@ -9,14 +9,19 @@ import {
   DrawerFooter,
   DrawerHeader,
   DrawerTitle,
-  DrawerTrigger,
 } from "@/components/ui/drawer";
 import { useTrendyolContext } from "@/state/context";
+import { MdOutlineClose } from "react-icons/md";
+import { trendyolSortOptions } from "@/service/data/static";
+import useNavigation from "@/hooks/useNavigation";
+import { IoMdCheckmark } from "react-icons/io";
+import { twMerge } from "tailwind-merge";
 
 interface IProps {
   onClick: () => void;
+  sortingText: string | undefined;
 }
-export default function Sort({ onClick }: IProps) {
+export default function Sort({ onClick, sortingText }: IProps) {
   return (
     <div
       onClick={onClick}
@@ -24,23 +29,57 @@ export default function Sort({ onClick }: IProps) {
       dir="rtl"
     >
       <TbArrowsSort className="text-xl text-orange-500" />
-      <span className="text-sm text-gray-700">مرتب سازی</span>
+      <span className="text-sm text-gray-700">
+        {sortingText ? sortingText : "مرتب سازی"}
+      </span>
     </div>
   );
 }
 
 export const SortDrawer = () => {
-  const { showSort } = useTrendyolContext();
+  const { showSort, setShowSort } = useTrendyolContext();
+  const { simpleUpdateUrl, simpleGetValueByKey } = useNavigation();
+
+  const getCurrentSortValue = simpleGetValueByKey("sort");
+
   return (
-    <Drawer open={showSort}>
-      <DrawerTrigger>Open</DrawerTrigger>
+    <Drawer open={showSort} closeThreshold={20}>
       <DrawerContent>
-        <DrawerHeader>
-          <DrawerTitle>Are you absolutely sure?</DrawerTitle>
-          <DrawerDescription>This action cannot be undone.</DrawerDescription>
+        <DrawerHeader className="m-0 p-0 px-3  flex justify-between h-10   *:">
+          <DrawerTitle className="text-gray-700 text-sm w-fit">
+            مرتب سازی
+          </DrawerTitle>
+          <DrawerClose
+            asChild
+            onClick={() => setShowSort(false)}
+            className="cursor-pointer"
+          >
+            <MdOutlineClose className="text-xl text-gray-500" />
+          </DrawerClose>
         </DrawerHeader>
-        <DrawerFooter>
-          <DrawerClose></DrawerClose>
+        <hr />
+        <DrawerFooter className="flex flex-col">
+          {trendyolSortOptions.map((item, index) => {
+            const sortChecker =
+              getCurrentSortValue && getCurrentSortValue == item.value;
+            return (
+              <div
+                key={index}
+                className="w-full  text-xs text-gray-600 h-6 justify-between flex items-center"
+                onClick={() => {
+                  simpleUpdateUrl("sort", item.value);
+                  setShowSort(false);
+                }}
+              >
+                <span className={twMerge(sortChecker ? "text-black" : null)}>
+                  {item.text}
+                </span>
+                {sortChecker && (
+                  <IoMdCheckmark className="text-lg text-orange-500" />
+                )}
+              </div>
+            );
+          })}
         </DrawerFooter>
       </DrawerContent>
     </Drawer>
