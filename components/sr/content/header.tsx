@@ -14,15 +14,14 @@ import { FaChevronLeft } from "react-icons/fa6";
 import Link from "next/link";
 import Filter from "@/components/common/Filter";
 import Sort from "@/components/common/Sort";
-
-
+import { useTrendyolContext } from "@/state/context";
 
 interface IProps {
   countAll: number;
   title: string;
 }
 const Header = ({ countAll, title }: IProps) => {
-  const [showSortDrawer, setShowSortDrawer] = useState<boolean>(false);
+  const { setShowSort } = useTrendyolContext();
   const [itemSelected, setItemSelected] = useState<
     { text: string; value: TrendyolSorts } | undefined
   >();
@@ -93,7 +92,7 @@ const Header = ({ countAll, title }: IProps) => {
         className=" h-10 grid grid-cols-2 w-full border divide-x mt-3"
         dir="ltr"
       >
-        <Sort onClick={() => setShowSortDrawer(true)} />
+        <Sort onClick={() => setShowSort(true)} />
         <Filter onClick={() => {}} />
       </div>
     </Fragment>
@@ -106,7 +105,6 @@ const Header = ({ countAll, title }: IProps) => {
       <section className="block lg:hidden">
         <SmallRender />
       </section>
-      
     </Fragment>
   );
 };

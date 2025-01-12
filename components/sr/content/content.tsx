@@ -3,6 +3,7 @@ import Header from "./header";
 import { TrendyolItemsByParams } from "@/types";
 import CardComponent from "@/components/common/Card";
 import { SortDrawer } from "@/components/common/Sort";
+import { TrendyolContextProvider } from "@/state/context";
 
 export default function Content({
   items,
@@ -18,9 +19,11 @@ export default function Content({
   );
   return (
     <div className="  w-full   pt-1">
-      <Header countAll={totalCount} title={title} />
-      <ContentDetail />
-      {/* <SortDrawer /> */}
+      <TrendyolContextProvider>
+        <Header countAll={totalCount} title={title} />
+        <ContentDetail />
+        <SortDrawer />
+      </TrendyolContextProvider>
     </div>
   );
 }
