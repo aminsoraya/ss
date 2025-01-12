@@ -6,20 +6,23 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { BiSortAlt2 } from "react-icons/bi";
-import { FiFilter } from "react-icons/fi";
 import { trendyolSortOptions } from "@/service/data/static";
 import { TrendyolSorts } from "@/types/trendyol";
 import { FC, Fragment, useEffect, useState } from "react";
 import useNavigation from "@/hooks/useNavigation";
 import { FaChevronLeft } from "react-icons/fa6";
 import Link from "next/link";
-import { TbArrowsSort } from "react-icons/tb";
+import Filter from "@/components/common/Filter";
+import Sort from "@/components/common/Sort";
+
+
 
 interface IProps {
   countAll: number;
   title: string;
 }
 const Header = ({ countAll, title }: IProps) => {
+  const [showSortDrawer, setShowSortDrawer] = useState<boolean>(false);
   const [itemSelected, setItemSelected] = useState<
     { text: string; value: TrendyolSorts } | undefined
   >();
@@ -90,22 +93,8 @@ const Header = ({ countAll, title }: IProps) => {
         className=" h-10 grid grid-cols-2 w-full border divide-x mt-3"
         dir="ltr"
       >
-        <div
-          className="w-full flex items-center justify-center gap-1"
-          dir="rtl"
-        >
-          <TbArrowsSort   className="text-xl text-orange-500" />
-          <span className="text-sm text-gray-700">مرتب سازی</span>
-           
-        </div>
-        <div
-          className="w-full flex items-center justify-center gap-1"
-          dir="rtl"
-        >
-          <FiFilter className="text-xl text-orange-500" />
-          <span className="text-sm text-gray-700">فیلتر</span>
-          <span className="text-orange-500 text-sm">(2)</span>
-        </div>
+        <Sort onClick={() => setShowSortDrawer(true)} />
+        <Filter onClick={() => {}} />
       </div>
     </Fragment>
   );
@@ -117,6 +106,7 @@ const Header = ({ countAll, title }: IProps) => {
       <section className="block lg:hidden">
         <SmallRender />
       </section>
+      
     </Fragment>
   );
 };

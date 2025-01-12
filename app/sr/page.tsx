@@ -4,6 +4,7 @@ import { CategoriesResponse, TrendyolItemsByParams } from "@/types";
 import Content from "@/components/sr/content/content";
 import React from "react";
 
+
 interface IPageProps {
   searchParams: {
     q: string;
@@ -24,11 +25,14 @@ export default async function Page(props: Promise<Partial<IPageProps>>) {
   const dataContent = await fetch(contentRoute)
     .then((data) => data.json())
     .then((data) => data as TrendyolItemsByParams);
-    
+
   return (
     <Container className="min-h-screen !px-0 flex">
-      <div className=" hidden lg:flex"><Sidebar route={sidebarRoute}  /></div>
-      <Content {...dataContent} title={searchParams?.q!}/>
+      <div className=" hidden lg:flex">
+        <Sidebar route={sidebarRoute} />
+      </div>
+      <Content {...dataContent} title={searchParams?.q!} />
+      
     </Container>
   );
 }
