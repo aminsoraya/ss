@@ -1,9 +1,7 @@
+import { TrendyolSorts } from "@/types/trendyol";
 import { AiOutlineTruck } from "react-icons/ai";
 import { BiMoneyWithdraw } from "react-icons/bi";
 import { GiCommercialAirplane, GiTimeTrap } from "react-icons/gi";
- 
-
- 
 
 const footerFeatureItems = [
   {
@@ -38,8 +36,17 @@ const footerLinks = [
   { link: "/offer", text: "پیشنهاد تغییرات" },
 ];
 
- 
+const trendyolSortOptions = [
+  { text: "توصیه میشود", value:TrendyolSorts.RECOMENDED },
+  { text: "کمترین قیمت", value: TrendyolSorts.MIN_PRICE },
+  { text: "بالاترین قیمت", value:TrendyolSorts.MAX_PRICE },
+  { text: "پرفروش ترین", value: TrendyolSorts.MOST_SELLING },
+  { text: "برگزیده های برتر", value: TrendyolSorts.MOST_POPULAR },
+  { text: "جدیدترین ها", value: TrendyolSorts.NEWEST },
+  {
+    text: "بیشترین بازبینی",
+    value: TrendyolSorts.MOST_REVIEWS,
+  },
+];
 
- 
-
-export { footerFeatureItems, footerLinks };
+export { footerFeatureItems, footerLinks,trendyolSortOptions };

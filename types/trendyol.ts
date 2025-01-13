@@ -4,7 +4,7 @@ type Link = {
 };
 
 type Image = {
-  img: string;
+  img: string|string[];
 };
 
 type Text = {
@@ -25,7 +25,7 @@ type PricedWithComparison = PricedItem & {
 };
 
 // Specific Types
-export type MostPopular = ImageLink & {
+export type Card = ImageLink & {
   brand: string;
   name: string;
   score: number;
@@ -46,9 +46,9 @@ export type BatchLink = {
   currentPage: number;
 };
 
-export type MostSellingProduct = MostPopular;
+export type MostSellingProduct = Card;
 
-export type UsefulProduct = MostPopular;
+export type UsefulProduct = Card;
 
 export type BrandLink = ImageLink;
 
@@ -66,4 +66,14 @@ export interface SearchDetailType {
   sideNote: string;
   link: string;
 }
-export type AmazingOffer = MostPopular;
+export type AmazingOffer = Card;
+
+export enum TrendyolSorts {
+  RECOMENDED = "RECOMENDED",
+  MIN_PRICE = "MIN_PRICE",
+  MAX_PRICE = "MAX_PRICE",
+  MOST_SELLING = "MOST_SELLING",
+  MOST_POPULAR = "MOST_POPULAR",
+  NEWEST = "NEWEST",
+  MOST_REVIEWS = "MOST_REVIEWS",
+}

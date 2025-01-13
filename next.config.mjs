@@ -19,7 +19,11 @@ const nextConfig = {
         protocol: "https",
         hostname: "mltp.malltina.com",
       },
-            {
+      {
+        protocol: "https",
+        hostname: "cdn.dsmcdn.com",
+      },
+      {
         protocol: "https",
         hostname: "cdn.dsmcdn.com",
       },
@@ -28,3 +32,4 @@ const nextConfig = {
 };
 
 export default nextConfig;
+ 

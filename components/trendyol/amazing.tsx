@@ -1,12 +1,11 @@
- 
-import { AmazingOfffer } from "@/types/trendyol";
+import { AmazingOffer } from "@/types/trendyol";
 import React, { FC } from "react";
-import Card from "./card";
+import Card from "../common/Card";
 import ProductCarousel from "../common/ProductCarousel";
 import backgroundImage from "@/imgs/trendyolback2.png";
 
 interface IProps {
-  data: AmazingOfffer[];
+  data: AmazingOffer[];
 }
 export default function Amazing({ data }: IProps) {
   const Title: FC = () => {
@@ -16,11 +15,17 @@ export default function Amazing({ data }: IProps) {
   const AdditionalElement: FC = () => {
     return (
       <div className="text-white text-sm flex items-center gap-1">
-        <span className="rounded bg-gray-50 text-gray-800 w-8 h-8 flex items-center justify-center">10</span>
+        <span className="rounded bg-gray-50 text-gray-800 w-8 h-8 flex items-center justify-center">
+          10
+        </span>
         <span>:</span>
-        <span className="rounded bg-gray-50 text-gray-800 w-8 h-8 flex items-center justify-center">12</span>
+        <span className="rounded bg-gray-50 text-gray-800 w-8 h-8 flex items-center justify-center">
+          12
+        </span>
         <span>:</span>
-        <span className="rounded bg-gray-50 text-gray-800 w-8 h-8 flex items-center justify-center">20</span>
+        <span className="rounded bg-gray-50 text-gray-800 w-8 h-8 flex items-center justify-center">
+          20
+        </span>
       </div>
     );
   };

@@ -1,14 +1,13 @@
 import { headers } from "next/headers";
 import { Header, Service } from "./header";
-import {  Menu, SubHeader } from "./subHeader";
+import { Menu, SubHeader } from "./subHeader";
 import { BestShopMark, FavouritePage, Footer } from "./footer";
 import {
   AmazingOffer,
-  
   BatchLink,
   BrandLink,
   Category,
-  MostPopular,
+  Card,
   MostSellingProduct,
   PopularCategory,
   Search,
@@ -36,24 +35,21 @@ export const weekDays = {
 export interface TrendyolMeta {
   search: Search;
   menus: Menu[];
-  usefulKeywords:UsefulKeyword[]
-  bestShopMarks :BestShopMark [],
-  favouritePages:FavouritePage[],
-  about:string
+  usefulKeywords: UsefulKeyword[];
+  bestShopMarks: BestShopMark[];
+  favouritePages: FavouritePage[];
+  about: string;
 }
 export interface TrendyolMain {
-  categories:Category[]
-  mostPopular: MostPopular[];
+  categories: Category[];
+  mostPopular: Card[];
   amazingOffer: AmazingOffer[];
   brandsLink: BrandLink[];
   popularCategories: PopularCategory[];
   mostSellingProducts: MostSellingProduct[];
   usefulProducts: UsefulProduct[];
   batchLinks: BatchLink;
-  
 }
- 
- 
 
 export interface ProductCarouselProps<T> {
   data: T[];
@@ -63,13 +59,24 @@ export interface ProductCarouselProps<T> {
   additionalElement?: ReactNode;
 }
 
+export type CategoriesResponseItem = {
+  title: string;
+  value: string;
+};
+export interface CategoriesResponse {
+  key: string;
+  title: string;
+  items: {
+    searchable?: boolean;
+    items: Array<CategoriesResponseItem>;
+  };
+}
+export type TrendyolItemsByParams = {
+  totalCount: number;
+  items: Card[];
+};
 
-export type CategoriesResponseItem={
-  title:string,
-  value:string
-}
-export interface CategoriesResponse{
-  key:string,
-  title:string,
-  items:Array<CategoriesResponseItem>
-}
+export type Filter = {
+  key: string;
+  values: string[] | undefined;
+};
