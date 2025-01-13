@@ -35,12 +35,20 @@ const useNavigation = () => {
     router.replace(`?${params.toString()}`);
   };
 
+  const updateBulkUrl = (key: string, values: string[]) => {
+    const params = new URLSearchParams(searchParams.toString());
+
+    params.set(key, values.join(","));
+
+    router.replace(`?${params.toString()}`);
+  };
+
   const simpleUpdateUrl = (key: string, value: string) => {
     const params = new URLSearchParams(searchParams.toString());
     params.set(key, value);
     router.replace(`?${params.toString()}`);
 
-    return ;
+    return;
   };
 
   const getValuesByKey = (key: string) => {
@@ -53,8 +61,14 @@ const useNavigation = () => {
 
     return params.get(key);
   };
-  
-  return { updateUrl, getValuesByKey,simpleUpdateUrl,simpleGetValueByKey };
+
+  return {
+    updateUrl,
+    getValuesByKey,
+    simpleUpdateUrl,
+    simpleGetValueByKey,
+    updateBulkUrl,
+  };
 };
 
 export default useNavigation;

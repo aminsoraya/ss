@@ -22,6 +22,14 @@ interface IProps {
   onClick: () => void;
 }
 export default function Filter({ onClick }: IProps) {
+  const {filters}=useTrendyolContext()
+  const filtersCount=useMemo(()=>{
+    let counter=0
+    if(filters){
+      counter=filters.flatMap(s=>s.values).length
+    }
+    return counter
+  },[filters])
   return (
     <div
       onClick={onClick}
@@ -30,7 +38,7 @@ export default function Filter({ onClick }: IProps) {
     >
       <FiFilter className="text-xl text-orange-500" />
       <span className="text-sm text-gray-700">فیلتر</span>
-      <span className="text-orange-500 text-sm">(2)</span>
+      {filtersCount>0&&<span className="text-orange-500 text-sm">({filtersCount})</span>}
     </div>
   );
 }
@@ -47,15 +55,21 @@ export const FilterDrawer = ({
 }: {
   categoriesRoute: string;
 }) => {
-  const { updateUrl } = useNavigation();
+  const { updateBulkUrl } = useNavigation();
   const { filters } = useTrendyolContext();
-
-  console.log("Body filters ", filters);
 
   const { showFilters, setShowFilters } = useTrendyolContext();
   const [subFilters, setSubFilters] = useState<
     CategoriesResponse | undefined
   >();
+
+  const passParametersToUrl = () => {
+    filters?.forEach((filter) => {
+      updateBulkUrl(filter?.key!, filter?.values!);
+    });
+
+    setSubFilters(undefined);
+  };
 
   return (
     showFilters && (
@@ -63,7 +77,7 @@ export const FilterDrawer = ({
         <Header
           onClose={() => setShowFilters(false)}
           subFilter={subFilters}
-          backward={() => {}}
+          onClickBackward={passParametersToUrl}
         />
         <Body
           categoriesRoute={categoriesRoute}
@@ -79,12 +93,15 @@ export const FilterDrawer = ({
 const Header: FC<{
   onClose: () => void;
   subFilter: CategoriesResponse | undefined;
-  backward: () => void;
-}> = ({ onClose, subFilter, backward }) => (
+  onClickBackward: () => void;
+}> = ({ onClose, subFilter, onClickBackward }) => (
   <div className="w-full h-12 flex items-center px-3 text-gray-700 bg-white justify-center">
     <span>فیلتر</span>
     {subFilter ? (
-      <FaAngleRight className="text-2xl absolute right-2" onClick={backward} />
+      <FaAngleRight
+        className="text-2xl absolute right-2"
+        onClick={onClickBackward}
+      />
     ) : (
       <MdOutlineClose className="text-2xl absolute right-2" onClick={onClose} />
     )}
@@ -149,23 +166,32 @@ const Body: FC<{
 const FilterList: FC<{
   categories: CategoriesResponse[];
   onSelect: (category: CategoriesResponse) => void;
-}> = ({ categories, onSelect }) => (
-  <>
-    {categories.map(({ items, title, key }, index) => (
-      <Fragment key={key}>
-        <hr />
-        <div
-          onClick={() => onSelect({ items, title, key })}
-          className="w-full px-3 h-12 text-xs flex justify-between items-center bg-white"
-        >
-          <span>{title}</span>
-          <LuChevronLeft className="text-lg text-orange-500" />
-        </div>
-        {index === categories.length - 1 && <hr />}
-      </Fragment>
-    ))}
-  </>
-);
+}> = ({ categories, onSelect }) => {
+  const { filters } = useTrendyolContext();
+  return (
+    <>
+      {categories.map(({ items, title, key }, index) => {
+        const selectedFilterLength = filters?.find((s) => s.key == key);
+        return (
+          <Fragment key={key}>
+            <hr />
+            <div
+              onClick={() => onSelect({ items, title, key })}
+              className="w-full px-3 h-12 text-xs flex justify-between items-center bg-white"
+            >
+              <div className="flex items-center gap-x-1">
+                <span>{title}</span>
+                {selectedFilterLength&&<span className="text-orange-500">({selectedFilterLength?.values?.length})</span>}
+              </div>
+              <LuChevronLeft className="text-lg text-orange-500" />
+            </div>
+            {index === categories.length - 1 && <hr />}
+          </Fragment>
+        );
+      })}
+    </>
+  );
+};
 
 // FilterSearch Component
 const FilterSearch: FC<{
