@@ -69,7 +69,7 @@ export default function Layout(props: IProps) {
                   </div>
                 </div>
               </Container>
-              <div className="w-full bg-gray-100 h-52 overflow-hidden">
+              <div className="w-full bg-gray-100 h-52 overflow-hidden hidden lg:block">
                 <Container>
                   <FooterResources />
                 </Container>
