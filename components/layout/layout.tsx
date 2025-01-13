@@ -30,8 +30,10 @@ export default function Layout(props: IProps) {
             <TrendyolHeader
               {...props.trendoyl.search}
               menuItems={props.trendoyl.menus}
+              pathName={props.pathName}
             />
-            <TrendyolSubHeader subHeaders={props.trendoyl.menus} />
+
+            <TrendyolSubHeader pathName={props.pathName} subHeaders={props.trendoyl.menus} />
           </Fragment>
         );
       default:
