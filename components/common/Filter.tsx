@@ -22,14 +22,14 @@ interface IProps {
   onClick: () => void;
 }
 export default function Filter({ onClick }: IProps) {
-  const {filters}=useTrendyolContext()
-  const filtersCount=useMemo(()=>{
-    let counter=0
-    if(filters){
-      counter=filters.flatMap(s=>s.values).length
+  const { filters } = useTrendyolContext();
+  const filtersCount = useMemo(() => {
+    let counter = 0;
+    if (filters) {
+      counter = filters.flatMap((s) => s.values).length;
     }
-    return counter
-  },[filters])
+    return counter;
+  }, [filters]);
   return (
     <div
       onClick={onClick}
@@ -38,7 +38,9 @@ export default function Filter({ onClick }: IProps) {
     >
       <FiFilter className="text-xl text-orange-500" />
       <span className="text-sm text-gray-700">فیلتر</span>
-      {filtersCount>0&&<span className="text-orange-500 text-sm">({filtersCount})</span>}
+      {filtersCount > 0 && (
+        <span className="text-orange-500 text-sm">({filtersCount})</span>
+      )}
     </div>
   );
 }
@@ -181,7 +183,11 @@ const FilterList: FC<{
             >
               <div className="flex items-center gap-x-1">
                 <span>{title}</span>
-                {selectedFilterLength&&<span className="text-orange-500">({selectedFilterLength?.values?.length})</span>}
+                {selectedFilterLength && (
+                  <span className="text-orange-500">
+                    ({selectedFilterLength?.values?.length})
+                  </span>
+                )}
               </div>
               <LuChevronLeft className="text-lg text-orange-500" />
             </div>
@@ -215,7 +221,7 @@ const FilterItems: FC<{
   subFilterKey: string;
 }> = ({ items, subFilterKey }) => {
   const { filters, setFilters } = useTrendyolContext();
-
+  const { getValuesByKey } = useNavigation();
   const modifyValues = (key: string, value: string, checked: boolean) => {
     const findedFilter = filters?.find((s) => s.key == key);
 
@@ -245,6 +251,7 @@ const FilterItems: FC<{
     }
   };
 
+  const filtersFromUrl = getValuesByKey(subFilterKey);
   return (
     <>
       {items.map(({ title, value }, index) => (
@@ -252,6 +259,7 @@ const FilterItems: FC<{
           <hr />
           <div className="flex items-center gap-2 px-3 h-12 text-xs text-gray-700 bg-white">
             <input
+              value={filtersFromUrl.find((s) => s == value)}
               type="checkbox"
               onChange={(e) =>
                 modifyValues(subFilterKey, value, e.target.checked)
