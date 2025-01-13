@@ -75,3 +75,8 @@ export type TrendyolItemsByParams = {
   totalCount: number;
   items: Card[];
 };
+
+export type Filter = {
+  key: string;
+  values: string[] | undefined;
+};
