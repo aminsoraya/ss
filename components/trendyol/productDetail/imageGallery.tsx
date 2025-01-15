@@ -71,7 +71,7 @@ export default function ImageGallery({
     <div className="flex flex-col">
       <div className="border rounded-lg flex flex-col">
         <CarouselSection images={images} imageKey="normal" height="h-96" />
-      </div>{" "}
+      </div> 
       <CarouselSection
         images={images}
         imageKey="thumbnail"
