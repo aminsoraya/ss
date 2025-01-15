@@ -6,10 +6,9 @@ import { twMerge } from "tailwind-merge";
 import { Menu } from "@/types/subHeader";
 import MobileNavigation from "./mobileNavigation";
 import DesktopNavigation from "./desktopNavigation";
-import { Routes } from "@/types/header";
 
 export default function TrendyolHeader(
-  props: SearchType & { menuItems: Menu[] }&{pathName:string}
+  props: SearchType & { menuItems: Menu[] }
 ) {
   const [haveBorder, setHaveBorder] = useState<boolean>(false);
 
@@ -26,8 +25,7 @@ export default function TrendyolHeader(
     <header
       className={twMerge(
         "sticky top-0   z-50 bg-gray-50 border-b lg:bg-white lg:border-none",
-        haveBorder ? "border-b" : "",
-         
+        haveBorder ? "border-b" : ""
       )}
     >
       <Container>
