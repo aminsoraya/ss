@@ -39,26 +39,24 @@ export default function CardComponent({
           className="px-1 text-gray-500   w-full  text-[11px] justify-end   h-8 flex items-center"
         >
           <span className="px-1  "> ({reviewCount})</span>
-          {
-           Array.from({length:Math.floor(score)}).map((_index)=>{
-            return <FaStar className="text-sm text-yellow-500"/>
-           })
-          }
+          {Array.from({ length: Math.floor(score) }).map((_index) => {
+            return <FaStar className="text-sm text-yellow-500" />;
+          })}
           <span className="px-1">{score}</span>
         </div>
         <div
           dir="ltr"
-          className="w-full flex items-center gap-2 absolute bottom-1   px-2"
+          className="w-full flex items-center gap-2 absolute bottom-1   px-2 "
         >
           {haveOriginalPrice && (
-            <span dir="ltr" className="line-through text-gray-400 text-sm">
+            <span dir="ltr" className="line-through text-gray-400 !text-[11px]">
               {originalPrice} TL
             </span>
           )}
           <span
             dir="ltr"
             className={twMerge(
-              "text-orange-500 text-xs md:text-sm",
+              "text-orange-500   md:text-sm text-[11px]",
               haveOriginalPrice ? "text-red-500" : null
             )}
           >

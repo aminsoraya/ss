@@ -1,5 +1,5 @@
 import { Card } from "@/types/trendyol";
-import CardComponent from "../common/card";
+import CardComponent from "../common/Card";
 import ProductCarousel from "../common/ProductCarousel";
 import backgroundImage from "@/imgs/trendyolback1.png";
 import { Button } from "../ui/button";

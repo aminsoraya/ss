@@ -20,7 +20,7 @@ export default function PopularCategoryComponent({ data }: IProps) {
             <Image
               className="bg-cover"
               alt=""
-              src={item.img}
+              src={item.img as string}
               width={150}
               height={150}
             />

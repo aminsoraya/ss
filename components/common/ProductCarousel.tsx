@@ -24,8 +24,8 @@ export default function ProductCarousel<T>({
         backgroundSize:"cover" 
       }}
     >
-      <div className="w-full flex justify-between text-gray-700 px-2 py-2">
-        <div>{title}</div>
+      <div className="w-full flex justify-between text-gray-700 px-2 py-2 items-center">
+        <div className="text-sm">{title}</div>
         {additionalElement}
       </div>
       <div className="relative md:px-10 px-3">
