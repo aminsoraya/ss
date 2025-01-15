@@ -4,7 +4,7 @@ type Link = {
 };
 
 type Image = {
-  img: string|string[];
+  img: string | string[];
 };
 
 type Text = {
@@ -76,4 +76,32 @@ export enum TrendyolSorts {
   MOST_POPULAR = "MOST_POPULAR",
   NEWEST = "NEWEST",
   MOST_REVIEWS = "MOST_REVIEWS",
+}
+
+interface LinkInfo extends Link {
+  count: number;
+}
+type ColorInfo = {
+  name: string;
+  img: string;
+};
+interface TitleText extends Text {
+  title: string;
+}
+interface TextValue extends Text {
+  value: string;
+}
+interface VideoLink extends Link {
+  video: string;
+}
+export interface TrendyolProductDetail extends Card {
+  sizes: Array<TextValue>;
+  breadCrumbPaths: Array<TextLink>;
+  reviews: LinkInfo;
+  questionAndAnswer: LinkInfo;
+  video?: VideoLink;
+  commentsLink: string;
+  colors: Array<ColorInfo>;
+  remainCount: number;
+  features: TitleText[];
 }
