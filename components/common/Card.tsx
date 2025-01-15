@@ -20,6 +20,7 @@ export default function CardComponent({
   const concatibleBrand =
     brand?.length! > 10 ? brand.slice(0, 10).concat("...")! : brand;
 
+  const nameCut = name.length > 30 ? name.slice(0, 30).concat("...") : name;
   return (
     <Link href={link}>
       <div className="bg-white cursor-pointer rounded-lg overflow-hidden shadow  border border-gray-100 relative  h-[400px] w-full  mt-5">
@@ -28,22 +29,23 @@ export default function CardComponent({
         </strong>
         <div className="h-72 px-2 py-2 bg-gray-200 flex items-center relative">
           <CardImage img={img} />
-          <div
-            dir="ltr"
-            className="absolute bottom-0 bg-gray-800 opacity-85 left-0 z-10 w-20  text-[11px] justify-evenly text-gray-100 h-8 flex items-center"
-          >
-            <span className="flex items-center text-gray-200 font-normal ">
-              <FaStar className="text-yellow-500 " />
-              {score}
-            </span>
-            <span className="text-gray-400 text-[10px]"> ({reviewCount})</span>
-          </div>
         </div>
 
         <div className="px-2 py-2 text-xs text-gray-600 leading-5 " dir="rtl">
-          <span>{name}</span>
+          <span>{nameCut}</span>
         </div>
-
+        <div
+          dir="rtl"
+          className="px-1 text-gray-500   w-full  text-[11px] justify-end   h-8 flex items-center"
+        >
+          <span className="px-1  "> ({reviewCount})</span>
+          {
+           Array.from({length:Math.floor(score)}).map((_index)=>{
+            return <FaStar className="text-sm text-yellow-500"/>
+           })
+          }
+          <span className="px-1">{score}</span>
+        </div>
         <div
           dir="ltr"
           className="w-full flex items-center gap-2 absolute bottom-1   px-2"

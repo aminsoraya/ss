@@ -4,17 +4,20 @@ import React from "react";
 import Menu from "./menu";
 import { Container } from "@/components/ui/container";
 import Link from "next/link";
+import { twMerge } from "tailwind-merge";
+import { Routes } from "@/types/header";
 
 interface IProps {
   subHeaders: MenuType[];
+  pathName:string
 }
 function TrendyolSubHeader(props: IProps) {
   return (
-    <Container className="w-full h-8 flex gap-5  items-center px-2 border-b">
+    <Container className={twMerge("w-full h-12 lg:h-8  gap-5  items-center px-2 border-b",props.pathName==Routes.Sr?"hidden lg:flex":"flex")}>
       <Menu menus={props.subHeaders} />
       {props.subHeaders.map((item, index) => (
         <Link href={""} className="text-xs   " key={index}>
-          {item.title}
+          <span className="hover:text-orange-500">{item.title}</span>
         </Link>
       ))}
     </Container>
