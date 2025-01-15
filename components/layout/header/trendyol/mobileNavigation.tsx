@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import {
   Sheet,
@@ -147,6 +147,16 @@ export default function MobileNavigation({
   const [subs, setSubs] = useState<Sub[] | undefined>();
   const [childsSub, setChildsSubs] =
     useState<Array<{ link: string; text: string } | undefined>>();
+
+  const pathname = usePathname();
+  const [currentPath, setCurrentPath] = useState(pathname);
+
+  useEffect(() => {
+    if (pathname !== currentPath) {
+      setSearchFocus(false);
+       
+    }
+  }, [pathname, currentPath]);
 
   const handleClose = () => {
     setIsOpen(false);

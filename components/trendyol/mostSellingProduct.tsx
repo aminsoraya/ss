@@ -1,5 +1,5 @@
 import { MostSellingProduct } from "@/types/trendyol";
-import Card from "../common/card";
+import Card from "../common/Card";
 import ProductCarousel from "../common/ProductCarousel";
 import backgroundImage from "@/imgs/trendyolback1.png";
 import { FC } from "react";
