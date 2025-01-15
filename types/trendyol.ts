@@ -94,7 +94,7 @@ interface TextValue extends Text {
 interface VideoLink extends Link {
   video: string;
 }
-export interface TrendyolProductDetail extends Card {
+export interface TrendyolProductDetail extends Omit<Card,"img"> {
   sizes: Array<TextValue>;
   breadCrumbPaths: Array<TextLink>;
   reviews: LinkInfo;
@@ -104,4 +104,8 @@ export interface TrendyolProductDetail extends Card {
   colors: Array<ColorInfo>;
   remainCount: number;
   features: TitleText[];
+  images: {
+    thumbnail: string;
+    normal: string;
+  }[];
 }

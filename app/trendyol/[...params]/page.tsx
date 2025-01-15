@@ -1,14 +1,16 @@
 import React from "react";
 import Layout from "@/components/layout/trendyol";
-import { TrendyolMeta,TrendyolItemsByParams } from "@/types";
+import { TrendyolMeta } from "@/types";
 import { TrendyolProductDetail } from "@/types/trendyol";
+import { Container } from "@/components/ui/container";
+import ProductDetail from "@/components/trendyol/productDetail/page";
 
 interface IProps {
   params: {
     params: string[];
   };
 }
-export default async function ProductDetail(props: Promise<Partial<IProps>>) {
+export default async function Page(props: Promise<Partial<IProps>>) {
   const trendyolMetaData = await fetch(
     process.env.NEXT_PUBLIC_TRENDYOL_META?.toString()!,
     {
@@ -23,22 +25,20 @@ export default async function ProductDetail(props: Promise<Partial<IProps>>) {
 
 
   //Should send both brand and product to fetch product detail data
-  const productData = await fetch(
+  const productDetail = await fetch(
     process.env.NEXT_PUBLIC_TRENDYOL_PRODUCT_DETAIL?.toString()!,
     {
       next: {
         revalidate: 0,
       },
     }
-  ).then((res) => res.json()).then (data=> data as Array<TrendyolProductDetail> );
+  ).then((res) => res.json()).then (data=> data as  TrendyolProductDetail );
 
-console.log({productData})
-  return (
+   return (
     <Layout trendoyl={trendyolMetaData! as TrendyolMeta}>
-      <div className="flex flex-col">
-        <span>{brand}</span>
-        <span>{product}</span>
-      </div>
+      <Container>
+            <ProductDetail data={productDetail}/>
+      </Container>
     </Layout>
   );
 }
