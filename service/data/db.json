@@ -1004,9 +1004,9 @@
     "originalPrice": 0,
     "link": "/apple/iphone-16-pro-256gb-naturel-titanyum-p-857296103?boutiqueId=61&merchantId=355135",
     "sizes": [
-      { "value": "1t", "text": "1 ترابایت" },
-      { "value": "512gb", "text": "512 گیگابایت" },
-      { "value": "256gb", "text": "256 گیگابایت" }
+      { "value": "1t", "text": "1 ترابایت", "link": "/link" },
+      { "value": "512gb", "text": "512 گیگابایت", "link": "/link" },
+      { "value": "256gb", "text": "256 گیگابایت", "link": "/link" }
     ],
     "breadCrumbPaths": [
       {
@@ -1038,15 +1038,18 @@
     "colors": [
       {
         "name": "تیتانیوم ",
-        "img": "https://cdn.dsmcdn.com/ty1539/product/media/images/prod/PIM/20240912/08/af2e9010-1771-4887-932c-390f8abbddcb/1_org_zoom.jpg"
+        "img": "https://cdn.dsmcdn.com/ty1539/product/media/images/prod/PIM/20240912/08/af2e9010-1771-4887-932c-390f8abbddcb/1_org_zoom.jpg",
+        "link": "apple/iphone-16-pro-max-256gb-col-titanyum-p-857296109"
       },
       {
         "name": "تیتانیوم سفید",
-        "img": "https://cdn.dsmcdn.com/ty1609/prod/QC/20241202/10/c9eb142a-6162-37be-acc2-fb8b4fae1047/1_org_zoom.jpg"
+        "img": "https://cdn.dsmcdn.com/ty1609/prod/QC/20241202/10/c9eb142a-6162-37be-acc2-fb8b4fae1047/1_org_zoom.jpg",
+        "link": "apple/iphone-16-pro-max-256gb-beyaz-titanyum-p-857296102"
       },
       {
         "name": "تیتانیوم طبیعی",
-        "img": "https://cdn.dsmcdn.com/ty1539/product/media/images/prod/PIM/20240912/08/af2e9010-1771-4887-932c-390f8abbddcb/1_org_zoom.jpg"
+        "img": "https://cdn.dsmcdn.com/ty1610/prod/QC/20241202/10/55ef7a8e-459d-3c62-a5f1-8936c412f240/1_org_zoom.jpg",
+        "link": "apple/iphone-16-pro-max-256gb-siyah-titanyum-p-857296077"
       }
     ],
     "remainCount": 5,

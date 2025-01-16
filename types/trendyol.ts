@@ -81,21 +81,21 @@ export enum TrendyolSorts {
 interface LinkInfo extends Link {
   count: number;
 }
-type ColorInfo = {
+export type ColorInfo =Link& {
   name: string;
   img: string;
 };
 interface TitleText extends Text {
   title: string;
 }
-interface TextValue extends Text {
+interface TextValueLink extends TextLink {
   value: string;
 }
 interface VideoLink extends Link {
   video: string;
 }
 export interface TrendyolProductDetail extends Omit<Card,"img"> {
-  sizes: Array<TextValue>;
+  sizes: Array<TextValueLink>;
   breadCrumbPaths: Array<TextLink>;
   reviews: LinkInfo;
   questionAndAnswer: LinkInfo;

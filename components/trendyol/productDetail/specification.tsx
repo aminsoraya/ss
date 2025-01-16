@@ -1,9 +1,12 @@
-import { TrendyolProductDetail } from "@/types/trendyol";
+"use client";
+import { ColorInfo, TrendyolProductDetail } from "@/types/trendyol";
 import Link from "next/link";
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import { FaChevronLeft, FaChevronRight, FaStar } from "react-icons/fa";
 import { TbPointFilled } from "react-icons/tb";
 import { twMerge } from "tailwind-merge";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export default function Specification(props: Partial<TrendyolProductDetail>) {
   const {
@@ -126,11 +129,31 @@ const Price = (
 };
 
 const Colors = (props: Pick<TrendyolProductDetail, "colors">) => {
+  const pathname = usePathname();
+
+  const color=props.colors.find(c=>pathname.includes( c.link))
+
   return (
-    <div className="flex flex-col">
-      <div className="flex items-center">
-        <span>رنگ</span>
-        <span>props.</span>
+    <div className="flex flex-col my-2">
+      <div className="flex items-center my-2">
+        <strong className="text-gray-800">رنگ :</strong>
+        <span className="text-xs px-2 text-gray-700">{color?.name} </span>
+      </div>
+      <div className="flex items-center gap-x-2">
+        {props.colors.map((item, index) => {
+          return (
+            <Link
+              href={`/trendyol/${item.link}`}
+              key={index}
+              className={twMerge(
+                `relative  hover:shadow cursor-pointer h-16 w-12 border rounded-lg overflow-hidden`,
+                pathname.includes(item.link) ? "border-orange-500 border-2" : ""
+              )}
+            >
+              <Image fill src={item.img} className="object-cover" alt="" />
+            </Link>
+          );
+        })}
       </div>
     </div>
   );
