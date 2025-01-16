@@ -978,6 +978,104 @@
       }
     }
   ],
+  "trendyol_product_detail": {
+    "images": [
+      {
+        "thumbnail": "https://cdn.dsmcdn.com/mnresize/128/192/ty1610/prod/QC/20241202/10/7814e7f5-00a5-33f0-bed9-85b2b6bd12c8/1_org_zoom.jpg",
+        "normal": "https://cdn.dsmcdn.com/ty1537/product/media/images/prod/PIM/20240911/21/0cc16044-8a39-4223-9464-cd98f8fe12df/1_org_zoom.jpg"
+      },
+      {
+        "thumbnail": "https://cdn.dsmcdn.com/mnresize/128/192/ty1608/prod/QC/20241202/10/9e4f964d-8d89-3c84-996f-7dab64e9b8e0/1_org_zoom.jpg",
+        "normal": "https://cdn.dsmcdn.com/ty1610/prod/QC/20241202/10/07e07151-d364-32c3-acb1-b4c583ad1fc6/1_org_zoom.jpg"
+      },
+      {
+        "thumbnail": "https://cdn.dsmcdn.com/mnresize/128/192/ty1608/prod/QC/20241202/10/0d94bcaf-30c6-32b1-9c9e-4768aa7e7660/1_org_zoom.jpg",
+        "normal": "https://cdn.dsmcdn.com/ty1608/prod/QC/20241202/10/ea253d55-635e-34c5-9b97-111246cf3aed/1_org_zoom.jpg"
+      },
+      {
+        "thumbnail": "https://cdn.dsmcdn.com/mnresize/128/192/ty1608/prod/QC/20241202/10/60d1b00e-5323-3000-a809-19f3e914b4d4/1_org_zoom.jpg",
+        "normal": "https://cdn.dsmcdn.com/ty1610/prod/QC/20241202/10/0d759086-f00b-3b94-83de-f254bf50c91e/1_org_zoom.jpg"
+      }
+    ],
+    "brand": "Apple",
+    "name": "آیفون 16 پرو 256GB",
+    "score": 4.5,
+    "finalPrice": "84.060",
+    "originalPrice": 0,
+    "link": "/apple/iphone-16-pro-256gb-naturel-titanyum-p-857296103?boutiqueId=61&merchantId=355135",
+    "sizes": [
+      { "value": "1tb", "text": "1 ترابایت", "link": "/apple/iphone-16-pro-max-1tb-beyaz-titanyum-p-857296091" },
+      { "value": "512gb", "text": "512 گیگابایت", "link": "/apple/iphone-16-pro-max-512gb-col-titanyum-p-857296091" },
+      { "value": "256gb", "text": "256 گیگابایت", "link": "/apple/iphone-16-pro-max-256gb-siyah-titanyum-p-857296091" }
+    ],
+    "breadCrumbPaths": [
+      {
+        "text": "اپل",
+        "link": "/apple"
+      },
+      {
+        "text": "موبایل",
+        "link": "/mobile"
+      },
+      {
+        "text": "ios",
+        "link": "/ios"
+      }
+    ],
+    "reviews": {
+      "count": 5,
+      "link": "/link"
+    },
+    "questionAndAnswer": {
+      "count": 8,
+      "link": "/link"
+    },
+    "video": {
+      "img": "https://video-content-img.dsmcdn.com/prod/thumb/2017928/2026901/2029892/c0b174ca-9aa2-4e23-bfd1-37898419f930.jpg",
+      "video": "https://video-content.dsmcdn.com/prod/720p/2017928/2026901/2029892/c0b174ca-9aa2-4e23-bfd1-37898419f930.mp4"
+    },
+    "commentsLink": "/apple/iphone-16-pro-256gb-naturel-titanyum-p-857296103/yorumlar/?score=4,5",
+    "colors": [
+      {
+        "name": "تیتانیوم ",
+        "img": "https://cdn.dsmcdn.com/ty1539/product/media/images/prod/PIM/20240912/08/af2e9010-1771-4887-932c-390f8abbddcb/1_org_zoom.jpg",
+        "link": "apple/iphone-16-pro-max-256gb-col-titanyum-p-857296109"
+      },
+      {
+        "name": "تیتانیوم سفید",
+        "img": "https://cdn.dsmcdn.com/ty1609/prod/QC/20241202/10/c9eb142a-6162-37be-acc2-fb8b4fae1047/1_org_zoom.jpg",
+        "link": "apple/iphone-16-pro-max-256gb-beyaz-titanyum-p-857296102"
+      },
+      {
+        "name": "تیتانیوم طبیعی",
+        "img": "https://cdn.dsmcdn.com/ty1610/prod/QC/20241202/10/55ef7a8e-459d-3c62-a5f1-8936c412f240/1_org_zoom.jpg",
+        "link": "apple/iphone-16-pro-max-256gb-siyah-titanyum-p-857296077"
+      }
+    ],
+    "remainCount": 5,
+    "features": [
+      {
+        "title": "نوع گارانتی",
+        "text": "گارانتی شده است"
+      },
+      {
+        "title": "وضوح دوربین",
+        "text": "20 مگاپیکسل"
+      },
+      {
+        "title": "حافظه داخلی",
+        "text": "256 GB"
+      },
+      {
+        "title": "اندازه صفحه نمایش",
+        "text": "6.26 اینچ"
+      },
+      {
+        "title": "نسل شبکه",
+        "text": "5G"
+      }
+    ]
+  },
   "trendyol_items_by_params": {
     "totalCount": 4,
     "items": [
