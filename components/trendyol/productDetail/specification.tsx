@@ -34,11 +34,11 @@ export default function Specification(props: Partial<TrendyolProductDetail>) {
         score={score!}
       />
       <ReviewsLink reviews={reviews!} />
-      <Price originalPrice={originalPrice!} finalPrice={finalPrice!} />
+      {/* <Price originalPrice={originalPrice!} finalPrice={finalPrice!} /> */}
       <hr />
       <Colors colors={colors!} />
       <Sizes sizes={sizes!} />
-      <ShoppingButtons />
+      {/* <ShoppingButtons /> */}
       <Features features={features!} />
     </div>
   );
