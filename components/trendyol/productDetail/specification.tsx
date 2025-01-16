@@ -104,7 +104,7 @@ const ReviewsLink = (props: Pick<TrendyolProductDetail, "reviews">) => {
   );
 };
 
-const Price = (
+export const Price = (
   props: Pick<TrendyolProductDetail, "originalPrice" | "finalPrice">
 ) => {
   const haveOriginalPrice = parseInt(props.originalPrice) > 0;
