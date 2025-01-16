@@ -218,14 +218,14 @@ const Features = (props: Pick<TrendyolProductDetail, "features">) => {
         {props.features.map((item, index) => {
           return (
             <div
-              className="flex flex-col bg-gray-100 px-2 py-2 rounded-lg justify-between"
+              className="flex flex-col bg-gray-100 px-3 py-2 rounded-lg justify-between"
               key={index}
             >
-              <span className="text-gray-600 text-xs ">
-                {truncateString(item.title, 9)}
+              <span className="text-gray-500 text-[9px] ">
+                {truncateString(item.title, 20)}
               </span>
-              <span className="text-gray-800 text-[10px]">
-                {truncateString(item.text)}
+              <span className="text-gray-800 text-xs mt-1">
+                {truncateString(item.text,12)}
               </span>
             </div>
           );
