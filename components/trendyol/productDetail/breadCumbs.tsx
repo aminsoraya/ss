@@ -21,7 +21,7 @@ export default function BreadcrumbPaths({
             return (
               <Fragment key={index}>
                 <BreadcrumbItem>
-                  <BreadcrumbLink href={item.link}>{item.text}</BreadcrumbLink>
+                  <BreadcrumbLink className="text-gray-800 text-xs" href={item.link}>{item.text}</BreadcrumbLink>
                 </BreadcrumbItem>
                 {index<breadCrumbPaths.length-1&&<BreadcrumbSeparator className="rotate-180 text-orange-500" />}
               </Fragment>
