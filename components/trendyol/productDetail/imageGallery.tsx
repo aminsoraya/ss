@@ -9,6 +9,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
+import { twMerge } from "tailwind-merge";
 
 interface CarouselSectionProps {
   images: TrendyolProductDetail["images"];
@@ -16,6 +17,7 @@ interface CarouselSectionProps {
   height: string;
   basis?: string;
   itemClassName?: string;
+  center?:boolean
 }
 
 const navigationButtonStyles =
@@ -32,10 +34,11 @@ function CarouselSection({
   height,
   basis,
   itemClassName,
+  center
 }: CarouselSectionProps) {
   return (
     <Carousel {...carouselProps}>
-      <CarouselContent className="-ml-1">
+      <CarouselContent className={twMerge("-ml-1  ",center?"flex justify-center":"")}>
         {images.map((image, index) => (
           <CarouselItem
             key={index}
@@ -72,12 +75,12 @@ export default function ImageGallery({
       <div className="border rounded-lg flex flex-col">
         <CarouselSection images={images} imageKey="normal" height="h-96" />
       </div> 
-      <CarouselSection
+      <CarouselSection center
         images={images}
         imageKey="thumbnail"
         height="h-16"
         basis="basis-1/8"
-        itemClassName="[&>div]:border [&>div]:border-gray-200  [&>div]:rounded-md"
+        itemClassName="[&>div]:border [&>div]:overflow-hidden [&>div]:border-gray-200  [&>div]:rounded-md"
       />
     </div>
   );
