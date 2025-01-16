@@ -7,6 +7,7 @@ import { TbPointFilled } from "react-icons/tb";
 import { twMerge } from "tailwind-merge";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { truncateString } from "@/utils/common";
 
 export default function Specification(props: Partial<TrendyolProductDetail>) {
   const {
@@ -38,6 +39,7 @@ export default function Specification(props: Partial<TrendyolProductDetail>) {
       <Colors colors={colors!} />
       <Sizes sizes={sizes!} />
       <ShoppingButtons />
+      <Features features={features!} />
     </div>
   );
 }
@@ -204,6 +206,21 @@ const ShoppingButtons = () => {
       <button className="border-orange-500 h-12 px-5 text-orange-500 hover:bg-orange-500 hover:text-white border rounded">
         افزودن به سبد خرید
       </button>
+    </div>
+  );
+};
+
+const Features = (props: Pick<TrendyolProductDetail, "features">) => {
+  return (
+    <div className="grid grid-cols-4 gap-x-3 my-5 gap-5">
+      {props.features.map((item, index) => {
+        return (
+          <div className="flex flex-col bg-gray-100 px-2 py-2 rounded-lg justify-between" key={index}>
+            <span className="text-gray-600 text-xs ">{truncateString(item.title,9)}</span>
+            <span className="text-gray-800 text-[10px]">{truncateString(item.text)}</span>
+          </div>
+        );
+      })}
     </div>
   );
 };

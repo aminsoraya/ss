@@ -14,3 +14,6 @@ export const formatTime = (time: string) => {
 
   return splitTime.join(" تا ");
 };
+
+export const truncateString = (val: string, preferedLength: number=10) =>
+  val.length > preferedLength ? val.slice(0, preferedLength).concat("...") : val;
