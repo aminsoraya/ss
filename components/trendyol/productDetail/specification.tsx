@@ -212,15 +212,25 @@ const ShoppingButtons = () => {
 
 const Features = (props: Pick<TrendyolProductDetail, "features">) => {
   return (
-    <div className="grid grid-cols-4 gap-x-3 my-5 gap-5">
-      {props.features.map((item, index) => {
-        return (
-          <div className="flex flex-col bg-gray-100 px-2 py-2 rounded-lg justify-between" key={index}>
-            <span className="text-gray-600 text-xs ">{truncateString(item.title,9)}</span>
-            <span className="text-gray-800 text-[10px]">{truncateString(item.text)}</span>
-          </div>
-        );
-      })}
+    <div className="w-full my-5 ">
+      <span className="h-12">ویژگی های محصول</span>
+      <div className="grid my-5 grid-cols-4 gap-x-3 gap-5">
+        {props.features.map((item, index) => {
+          return (
+            <div
+              className="flex flex-col bg-gray-100 px-2 py-2 rounded-lg justify-between"
+              key={index}
+            >
+              <span className="text-gray-600 text-xs ">
+                {truncateString(item.title, 9)}
+              </span>
+              <span className="text-gray-800 text-[10px]">
+                {truncateString(item.text)}
+              </span>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };
