@@ -1004,9 +1004,9 @@
     "originalPrice": 0,
     "link": "/apple/iphone-16-pro-256gb-naturel-titanyum-p-857296103?boutiqueId=61&merchantId=355135",
     "sizes": [
-      { "value": "1t", "text": "1 ترابایت", "link": "/link" },
-      { "value": "512gb", "text": "512 گیگابایت", "link": "/link" },
-      { "value": "256gb", "text": "256 گیگابایت", "link": "/link" }
+      { "value": "1tb", "text": "1 ترابایت", "link": "/apple/iphone-16-pro-max-1tb-beyaz-titanyum-p-857296091" },
+      { "value": "512gb", "text": "512 گیگابایت", "link": "/apple/iphone-16-pro-max-512gb-col-titanyum-p-857296091" },
+      { "value": "256gb", "text": "256 گیگابایت", "link": "/apple/iphone-16-pro-max-256gb-siyah-titanyum-p-857296091" }
     ],
     "breadCrumbPaths": [
       {

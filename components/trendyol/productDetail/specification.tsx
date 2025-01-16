@@ -36,6 +36,7 @@ export default function Specification(props: Partial<TrendyolProductDetail>) {
       <Price originalPrice={originalPrice!} finalPrice={finalPrice!} />
       <hr />
       <Colors colors={colors!} />
+      <Sizes sizes={sizes!}/>
     </div>
   );
 }
@@ -151,6 +152,37 @@ const Colors = (props: Pick<TrendyolProductDetail, "colors">) => {
               )}
             >
               <Image fill src={item.img} className="object-cover" alt="" />
+            </Link>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
+const Sizes = (props: Pick<TrendyolProductDetail, "sizes">) => {
+  const pathname = usePathname();
+
+  const size=props.sizes.find(c=>pathname.includes( c.value))
+
+  return (
+    <div className="flex flex-col my-2">
+      <div className="flex items-center my-2">
+        <strong className="text-gray-800">سایز :</strong>
+        <span className="text-xs px-2 text-gray-700">{size?.value} </span>
+      </div>
+      <div className="flex items-center gap-x-2">
+        {props.sizes.map((item, index) => {
+          return (
+            <Link
+              href={`/trendyol/${item.link}`}
+              key={index}
+              className={twMerge(
+                `relative  hover:shadow cursor-pointer h-8  text-xs flex items-center px-3 border rounded-lg overflow-hidden`,
+                pathname.includes(item.value) ? "border-orange-500 border-2" : ""
+              )}
+            >
+               {item.text}
             </Link>
           );
         })}
