@@ -26,7 +26,7 @@ export default function Specification(props: Partial<TrendyolProductDetail>) {
     features,
   } = props;
   return (
-    <div className="px-5 ">
+    <div className="px-5 col-span-2">
       <BrandAndName brand={brand!} name={name!} />
       <RankReviewsComment
         questionAndAnswer={questionAndAnswer!}

@@ -68,7 +68,7 @@ export default function ImageGallery({
   images,
 }: Pick<TrendyolProductDetail, "images">) {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col col-span-2">
       <div className="border rounded-lg flex flex-col">
         <CarouselSection images={images} imageKey="normal" height="h-96" />
       </div> 

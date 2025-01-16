@@ -11,7 +11,7 @@ export default function ProductDetail({ data }: IProps) {
   return (
     <div>
       <BreadcrumbPaths breadCrumbPaths={data.breadCrumbPaths} />
-      <div className="relative grid grid-cols-3 py-5">
+      <div className="relative grid grid-cols-5 py-5">
         <ImageGallery images={data.images} />
         <Specification {...data} />
       </div>
