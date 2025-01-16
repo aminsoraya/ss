@@ -9,6 +9,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import { twMerge } from "tailwind-merge";
 
 export default function BreadcrumbPaths({
   breadCrumbPaths,
@@ -21,7 +22,7 @@ export default function BreadcrumbPaths({
             return (
               <Fragment key={index}>
                 <BreadcrumbItem>
-                  <BreadcrumbLink className="text-gray-800 text-xs" href={item.link}>{item.text}</BreadcrumbLink>
+                  <BreadcrumbLink className={twMerge("text-gray-600 text-xs hover:border-b border-gray-600",index==breadCrumbPaths.length-1? "text-black":"")} href={item.link}>{item.text}</BreadcrumbLink>
                 </BreadcrumbItem>
                 {index<breadCrumbPaths.length-1&&<BreadcrumbSeparator className="rotate-180 text-orange-500" />}
               </Fragment>
